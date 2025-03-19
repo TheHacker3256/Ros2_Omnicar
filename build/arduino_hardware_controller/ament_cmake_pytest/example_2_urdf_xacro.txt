@@ -1,0 +1,52 @@
+-- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller':
+ - /usr/bin/python3 -u -m pytest /home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_urdf_xacro.py -o cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache --junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml --junit-prefix=arduino_hardware_controller
+
+============================= test session starts ==============================
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache
+rootdir: /home/nwhit210/omnicar_2_ws
+plugins: ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-flake8-0.12.11, launch-testing-1.0.7, launch-testing-ros-0.19.8, ament-lint-0.12.11, ament-copyright-0.12.11, cov-3.0.0, colcon-core-0.19.0
+collected 1 item
+
+../../src/arduino_controller/test/test_urdf_xacro.py F                   [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_urdf_xacro ________________________________
+
+    def test_urdf_xacro():
+        # General Arguments
+        description_package = "arduino_hardware_controller"
+        description_file = "diffbot.urdf.xacro"
+    
+        description_file_path = os.path.join(
+            get_package_share_directory(description_package), "urdf", description_file
+        )
+    
+        (_, tmp_urdf_output_file) = tempfile.mkstemp(suffix=".urdf")
+    
+        # Compose `xacro` and `check_urdf` command
+        xacro_command = (
+            f"{shutil.which('xacro')}" f" {description_file_path}" f" > {tmp_urdf_output_file}"
+        )
+        check_urdf_command = f"{shutil.which('check_urdf')} {tmp_urdf_output_file}"
+    
+        # Try to call processes but finally remove the temp file
+        try:
+            xacro_process = subprocess.run(
+                xacro_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True
+            )
+    
+>           assert xacro_process.returncode == 0, " --- XACRO command failed ---"
+E           AssertionError:  --- XACRO command failed ---
+E           assert 2 == 0
+E            +  where 2 = CompletedProcess(args='/opt/ros/humble/bin/xacro /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share...nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro\n').returncode
+
+../../src/arduino_controller/test/test_urdf_xacro.py:62: AssertionError
+- generated xml file: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml -
+=========================== short test summary info ============================
+FAILED ../../src/arduino_controller/test/test_urdf_xacro.py::test_urdf_xacro
+============================== 1 failed in 0.23s ===============================
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml'

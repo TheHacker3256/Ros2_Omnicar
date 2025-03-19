@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="16" failures="0" disabled="0" errors="0" time="3.317" timestamp="2025-03-18T14:48:38" name="AllTests">
+  <testsuite name="MecanumDriveControllerTest" tests="16" failures="0" disabled="0" errors="0" time="3.317" timestamp="2025-03-18T14:48:38">
+    <testcase name="when_controller_is_configured_expect_all_parameters_set" status="run" result="completed" time="0.072" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_controller_configured_expect_properly_exported_interfaces" status="run" result="completed" time="0.04" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_controller_is_activated_expect_reference_reset" status="run" result="completed" time="0.047" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_controller_active_and_update_called_expect_success" status="run" result="completed" time="0.041" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_active_controller_is_deactivated_expect_success" status="run" result="completed" time="0.045" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_controller_is_reactivated_expect_cmd_itfs_not_set_and_update_success" status="run" result="completed" time="0.041" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_update_is_called_expect_status_message" status="run" result="completed" time="0.042" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_reference_msg_received_expect_updated_commands_and_status_message" status="run" result="completed" time="0.559" timestamp="2025-03-18T14:48:38" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_reference_msg_is_too_old_expect_unset_reference" status="run" result="completed" time="0.53" timestamp="2025-03-18T14:48:39" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_reference_msg_has_timestamp_zero_expect_reference_set_and_timestamp_set_to_current_time" status="run" result="completed" time="0.537" timestamp="2025-03-18T14:48:39" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_message_has_valid_timestamp_expect_reference_set" status="run" result="completed" time="0.564" timestamp="2025-03-18T14:48:40" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_ref_msg_old_expect_cmnd_itfs_set_to_zero_otherwise_to_valid_cmnds" status="run" result="completed" time="0.077" timestamp="2025-03-18T14:48:40" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_controller_in_chainable_mode_expect_receiving_commands_from_reference_interfaces_directly" status="run" result="completed" time="0.071" timestamp="2025-03-18T14:48:41" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_reference_timeout_is_zero_expect_reference_msg_being_used_only_once" status="run" result="completed" time="0.062" timestamp="2025-03-18T14:48:41" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="when_ref_timeout_zero_for_reference_callback_expect_reference_msg_being_used_only_once" status="run" result="completed" time="0.56" timestamp="2025-03-18T14:48:41" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+    <testcase name="SideToSideAndRotationOdometryTest" status="run" result="completed" time="0.029" timestamp="2025-03-18T14:48:41" classname="mecanum_drive_controller.MecanumDriveControllerTest" />
+  </testsuite>
+</testsuites>

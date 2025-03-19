@@ -1,0 +1,165 @@
+UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini
+Parse Config file:/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini
+   Site: nwhit210
+   Build name: (empty)
+ Add coverage exclude regular expressions.
+Create new tag: 20250318-0448 - Experimental
+UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini
+Parse Config file:/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini
+Test project /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: example_2_urdf_xacro
+
+1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml" "--package-name" "arduino_hardware_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_urdf_xacro.py" "-o" "cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache" "--junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml" "--junit-prefix=arduino_hardware_controller"
+1: Test timeout computed to be: 60
+1: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller':
+1:  - /usr/bin/python3 -u -m pytest /home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_urdf_xacro.py -o cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache --junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml --junit-prefix=arduino_hardware_controller
+1: ============================= test session starts ==============================
+1: platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+1: cachedir: build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache
+1: rootdir: /home/nwhit210/omnicar_2_ws
+1: plugins: ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-flake8-0.12.11, launch-testing-1.0.7, launch-testing-ros-0.19.8, ament-lint-0.12.11, ament-copyright-0.12.11, cov-3.0.0, colcon-core-0.19.0
+1: collected 1 item
+1: 
+1: ../../src/arduino_controller/test/test_urdf_xacro.py F                   [100%]
+1: 
+1: =================================== FAILURES ===================================
+1: _______________________________ test_urdf_xacro ________________________________
+1: 
+1:     def test_urdf_xacro():
+1:         # General Arguments
+1:         description_package = "arduino_hardware_controller"
+1:         description_file = "diffbot.urdf.xacro"
+1:     
+1:         description_file_path = os.path.join(
+1:             get_package_share_directory(description_package), "urdf", description_file
+1:         )
+1:     
+1:         (_, tmp_urdf_output_file) = tempfile.mkstemp(suffix=".urdf")
+1:     
+1:         # Compose `xacro` and `check_urdf` command
+1:         xacro_command = (
+1:             f"{shutil.which('xacro')}" f" {description_file_path}" f" > {tmp_urdf_output_file}"
+1:         )
+1:         check_urdf_command = f"{shutil.which('check_urdf')} {tmp_urdf_output_file}"
+1:     
+1:         # Try to call processes but finally remove the temp file
+1:         try:
+1:             xacro_process = subprocess.run(
+1:                 xacro_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True
+1:             )
+1:     
+1: >           assert xacro_process.returncode == 0, " --- XACRO command failed ---"
+1: E           AssertionError:  --- XACRO command failed ---
+1: E           assert 2 == 0
+1: E            +  where 2 = CompletedProcess(args='/opt/ros/humble/bin/xacro /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share...nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro\n').returncode
+1: 
+1: ../../src/arduino_controller/test/test_urdf_xacro.py:62: AssertionError
+1: - generated xml file: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml -
+1: =========================== short test summary info ============================
+1: FAILED ../../src/arduino_controller/test/test_urdf_xacro.py::test_urdf_xacro
+1: ============================== 1 failed in 0.23s ===============================
+1: -- run_test.py: return code 1
+1: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml'
+1/3 Test #1: example_2_urdf_xacro .............***Failed    0.91 sec
+test 2
+    Start 2: view_example_2_launch
+
+2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml" "--package-name" "arduino_hardware_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_view_robot_launch.py" "-o" "cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch/.cache" "--junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml" "--junit-prefix=arduino_hardware_controller"
+2: Test timeout computed to be: 60
+2: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller':
+2:  - /usr/bin/python3 -u -m pytest /home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_view_robot_launch.py -o cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch/.cache --junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml --junit-prefix=arduino_hardware_controller
+2: ============================= test session starts ==============================
+2: platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+2: cachedir: build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch/.cache
+2: rootdir: /home/nwhit210/omnicar_2_ws
+2: plugins: ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-flake8-0.12.11, launch-testing-1.0.7, launch-testing-ros-0.19.8, ament-lint-0.12.11, ament-copyright-0.12.11, cov-3.0.0, colcon-core-0.19.0
+2: collected 1 item
+2: 
+2: ../../src/arduino_controller/test/test_view_robot_launch.py F            [100%]
+2: 
+2: =================================== FAILURES ===================================
+2: _____________________ launch tests: test_view_robot_launch _____________________
+2: 
+2: ----------------------------- Captured stdout call -----------------------------
+2: [INFO] [launch]: All log files can be found below /home/nwhit210/.ros/log/2025-03-18-14-48-39-727507-nwhit210-2717
+2: [INFO] [launch]: Default logging verbosity is set to INFO
+2: [ERROR] [launch]: Caught exception in launch (see debug for traceback): executed command failed. Command: /opt/ros/humble/bin/xacro /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro prefix:=""
+2: Captured stderr output: error: package not found: "package 'ros2_control_demo_description' not found, searching: ['/home/nwhit210/omnicar_2_ws/install/omnicar', '/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller', '/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller', '/opt/ros/humble']"
+2: when processing file: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro
+2: 
+2: Processes under test stopped before tests completed
+2: - generated xml file: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml -
+2: =========================== short test summary info ============================
+2: FAILED ../../src/arduino_controller/test/test_view_robot_launch.py::test_view_robot_launch
+2: ============================== 1 failed in 0.36s ===============================
+2: -- run_test.py: return code 1
+2: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml'
+2/3 Test #2: view_example_2_launch ............***Failed    0.96 sec
+test 3
+    Start 3: run_example_2_launch
+
+3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml" "--package-name" "arduino_hardware_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_diffbot_launch.py" "-o" "cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch/.cache" "--junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml" "--junit-prefix=arduino_hardware_controller"
+3: Test timeout computed to be: 60
+3: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller':
+3:  - /usr/bin/python3 -u -m pytest /home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_diffbot_launch.py -o cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch/.cache --junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml --junit-prefix=arduino_hardware_controller
+3: ============================= test session starts ==============================
+3: platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+3: cachedir: build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch/.cache
+3: rootdir: /home/nwhit210/omnicar_2_ws
+3: plugins: ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-flake8-0.12.11, launch-testing-1.0.7, launch-testing-ros-0.19.8, ament-lint-0.12.11, ament-copyright-0.12.11, cov-3.0.0, colcon-core-0.19.0
+3: collected 0 items / 1 error
+3: 
+3: ==================================== ERRORS ====================================
+3: ________________________ ERROR collecting test session _________________________
+3: /usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+3:     return self._hookexec(self, self.get_hookimpls(), kwargs)
+3: /usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+3:     return self._inner_hookexec(hook, methods, kwargs)
+3: /usr/lib/python3/dist-packages/pluggy/manager.py:83: in <lambda>
+3:     self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+3: /usr/lib/python3/dist-packages/_pytest/python.py:200: in pytest_collect_file
+3:     module: Module = ihook.pytest_pycollect_makemodule(path=path, parent=parent)
+3: /usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+3:     return self._hookexec(self, self.get_hookimpls(), kwargs)
+3: /usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+3:     return self._inner_hookexec(hook, methods, kwargs)
+3: /usr/lib/python3/dist-packages/pluggy/manager.py:83: in <lambda>
+3:     self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+3: /opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule
+3:     entrypoint = find_launch_test_entrypoint(path)
+3: /opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:186: in find_launch_test_entrypoint
+3:     module = path.pyimport()
+3: /usr/lib/python3/dist-packages/py/_path/local.py:704: in pyimport
+3:     __import__(modname)
+3: /usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:170: in exec_module
+3:     exec(co, module.__dict__)
+3: ../../src/arduino_controller/test/test_diffbot_launch.py:43: in <module>
+3:     from ros2_control_demo_testing.test_utils import (
+3: E   ModuleNotFoundError: No module named 'ros2_control_demo_testing'
+3: - generated xml file: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml -
+3: =========================== short test summary info ============================
+3: ERROR ../.. - ModuleNotFoundError: No module named 'ros2_control_demo_testing'
+3: !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+3: =============================== 1 error in 0.28s ===============================
+3: -- run_test.py: return code 2
+3: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml'
+3/3 Test #3: run_example_2_launch .............***Failed    1.01 sec
+
+0% tests passed[0;0m, [0;31m3 tests failed[0;0m out of 3
+
+Label Time Summary:
+pytest    =   2.87 sec*proc (3 tests)
+
+Total Test time (real) =   2.88 sec
+
+The following tests FAILED:
+	[0;31m  1 - example_2_urdf_xacro (Failed)[0;0m
+	[0;31m  2 - view_example_2_launch (Failed)[0;0m
+	[0;31m  3 - run_example_2_launch (Failed)[0;0m

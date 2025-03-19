@@ -1,0 +1,22 @@
+-- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller':
+ - /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_mecanum_drive_controller_preceeding --ros-args --params-file /home/nwhit210/omnicar_2_ws/src/mecanum_drive_controller/test/mecanum_drive_controller_preceeding_params.yaml -- --gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml
+
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from MecanumDriveControllerTest
+[ RUN      ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set
+[INFO] [1742273322.009870094] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set (101 ms)
+[ RUN      ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces
+[INFO] [1742273322.082175325] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces (62 ms)
+[----------] 2 tests from MecanumDriveControllerTest (163 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (163 ms total)
+[  PASSED  ] 2 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml'
+-- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml'

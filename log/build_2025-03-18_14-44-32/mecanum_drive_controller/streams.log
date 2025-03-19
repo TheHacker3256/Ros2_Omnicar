@@ -1,0 +1,43 @@
+[0.053s] Invoking command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller -- -j8 -l8
+[0.259s] [ 12%] Built target mecanum_drive_controller_parameters
+[0.305s] [ 25%] Built target gmock_main
+[0.308s] [ 43%] Built target gmock
+[0.373s] [ 62%] Built target mecanum_drive_controller
+[0.380s] [ 75%] Built target test_load_mecanum_drive_controller
+[0.437s] [ 87%] Built target test_mecanum_drive_controller_preceeding
+[0.437s] [100%] Built target test_mecanum_drive_controller
+[0.470s] Invoked command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller -- -j8 -l8
+[0.478s] Invoking command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller
+[0.488s] -- Install configuration: ""
+[0.489s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/include/mecanum_drive_controller
+[0.490s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp
+[0.490s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml
+[0.492s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/include/mecanum_drive_controller
+[0.493s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller
+[0.494s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[0.494s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[0.494s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[0.495s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[0.496s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[0.497s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[0.497s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[0.499s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[0.500s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[0.501s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[0.501s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[0.502s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[0.502s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[0.503s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[0.503s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[0.504s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[0.504s] -- Installing: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[0.504s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[0.505s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[0.506s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[0.507s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[0.507s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.511s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[0.513s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[0.513s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[0.514s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[0.514s] Invoked command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller

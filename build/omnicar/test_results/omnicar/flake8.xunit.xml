@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="omnicar.flake8"
+  tests="58"
+  errors="0"
+  failures="58"
+  time="0.177"
+>
+  <testcase
+    name="F811 (./launch/launch_bot.launch.py:10:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="redefinition of unused 'IncludeLaunchDescription' from line 6:&#10;from launch.actions import IncludeLaunchDescription, TimerAction&#10;"/>
+  </testcase>
+  <testcase
+    name="E225 (./launch/launch_bot.launch.py:16:17)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace around operator:&#10;    package_name='omnicar'&#10;"/>
+  </testcase>
+  <testcase
+    name="F821 (./launch/launch_bot.launch.py:17:25)"
+    classname="omnicar.flake8"
+  >
+      <failure message="undefined name 'Command':&#10;    robot_description = Command(['ros2 param get --hide-type/robot_state_publisher robot_description'])&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/launch_bot.launch.py:17:100)"
+    classname="omnicar.flake8"
+  >
+      <failure message="line too long (103 &gt; 99 characters):&#10;    robot_description = Command(['ros2 param get --hide-type/robot_state_publisher robot_description'])&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_bot.launch.py:20:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/launch_bot.launch.py:20:89)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;    controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/launch_bot.launch.py:20:100)"
+    classname="omnicar.flake8"
+  >
+      <failure message="line too long (111 &gt; 99 characters):&#10;    controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/launch_bot.launch.py:23:92)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/launch_bot.launch.py:23:100)"
+    classname="omnicar.flake8"
+  >
+      <failure message="line too long (120 &gt; 99 characters):&#10;      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/launch_bot.launch.py:23:101)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./launch/launch_bot.launch.py:23:121)"
+    classname="omnicar.flake8"
+  >
+      <failure message="trailing whitespace:&#10;      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/launch_bot.launch.py:32:56)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;    delayed_controller_manager = TimerAction(period=3.0,actions=[controller_manager])&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_bot.launch.py:36:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (3):&#10;    diff_drive_spawner = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="E122 (./launch/launch_bot.launch.py:37:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message='continuation line missing indentation or outdented:&#10;    package="controller_manager",&#10;'/>
+  </testcase>
+  <testcase
+    name="E122 (./launch/launch_bot.launch.py:38:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message='continuation line missing indentation or outdented:&#10;    executable="spawner",&#10;'/>
+  </testcase>
+  <testcase
+    name="E122 (./launch/launch_bot.launch.py:39:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message='continuation line missing indentation or outdented:&#10;    arguments=["diff_cont"],&#10;'/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_bot.launch.py:49:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    joint_broad_spawner = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_sim.launch.py:14:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (3):&#10;def generate_launch_description():&#10;"/>
+  </testcase>
+  <testcase
+    name="E225 (./launch/launch_sim.launch.py:15:17)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace around operator:&#10;    package_name='omnicar'&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_sim.launch.py:18:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    rsp = IncludeLaunchDescription(&#10;"/>
+  </testcase>
+  <testcase
+    name="E122 (./launch/launch_sim.launch.py:20:7)"
+    classname="omnicar.flake8"
+  >
+      <failure message="continuation line missing indentation or outdented:&#10;      get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/launch_sim.launch.py:20:48)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;      get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/launch_sim.launch.py:20:57)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;      get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./launch/launch_sim.launch.py:20:77)"
+    classname="omnicar.flake8"
+  >
+      <failure message="trailing whitespace:&#10;      get_package_share_directory(package_name),'launch','rsp.launch.py')]), &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_sim.launch.py:25:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    # Include the Gazebo launch file, provided by the gazebo_ros package&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/launch_sim.launch.py:27:100)"
+    classname="omnicar.flake8"
+  >
+      <failure message="line too long (124 &gt; 99 characters):&#10;      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_sim.launch.py:31:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/launch_sim.launch.py:31:100)"
+    classname="omnicar.flake8"
+  >
+      <failure message="line too long (126 &gt; 99 characters):&#10;    # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.&#10;"/>
+  </testcase>
+  <testcase
+    name="W291 (./launch/launch_sim.launch.py:33:28)"
+    classname="omnicar.flake8"
+  >
+      <failure message="trailing whitespace:&#10;      package='gazebo_ros', &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_sim.launch.py:40:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    diff_drive_spawner = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_sim.launch.py:47:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    joint_broad_spawner = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/launch_sim.launch.py:54:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    # Launch them all!&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/joint_pub.launch.py:1:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="'os' imported but unused:&#10;import os&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/joint_pub.launch.py:3:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="'ament_index_python.packages.get_package_share_directory' imported but unused:&#10;from ament_index_python.packages import get_package_share_directory&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/joint_pub.launch.py:6:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="'launch.substitutions.LaunchConfiguration' imported but unused:&#10;from launch.substitutions import LaunchConfiguration&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/joint_pub.launch.py:7:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="'launch.actions.DeclareLaunchArgument' imported but unused:&#10;from launch.actions import DeclareLaunchArgument&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/joint_pub.launch.py:10:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="'xacro' imported but unused:&#10;import xacro&#10;"/>
+  </testcase>
+  <testcase
+    name="E302 (./launch/joint_pub.launch.py:11:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="expected 2 blank lines, found 0:&#10;def generate_launch_description():&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/joint_pub.launch.py:15:100)"
+    classname="omnicar.flake8"
+  >
+      <failure message="line too long (107 &gt; 99 characters):&#10;        Node(package='joint_state_publisher_gui', executable='joint_state_publisher_gui', output='screen'),&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/joint_pub.launch.py:16:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;        &#10;"/>
+  </testcase>
+  <testcase
+    name="W292 (./launch/joint_pub.launch.py:17:7)"
+    classname="omnicar.flake8"
+  >
+      <failure message="no newline at end of file:&#10;    ])"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/rsp.launch.py:7:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="'launch.actions.DeclareLaunchArgument' imported but unused:&#10;from launch.actions import DeclareLaunchArgument&#10;"/>
+  </testcase>
+  <testcase
+    name="E302 (./launch/rsp.launch.py:11:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="expected 2 blank lines, found 0:&#10;def generate_launch_description():&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/rsp.launch.py:17:39)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;    xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/rsp.launch.py:17:53)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;    xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/rsp.launch.py:19:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;    &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/rsp.launch.py:25:5)"
+    classname="omnicar.flake8"
+  >
+      <failure message="too many blank lines (3):&#10;    return LaunchDescription([&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/rsp.launch.py:27:100)"
+    classname="omnicar.flake8"
+  >
+      <failure message="line too long (119 &gt; 99 characters):&#10;        Node(package='robot_state_publisher', executable='robot_state_publisher', output='screen', parameters=[params])&#10;"/>
+  </testcase>
+  <testcase
+    name="W292 (./launch/rsp.launch.py:28:7)"
+    classname="omnicar.flake8"
+  >
+      <failure message="no newline at end of file:&#10;    ])"/>
+  </testcase>
+  <testcase
+    name="E302 (./launch/joystick.launch.py:5:1)"
+    classname="omnicar.flake8"
+  >
+      <failure message="expected 2 blank lines, found 0:&#10;def generate_launch_description():&#10;"/>
+  </testcase>
+  <testcase
+    name="E111 (./launch/joystick.launch.py:6:3)"
+    classname="omnicar.flake8"
+  >
+      <failure message="indentation is not a multiple of 4:&#10;  joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/joystick.launch.py:6:67)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;  joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/joystick.launch.py:6:76)"
+    classname="omnicar.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;  joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')&#10;"/>
+  </testcase>
+  <testcase
+    name="E111 (./launch/joystick.launch.py:8:3)"
+    classname="omnicar.flake8"
+  >
+      <failure message="indentation is not a multiple of 4:&#10;  joy_node = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="E111 (./launch/joystick.launch.py:14:3)"
+    classname="omnicar.flake8"
+  >
+      <failure message="indentation is not a multiple of 4:&#10;  teleop_node = Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/joystick.launch.py:17:9)"
+    classname="omnicar.flake8"
+  >
+      <failure message="unexpected spaces around keyword / parameter equals:&#10;    name = 'teleop_node',&#10;"/>
+  </testcase>
+  <testcase
+    name="E251 (./launch/joystick.launch.py:17:11)"
+    classname="omnicar.flake8"
+  >
+      <failure message="unexpected spaces around keyword / parameter equals:&#10;    name = 'teleop_node',&#10;"/>
+  </testcase>
+  <testcase
+    name="E111 (./launch/joystick.launch.py:22:3)"
+    classname="omnicar.flake8"
+  >
+      <failure message="indentation is not a multiple of 4:&#10;  return LaunchDescription([&#10;"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/launch_bot.launch.py
+* ./launch/launch_sim.launch.py
+* ./launch/joint_pub.launch.py
+* ./launch/rsp.launch.py
+* ./launch/joystick.launch.py</system-out>
+</testsuite>

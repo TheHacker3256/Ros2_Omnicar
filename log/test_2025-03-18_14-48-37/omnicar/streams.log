@@ -1,0 +1,359 @@
+[0.167s] Invoking command in '/home/nwhit210/omnicar_2_ws/build/omnicar': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.182s] UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini
+[0.182s] Parse Config file:/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini
+[0.182s]    Site: nwhit210
+[0.182s]    Build name: (empty)
+[0.182s]  Add coverage exclude regular expressions.
+[0.182s] Create new tag: 20250318-0448 - Experimental
+[0.182s] UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini
+[0.182s] Parse Config file:/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini
+[0.183s] Test project /home/nwhit210/omnicar_2_ws/build/omnicar
+[0.183s] Constructing a list of tests
+[0.183s] Done constructing a list of tests
+[0.183s] Updating test list for fixtures
+[0.183s] Added 0 tests to meet fixture requirements
+[0.183s] Checking test dependency graph...
+[0.183s] Checking test dependency graph end
+[0.183s] test 1
+[0.183s]     Start 1: copyright
+[0.183s] 
+[0.183s] 1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml"
+[0.184s] 1: Test timeout computed to be: 200
+[0.253s] 1: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':
+[0.253s] 1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml
+[0.409s] 1: launch/joint_pub.launch.py: could not find copyright notice
+[0.409s] 1: launch/joystick.launch.py: could not find copyright notice
+[0.410s] 1: launch/launch_bot.launch.py: could not find copyright notice
+[0.410s] 1: launch/launch_sim.launch.py: could not find copyright notice
+[0.410s] 1: launch/rsp.launch.py: could not find copyright notice
+[0.410s] 1: 5 errors, checked 5 files
+[0.422s] 1: -- run_test.py: return code 1
+[0.422s] 1: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml'
+[0.432s] 1/5 Test #1: copyright ........................***Failed    0.25 sec
+[0.432s] test 2
+[0.433s]     Start 2: flake8
+[0.433s] 
+[0.433s] 2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml"
+[0.433s] 2: Test timeout computed to be: 60
+[0.507s] 2: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':
+[0.507s] 2:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml
+[0.856s] 2: from launch.actions import IncludeLaunchDescription, TimerAction
+[0.857s] 2: ^
+[0.857s] 2:     package_name='omnicar'
+[0.857s] 2:                 ^
+[0.857s] 2:     robot_description = Command(['ros2 param get --hide-type/robot_state_publisher robot_description'])
+[0.857s] 2:                         ^
+[0.858s] 2:     robot_description = Command(['ros2 param get --hide-type/robot_state_publisher robot_description'])
+[0.858s] 2:                                                                                                    ^
+[0.859s] 2:     controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')
+[0.859s] 2:     ^
+[0.859s] 2:     controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')
+[0.859s] 2:                                                                                         ^
+[0.859s] 2:     controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')
+[0.860s] 2:                                                                                                    ^
+[0.860s] 2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.860s] 2:                                                                                            ^
+[0.860s] 2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.860s] 2:                                                                                                    ^
+[0.861s] 2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.861s] 2:                                                                                                     ^
+[0.861s] 2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.861s] 2:                                                                                                                         ^
+[0.861s] 2:     delayed_controller_manager = TimerAction(period=3.0,actions=[controller_manager])
+[0.861s] 2:                                                        ^
+[0.862s] 2:     diff_drive_spawner = Node(
+[0.862s] 2:     ^
+[0.862s] 2:     package="controller_manager",
+[0.863s] 2:     ^
+[0.863s] 2:     executable="spawner",
+[0.863s] 2:     ^
+[0.863s] 2:     arguments=["diff_cont"],
+[0.863s] 2:     ^
+[0.863s] 2:     joint_broad_spawner = Node(
+[0.864s] 2:     ^
+[0.864s] 2: def generate_launch_description():
+[0.864s] 2: ^
+[0.864s] 2:     package_name='omnicar'
+[0.864s] 2:                 ^
+[0.864s] 2:     rsp = IncludeLaunchDescription(
+[0.864s] 2:     ^
+[0.865s] 2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.865s] 2:       ^
+[0.865s] 2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.865s] 2:                                                ^
+[0.865s] 2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.866s] 2:                                                         ^
+[0.866s] 2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
+[0.866s] 2:                                                                             ^
+[0.866s] 2:     # Include the Gazebo launch file, provided by the gazebo_ros package
+[0.866s] 2:     ^
+[0.866s] 2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])
+[0.866s] 2:                                                                                                    ^
+[0.867s] 2:     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
+[0.867s] 2:     ^
+[0.867s] 2:     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
+[0.867s] 2:                                                                                                    ^
+[0.867s] 2:       package='gazebo_ros', 
+[0.867s] 2:                            ^
+[0.868s] 2:     diff_drive_spawner = Node(
+[0.868s] 2:     ^
+[0.868s] 2:     joint_broad_spawner = Node(
+[0.868s] 2:     ^
+[0.868s] 2:     # Launch them all!
+[0.869s] 2:     ^
+[0.869s] 2: import os
+[0.870s] 2: ^
+[0.870s] 2: from ament_index_python.packages import get_package_share_directory
+[0.870s] 2: ^
+[0.870s] 2: from launch.substitutions import LaunchConfiguration
+[0.870s] 2: ^
+[0.871s] 2: from launch.actions import DeclareLaunchArgument
+[0.871s] 2: ^
+[0.871s] 2: import xacro
+[0.871s] 2: ^
+[0.871s] 2: def generate_launch_description():
+[0.871s] 2: ^
+[0.871s] 2:         Node(package='joint_state_publisher_gui', executable='joint_state_publisher_gui', output='screen'),
+[0.872s] 2:                                                                                                    ^
+[0.872s] 2:         
+[0.872s] 2: ^
+[0.872s] 2:     ])      ^
+[0.872s] 2: from launch.actions import DeclareLaunchArgument
+[0.872s] 2: ^
+[0.872s] 2: def generate_launch_description():
+[0.873s] 2: ^
+[0.873s] 2:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')
+[0.873s] 2:                                       ^
+[0.873s] 2:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')
+[0.873s] 2:                                                     ^
+[0.874s] 2:     
+[0.874s] 2: ^
+[0.874s] 2:     return LaunchDescription([
+[0.874s] 2:     ^
+[0.874s] 2:         Node(package='robot_state_publisher', executable='robot_state_publisher', output='screen', parameters=[params])
+[0.874s] 2:                                                                                                    ^
+[0.874s] 2:     ])      ^
+[0.874s] 2: def generate_launch_description():
+[0.875s] 2: ^
+[0.875s] 2:   joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')
+[0.875s] 2:   ^
+[0.875s] 2:   joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')
+[0.875s] 2:                                                                   ^
+[0.875s] 2:   joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')
+[0.876s] 2:                                                                            ^
+[0.876s] 2:   joy_node = Node(
+[0.876s] 2:   ^
+[0.876s] 2:   teleop_node = Node(
+[0.876s] 2:   ^
+[0.876s] 2:     name = 'teleop_node',
+[0.876s] 2:         ^
+[0.877s] 2:     name = 'teleop_node',
+[0.877s] 2:           ^
+[0.877s] 2:   return LaunchDescription([
+[0.877s] 2:   ^
+[0.877s] 2: 4     E111 indentation is not a multiple of 4
+[0.877s] 2: 4     E122 continuation line missing indentation or outdented
+[0.877s] 2: 2     E225 missing whitespace around operator
+[0.878s] 2: 10    E231 missing whitespace after ','
+[0.878s] 2: 2     E251 unexpected spaces around keyword / parameter equals
+[0.878s] 2: 3     E302 expected 2 blank lines, found 0
+[0.878s] 2: 11    E303 too many blank lines (2)
+[0.878s] 2: 7     E501 line too long (107 > 99 characters)
+[0.878s] 2: 6     F401 'os' imported but unused
+[0.878s] 2: 1     F811 redefinition of unused 'IncludeLaunchDescription' from line 6
+[0.879s] 2: 1     F821 undefined name 'Command'
+[0.879s] 2: 3     W291 trailing whitespace
+[0.879s] 2: 2     W292 no newline at end of file
+[0.879s] 2: 2     W293 blank line contains whitespace
+[0.880s] 2: 
+[0.880s] 2: ./launch/launch_bot.launch.py:10:1: F811 redefinition of unused 'IncludeLaunchDescription' from line 6
+[0.880s] 2: 
+[0.880s] 2: ./launch/launch_bot.launch.py:16:17: E225 missing whitespace around operator
+[0.880s] 2: 
+[0.880s] 2: ./launch/launch_bot.launch.py:17:25: F821 undefined name 'Command'
+[0.880s] 2: 
+[0.880s] 2: ./launch/launch_bot.launch.py:17:100: E501 line too long (103 > 99 characters)
+[0.881s] 2: 
+[0.881s] 2: ./launch/launch_bot.launch.py:20:5: E303 too many blank lines (2)
+[0.881s] 2: 
+[0.881s] 2: ./launch/launch_bot.launch.py:20:89: E231 missing whitespace after ','
+[0.881s] 2: 
+[0.881s] 2: ./launch/launch_bot.launch.py:20:100: E501 line too long (111 > 99 characters)
+[0.881s] 2: 
+[0.881s] 2: ./launch/launch_bot.launch.py:23:92: E231 missing whitespace after ','
+[0.882s] 2: 
+[0.882s] 2: ./launch/launch_bot.launch.py:23:100: E501 line too long (120 > 99 characters)
+[0.882s] 2: 
+[0.882s] 2: ./launch/launch_bot.launch.py:23:101: E231 missing whitespace after ','
+[0.882s] 2: 
+[0.882s] 2: ./launch/launch_bot.launch.py:23:121: W291 trailing whitespace
+[0.882s] 2: 
+[0.883s] 2: ./launch/launch_bot.launch.py:32:56: E231 missing whitespace after ','
+[0.883s] 2: 
+[0.883s] 2: ./launch/launch_bot.launch.py:36:5: E303 too many blank lines (3)
+[0.883s] 2: 
+[0.883s] 2: ./launch/launch_bot.launch.py:37:5: E122 continuation line missing indentation or outdented
+[0.883s] 2: 
+[0.884s] 2: ./launch/launch_bot.launch.py:38:5: E122 continuation line missing indentation or outdented
+[0.884s] 2: 
+[0.884s] 2: ./launch/launch_bot.launch.py:39:5: E122 continuation line missing indentation or outdented
+[0.884s] 2: 
+[0.884s] 2: ./launch/launch_bot.launch.py:49:5: E303 too many blank lines (2)
+[0.884s] 2: 
+[0.884s] 2: ./launch/launch_sim.launch.py:14:1: E303 too many blank lines (3)
+[0.884s] 2: 
+[0.885s] 2: ./launch/launch_sim.launch.py:15:17: E225 missing whitespace around operator
+[0.885s] 2: 
+[0.885s] 2: ./launch/launch_sim.launch.py:18:5: E303 too many blank lines (2)
+[0.885s] 2: 
+[0.885s] 2: ./launch/launch_sim.launch.py:20:7: E122 continuation line missing indentation or outdented
+[0.885s] 2: 
+[0.885s] 2: ./launch/launch_sim.launch.py:20:48: E231 missing whitespace after ','
+[0.885s] 2: 
+[0.885s] 2: ./launch/launch_sim.launch.py:20:57: E231 missing whitespace after ','
+[0.886s] 2: 
+[0.886s] 2: ./launch/launch_sim.launch.py:20:77: W291 trailing whitespace
+[0.886s] 2: 
+[0.886s] 2: ./launch/launch_sim.launch.py:25:5: E303 too many blank lines (2)
+[0.886s] 2: 
+[0.886s] 2: ./launch/launch_sim.launch.py:27:100: E501 line too long (124 > 99 characters)
+[0.886s] 2: 
+[0.887s] 2: ./launch/launch_sim.launch.py:31:5: E303 too many blank lines (2)
+[0.887s] 2: 
+[0.887s] 2: ./launch/launch_sim.launch.py:31:100: E501 line too long (126 > 99 characters)
+[0.887s] 2: 
+[0.887s] 2: ./launch/launch_sim.launch.py:33:28: W291 trailing whitespace
+[0.887s] 2: 
+[0.887s] 2: ./launch/launch_sim.launch.py:40:5: E303 too many blank lines (2)
+[0.887s] 2: 
+[0.888s] 2: ./launch/launch_sim.launch.py:47:5: E303 too many blank lines (2)
+[0.888s] 2: 
+[0.888s] 2: ./launch/launch_sim.launch.py:54:5: E303 too many blank lines (2)
+[0.888s] 2: 
+[0.888s] 2: ./launch/joint_pub.launch.py:1:1: F401 'os' imported but unused
+[0.888s] 2: 
+[0.888s] 2: ./launch/joint_pub.launch.py:3:1: F401 'ament_index_python.packages.get_package_share_directory' imported but unused
+[0.888s] 2: 
+[0.889s] 2: ./launch/joint_pub.launch.py:6:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused
+[0.889s] 2: 
+[0.889s] 2: ./launch/joint_pub.launch.py:7:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused
+[0.889s] 2: 
+[0.890s] 2: ./launch/joint_pub.launch.py:10:1: F401 'xacro' imported but unused
+[0.890s] 2: 
+[0.890s] 2: ./launch/joint_pub.launch.py:11:1: E302 expected 2 blank lines, found 0
+[0.890s] 2: 
+[0.890s] 2: ./launch/joint_pub.launch.py:15:100: E501 line too long (107 > 99 characters)
+[0.891s] 2: 
+[0.891s] 2: ./launch/joint_pub.launch.py:16:1: W293 blank line contains whitespace
+[0.891s] 2: 
+[0.891s] 2: ./launch/joint_pub.launch.py:17:7: W292 no newline at end of file
+[0.891s] 2: 
+[0.892s] 2: ./launch/rsp.launch.py:7:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused
+[0.892s] 2: 
+[0.892s] 2: ./launch/rsp.launch.py:11:1: E302 expected 2 blank lines, found 0
+[0.892s] 2: 
+[0.892s] 2: ./launch/rsp.launch.py:17:39: E231 missing whitespace after ','
+[0.892s] 2: 
+[0.893s] 2: ./launch/rsp.launch.py:17:53: E231 missing whitespace after ','
+[0.893s] 2: 
+[0.893s] 2: ./launch/rsp.launch.py:19:1: W293 blank line contains whitespace
+[0.893s] 2: 
+[0.893s] 2: ./launch/rsp.launch.py:25:5: E303 too many blank lines (3)
+[0.894s] 2: 
+[0.894s] 2: ./launch/rsp.launch.py:27:100: E501 line too long (119 > 99 characters)
+[0.894s] 2: 
+[0.894s] 2: ./launch/rsp.launch.py:28:7: W292 no newline at end of file
+[0.894s] 2: 
+[0.895s] 2: ./launch/joystick.launch.py:5:1: E302 expected 2 blank lines, found 0
+[0.895s] 2: 
+[0.895s] 2: ./launch/joystick.launch.py:6:3: E111 indentation is not a multiple of 4
+[0.895s] 2: 
+[0.896s] 2: ./launch/joystick.launch.py:6:67: E231 missing whitespace after ','
+[0.896s] 2: 
+[0.896s] 2: ./launch/joystick.launch.py:6:76: E231 missing whitespace after ','
+[0.896s] 2: 
+[0.896s] 2: ./launch/joystick.launch.py:8:3: E111 indentation is not a multiple of 4
+[0.896s] 2: 
+[0.897s] 2: ./launch/joystick.launch.py:14:3: E111 indentation is not a multiple of 4
+[0.897s] 2: 
+[0.897s] 2: ./launch/joystick.launch.py:17:9: E251 unexpected spaces around keyword / parameter equals
+[0.897s] 2: 
+[0.897s] 2: ./launch/joystick.launch.py:17:11: E251 unexpected spaces around keyword / parameter equals
+[0.898s] 2: 
+[0.898s] 2: ./launch/joystick.launch.py:22:3: E111 indentation is not a multiple of 4
+[0.898s] 2: 
+[0.898s] 2: 
+[0.898s] 2: 5 files checked
+[0.898s] 2: 58 errors
+[0.899s] 2: 
+[0.899s] 2: 'E'-type errors: 43
+[0.899s] 2: 'F'-type errors: 8
+[0.899s] 2: 'W'-type errors: 7
+[0.899s] 2: 
+[0.900s] 2: Checked files:
+[0.900s] 2: 
+[0.900s] 2: * ./launch/launch_bot.launch.py
+[0.900s] 2: * ./launch/launch_sim.launch.py
+[0.900s] 2: * ./launch/joint_pub.launch.py
+[0.900s] 2: * ./launch/rsp.launch.py
+[0.900s] 2: * ./launch/joystick.launch.py
+[0.901s] 2: -- run_test.py: return code 1
+[0.901s] 2: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml'
+[0.909s] 2/5 Test #2: flake8 ...........................***Failed    0.48 sec
+[0.909s] test 3
+[0.910s]     Start 3: lint_cmake
+[0.910s] 
+[0.910s] 3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml"
+[0.910s] 3: Test timeout computed to be: 60
+[0.996s] 3: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':
+[0.996s] 3:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml
+[1.119s] 3: 
+[1.119s] 3: No problems found
+[1.133s] 3: -- run_test.py: return code 0
+[1.133s] 3: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml'
+[1.146s] 3/5 Test #3: lint_cmake .......................   Passed    0.24 sec
+[1.147s] test 4
+[1.147s]     Start 4: pep257
+[1.147s] 
+[1.147s] 4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml"
+[1.147s] 4: Test timeout computed to be: 60
+[1.239s] 4: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':
+[1.239s] 4:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml
+[1.448s] 4: checking ./launch/joint_pub.launch.py
+[1.448s] 4: checking ./launch/joystick.launch.py
+[1.448s] 4: checking ./launch/launch_bot.launch.py
+[1.448s] 4: checking ./launch/launch_sim.launch.py
+[1.448s] 4: checking ./launch/rsp.launch.py
+[1.449s] 4: No problems found
+[1.471s] 4: -- run_test.py: return code 0
+[1.471s] 4: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml'
+[1.483s] 4/5 Test #4: pep257 ...........................   Passed    0.34 sec
+[1.483s] test 5
+[1.483s]     Start 5: xmllint
+[1.483s] 
+[1.484s] 5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/xmllint.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/xmllint.xunit.xml"
+[1.484s] 5: Test timeout computed to be: 60
+[1.580s] 5: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':
+[1.581s] 5:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/xmllint.xunit.xml
+[61.536s] 5/5 Test #5: xmllint ..........................***Timeout  60.05 sec
+[61.538s] 
+[61.538s] 40% tests passed[0;0m, [0;31m3 tests failed[0;0m out of 5
+[61.539s] 
+[61.539s] Label Time Summary:
+[61.540s] copyright     =   0.25 sec*proc (1 test)
+[61.540s] flake8        =   0.48 sec*proc (1 test)
+[61.540s] lint_cmake    =   0.24 sec*proc (1 test)
+[61.541s] linter        =  61.35 sec*proc (5 tests)
+[61.541s] pep257        =   0.34 sec*proc (1 test)
+[61.541s] xmllint       =  60.05 sec*proc (1 test)
+[61.541s] 
+[61.541s] Total Test time (real) =  61.36 sec
+[61.542s] 
+[61.542s] The following tests FAILED:
+[61.542s] 	[0;31m  1 - copyright (Failed)[0;0m
+[61.542s] 	[0;31m  2 - flake8 (Failed)[0;0m
+[61.543s] 	[0;31m  5 - xmllint (Timeout)[0;0m
+[61.547s] Errors while running CTest
+[61.547s] Output from these tests are in: /home/nwhit210/omnicar_2_ws/build/omnicar/Testing/Temporary/LastTest.log
+[61.547s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[61.558s] Invoked command in '/home/nwhit210/omnicar_2_ws/build/omnicar' returned '8': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

@@ -1,0 +1,7 @@
+example_2_urdf_xacro 0 0
+view_example_2_launch 0 0
+run_example_2_launch 0 0
+---
+example_2_urdf_xacro
+view_example_2_launch
+run_example_2_launch

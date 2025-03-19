@@ -1,0 +1,25 @@
+-- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller':
+ - /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_load_mecanum_drive_controller --gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml
+
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TestLoadMecanumDriveController
+[ RUN      ] TestLoadMecanumDriveController.load_controller
+[INFO] [1742273318.277876345] [resource_manager]: Loading hardware 'TestActuatorHardware' 
+unknown file: Failure
+C++ exception with description "According to the loaded plugin descriptions the class test_actuator with base class type hardware_interface::ActuatorInterface does not exist. Declared types are  test_hardware_components/TestSingleJointActuator" thrown in the test body.
+[  FAILED  ] TestLoadMecanumDriveController.load_controller (3 ms)
+[----------] 1 test from TestLoadMecanumDriveController (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (3 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] TestLoadMecanumDriveController.load_controller
+
+ 1 FAILED TEST
+
+
+-- run_test.py: return code 1
+-- run_test.py: inject classname prefix into gtest result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml'
+-- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml'

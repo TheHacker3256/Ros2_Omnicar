@@ -1,0 +1,1304 @@
+[0.000000] (-) TimerEvent: {}
+[0.000536] (arduino_hardware_controller) JobQueued: {'identifier': 'arduino_hardware_controller', 'dependencies': OrderedDict([('arduino_hardware_controller', '/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller')])}
+[0.001077] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict([('mecanum_drive_controller', '/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller')])}
+[0.001161] (omnicar) JobQueued: {'identifier': 'omnicar', 'dependencies': OrderedDict([('omnicar', '/home/nwhit210/omnicar_2_ws/install/omnicar')])}
+[0.001542] (arduino_hardware_controller) JobStarted: {'identifier': 'arduino_hardware_controller'}
+[0.013450] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.020498] (omnicar) JobStarted: {'identifier': 'omnicar'}
+[0.099781] (-) TimerEvent: {}
+[0.187202] (omnicar) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/nwhit210/omnicar_2_ws/build/omnicar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/lib:/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/312_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/snap/bin'), ('WT_SESSION', 'e9219d76-5005-4513-91fa-9e2faa35d6ad'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install/omnicar:/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller:/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/omnicar_2_ws/build/omnicar'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install/omnicar:/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller:/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.194811] (arduino_hardware_controller) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/lib:/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/312_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/snap/bin'), ('WT_SESSION', 'e9219d76-5005-4513-91fa-9e2faa35d6ad'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install/omnicar:/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller:/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller:/home/nwhit210/omnicar_2_ws/install/omnicar:/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.200848] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller/lib:/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/312_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/snap/bin'), ('WT_SESSION', 'e9219d76-5005-4513-91fa-9e2faa35d6ad'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install/omnicar:/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller:/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller:/home/nwhit210/omnicar_2_ws/install/omnicar:/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.202222] (-) TimerEvent: {}
+[0.202420] (omnicar) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini\n'}
+[0.202602] (omnicar) StdoutLine: {'line': b'Parse Config file:/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini\n'}
+[0.202700] (omnicar) StdoutLine: {'line': b'   Site: nwhit210\n'}
+[0.202778] (omnicar) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.202853] (omnicar) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.202925] (omnicar) StdoutLine: {'line': b'Create new tag: 20250318-0448 - Experimental\n'}
+[0.202998] (omnicar) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini\n'}
+[0.203077] (omnicar) StdoutLine: {'line': b'Parse Config file:/home/nwhit210/omnicar_2_ws/build/omnicar/CTestConfiguration.ini\n'}
+[0.203148] (omnicar) StdoutLine: {'line': b'Test project /home/nwhit210/omnicar_2_ws/build/omnicar\n'}
+[0.203224] (omnicar) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.203423] (omnicar) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.203501] (omnicar) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.203576] (omnicar) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.203646] (omnicar) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.203717] (omnicar) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.203791] (omnicar) StdoutLine: {'line': b'test 1\n'}
+[0.203862] (omnicar) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[0.203933] (omnicar) StdoutLine: {'line': b'\n'}
+[0.204005] (omnicar) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml"\n'}
+[0.204121] (omnicar) StdoutLine: {'line': b'1: Test timeout computed to be: 200\n'}
+[0.207071] (arduino_hardware_controller) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini\n'}
+[0.207306] (arduino_hardware_controller) StdoutLine: {'line': b'Parse Config file:/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini\n'}
+[0.207437] (arduino_hardware_controller) StdoutLine: {'line': b'   Site: nwhit210\n'}
+[0.207522] (arduino_hardware_controller) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.207596] (arduino_hardware_controller) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.207668] (arduino_hardware_controller) StdoutLine: {'line': b'Create new tag: 20250318-0448 - Experimental\n'}
+[0.207739] (arduino_hardware_controller) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini\n'}
+[0.207811] (arduino_hardware_controller) StdoutLine: {'line': b'Parse Config file:/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/CTestConfiguration.ini\n'}
+[0.207882] (arduino_hardware_controller) StdoutLine: {'line': b'Test project /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller\n'}
+[0.208207] (arduino_hardware_controller) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.208427] (arduino_hardware_controller) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.208591] (arduino_hardware_controller) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.208696] (arduino_hardware_controller) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.208793] (arduino_hardware_controller) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.208945] (arduino_hardware_controller) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.209047] (arduino_hardware_controller) StdoutLine: {'line': b'test 1\n'}
+[0.209142] (arduino_hardware_controller) StdoutLine: {'line': b'    Start 1: example_2_urdf_xacro\n'}
+[0.209235] (arduino_hardware_controller) StdoutLine: {'line': b'\n'}
+[0.209328] (arduino_hardware_controller) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml" "--package-name" "arduino_hardware_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_urdf_xacro.py" "-o" "cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache" "--junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml" "--junit-prefix=arduino_hardware_controller"\n'}
+[0.209430] (arduino_hardware_controller) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.212274] (mecanum_drive_controller) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/CTestConfiguration.ini\n'}
+[0.212494] (mecanum_drive_controller) StdoutLine: {'line': b'Parse Config file:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/CTestConfiguration.ini\n'}
+[0.212602] (mecanum_drive_controller) StdoutLine: {'line': b'   Site: nwhit210\n'}
+[0.212699] (mecanum_drive_controller) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.212792] (mecanum_drive_controller) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.212883] (mecanum_drive_controller) StdoutLine: {'line': b'Create new tag: 20250318-0448 - Experimental\n'}
+[0.213037] (mecanum_drive_controller) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/CTestConfiguration.ini\n'}
+[0.213136] (mecanum_drive_controller) StdoutLine: {'line': b'Parse Config file:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/CTestConfiguration.ini\n'}
+[0.213229] (mecanum_drive_controller) StdoutLine: {'line': b'Test project /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller\n'}
+[0.213352] (mecanum_drive_controller) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.213463] (mecanum_drive_controller) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.213558] (mecanum_drive_controller) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.213650] (mecanum_drive_controller) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.213741] (mecanum_drive_controller) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.213832] (mecanum_drive_controller) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.213921] (mecanum_drive_controller) StdoutLine: {'line': b'test 1\n'}
+[0.214011] (mecanum_drive_controller) StdoutLine: {'line': b'    Start 1: test_load_mecanum_drive_controller\n'}
+[0.214100] (mecanum_drive_controller) StdoutLine: {'line': b'\n'}
+[0.214189] (mecanum_drive_controller) StdoutLine: {'line': b'1: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml" "--package-name" "mecanum_drive_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/ament_cmake_gmock/test_load_mecanum_drive_controller.txt" "--command" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_load_mecanum_drive_controller" "--gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml"\n'}
+[0.214321] (mecanum_drive_controller) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.272899] (omnicar) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':\n"}
+[0.273229] (omnicar) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml\n'}
+[0.287926] (arduino_hardware_controller) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller':\n"}
+[0.288186] (arduino_hardware_controller) StdoutLine: {'line': b'1:  - /usr/bin/python3 -u -m pytest /home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_urdf_xacro.py -o cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache --junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml --junit-prefix=arduino_hardware_controller\n'}
+[0.295858] (mecanum_drive_controller) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller':\n"}
+[0.296113] (mecanum_drive_controller) StdoutLine: {'line': b'1:  - /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_load_mecanum_drive_controller --gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml\n'}
+[0.302500] (-) TimerEvent: {}
+[0.318881] (mecanum_drive_controller) StdoutLine: {'line': b'1: [==========] Running 1 test from 1 test suite.\n'}
+[0.319133] (mecanum_drive_controller) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.319242] (mecanum_drive_controller) StdoutLine: {'line': b'1: [----------] 1 test from TestLoadMecanumDriveController\n'}
+[0.319328] (mecanum_drive_controller) StdoutLine: {'line': b'1: [ RUN      ] TestLoadMecanumDriveController.load_controller\n'}
+[0.320244] (mecanum_drive_controller) StdoutLine: {'line': b"1: [INFO] [1742273318.277876345] [resource_manager]: Loading hardware 'TestActuatorHardware' \n"}
+[0.321677] (mecanum_drive_controller) StdoutLine: {'line': b'1: unknown file: Failure\n'}
+[0.321868] (mecanum_drive_controller) StdoutLine: {'line': b'1: C++ exception with description "According to the loaded plugin descriptions the class test_actuator with base class type hardware_interface::ActuatorInterface does not exist. Declared types are  test_hardware_components/TestSingleJointActuator" thrown in the test body.\n'}
+[0.322016] (mecanum_drive_controller) StdoutLine: {'line': b'1: [  FAILED  ] TestLoadMecanumDriveController.load_controller (3 ms)\n'}
+[0.322149] (mecanum_drive_controller) StdoutLine: {'line': b'1: [----------] 1 test from TestLoadMecanumDriveController (3 ms total)\n'}
+[0.322460] (mecanum_drive_controller) StdoutLine: {'line': b'1: \n'}
+[0.322792] (mecanum_drive_controller) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.323562] (mecanum_drive_controller) StdoutLine: {'line': b'1: [==========] 1 test from 1 test suite ran. (3 ms total)\n'}
+[0.323797] (mecanum_drive_controller) StdoutLine: {'line': b'1: [  PASSED  ] 0 tests.\n'}
+[0.323901] (mecanum_drive_controller) StdoutLine: {'line': b'1: [  FAILED  ] 1 test, listed below:\n'}
+[0.323984] (mecanum_drive_controller) StdoutLine: {'line': b'1: [  FAILED  ] TestLoadMecanumDriveController.load_controller\n'}
+[0.324057] (mecanum_drive_controller) StdoutLine: {'line': b'1: \n'}
+[0.324129] (mecanum_drive_controller) StdoutLine: {'line': b'1:  1 FAILED TEST\n'}
+[0.324534] (mecanum_drive_controller) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.324852] (mecanum_drive_controller) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml'\n"}
+[0.325196] (mecanum_drive_controller) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_load_mecanum_drive_controller.gtest.xml'\n"}
+[0.334954] (mecanum_drive_controller) StdoutLine: {'line': b'1/3 Test #1: test_load_mecanum_drive_controller .........***Failed    0.13 sec\n'}
+[0.335399] (mecanum_drive_controller) StdoutLine: {'line': b'test 2\n'}
+[0.335508] (mecanum_drive_controller) StdoutLine: {'line': b'    Start 2: test_mecanum_drive_controller\n'}
+[0.335589] (mecanum_drive_controller) StdoutLine: {'line': b'\n'}
+[0.335660] (mecanum_drive_controller) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml" "--package-name" "mecanum_drive_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.txt" "--command" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_mecanum_drive_controller" "--ros-args" "--params-file" "/home/nwhit210/omnicar_2_ws/src/mecanum_drive_controller/test/mecanum_drive_controller_params.yaml" "--" "--gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml"\n'}
+[0.335760] (mecanum_drive_controller) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.399823] (mecanum_drive_controller) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller':\n"}
+[0.400205] (mecanum_drive_controller) StdoutLine: {'line': b'2:  - /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_mecanum_drive_controller --ros-args --params-file /home/nwhit210/omnicar_2_ws/src/mecanum_drive_controller/test/mecanum_drive_controller_params.yaml -- --gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml\n'}
+[0.402689] (-) TimerEvent: {}
+[0.429585] (omnicar) StdoutLine: {'line': b'1: launch/joint_pub.launch.py: could not find copyright notice\n'}
+[0.429995] (omnicar) StdoutLine: {'line': b'1: launch/joystick.launch.py: could not find copyright notice\n'}
+[0.430134] (omnicar) StdoutLine: {'line': b'1: launch/launch_bot.launch.py: could not find copyright notice\n'}
+[0.430254] (omnicar) StdoutLine: {'line': b'1: launch/launch_sim.launch.py: could not find copyright notice\n'}
+[0.430437] (omnicar) StdoutLine: {'line': b'1: launch/rsp.launch.py: could not find copyright notice\n'}
+[0.430562] (omnicar) StdoutLine: {'line': b'1: 5 errors, checked 5 files\n'}
+[0.442022] (omnicar) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.442600] (omnicar) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/copyright.xunit.xml'\n"}
+[0.452728] (omnicar) StdoutLine: {'line': b'1/5 Test #1: copyright ........................***Failed    0.25 sec\n'}
+[0.453026] (omnicar) StdoutLine: {'line': b'test 2\n'}
+[0.453130] (omnicar) StdoutLine: {'line': b'    Start 2: flake8\n'}
+[0.453207] (omnicar) StdoutLine: {'line': b'\n'}
+[0.453289] (omnicar) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml"\n'}
+[0.453370] (omnicar) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.460827] (mecanum_drive_controller) StdoutLine: {'line': b'2: [==========] Running 16 tests from 1 test suite.\n'}
+[0.461453] (mecanum_drive_controller) StdoutLine: {'line': b'2: [----------] Global test environment set-up.\n'}
+[0.461582] (mecanum_drive_controller) StdoutLine: {'line': b'2: [----------] 16 tests from MecanumDriveControllerTest\n'}
+[0.461688] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set\n'}
+[0.502968] (-) TimerEvent: {}
+[0.519081] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.476633321] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.527175] (omnicar) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':\n"}
+[0.527644] (omnicar) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml\n'}
+[0.533058] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set (72 ms)\n'}
+[0.533355] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces\n'}
+[0.556495] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.513938922] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.572714] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces (40 ms)\n'}
+[0.573134] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_controller_is_activated_expect_reference_reset\n'}
+[0.601463] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.558916433] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.603110] (-) TimerEvent: {}
+[0.620239] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_controller_is_activated_expect_reference_reset (47 ms)\n'}
+[0.620609] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_controller_active_and_update_called_expect_success\n'}
+[0.644083] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.601467423] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.660805] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_controller_active_and_update_called_expect_success (41 ms)\n'}
+[0.661398] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_active_controller_is_deactivated_expect_success\n'}
+[0.686012] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.643297074] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.703311] (-) TimerEvent: {}
+[0.705693] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_active_controller_is_deactivated_expect_success (45 ms)\n'}
+[0.705983] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_controller_is_reactivated_expect_cmd_itfs_not_set_and_update_success\n'}
+[0.731924] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.689314149] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.747420] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_controller_is_reactivated_expect_cmd_itfs_not_set_and_update_success (41 ms)\n'}
+[0.747850] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_update_is_called_expect_status_message\n'}
+[0.767028] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.724476510] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.789440] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_update_is_called_expect_status_message (42 ms)\n'}
+[0.789865] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_reference_msg_received_expect_updated_commands_and_status_message\n'}
+[0.795747] (arduino_hardware_controller) StdoutLine: {'line': b'1: ============================= test session starts ==============================\n'}
+[0.796072] (arduino_hardware_controller) StdoutLine: {'line': b'1: platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.803461] (-) TimerEvent: {}
+[0.804261] (arduino_hardware_controller) StdoutLine: {'line': b'1: cachedir: build/arduino_hardware_controller/ament_cmake_pytest/example_2_urdf_xacro/.cache\n'}
+[0.804873] (arduino_hardware_controller) StdoutLine: {'line': b'1: rootdir: /home/nwhit210/omnicar_2_ws\n'}
+[0.805163] (arduino_hardware_controller) StdoutLine: {'line': b'1: plugins: ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-flake8-0.12.11, launch-testing-1.0.7, launch-testing-ros-0.19.8, ament-lint-0.12.11, ament-copyright-0.12.11, cov-3.0.0, colcon-core-0.19.0\n'}
+[0.809556] (arduino_hardware_controller) StdoutLine: {'line': b'1: collected 1 item\n'}
+[0.810072] (arduino_hardware_controller) StdoutLine: {'line': b'1: \n'}
+[0.813795] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273318.771121207] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[0.875999] (omnicar) StdoutLine: {'line': b'2: from launch.actions import IncludeLaunchDescription, TimerAction\n'}
+[0.877244] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.877444] (omnicar) StdoutLine: {'line': b"2:     package_name='omnicar'\n"}
+[0.877587] (omnicar) StdoutLine: {'line': b'2:                 ^\n'}
+[0.877726] (omnicar) StdoutLine: {'line': b"2:     robot_description = Command(['ros2 param get --hide-type/robot_state_publisher robot_description'])\n"}
+[0.877853] (omnicar) StdoutLine: {'line': b'2:                         ^\n'}
+[0.877980] (omnicar) StdoutLine: {'line': b"2:     robot_description = Command(['ros2 param get --hide-type/robot_state_publisher robot_description'])\n"}
+[0.878386] (omnicar) StdoutLine: {'line': b'2:                                                                                                    ^\n'}
+[0.879228] (omnicar) StdoutLine: {'line': b"2:     controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')\n"}
+[0.879497] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.879668] (omnicar) StdoutLine: {'line': b"2:     controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')\n"}
+[0.879884] (omnicar) StdoutLine: {'line': b'2:                                                                                         ^\n'}
+[0.880036] (omnicar) StdoutLine: {'line': b"2:     controller_params = os.path.join(get_package_share_directory(package_name), 'config','my_controllers.yaml')\n"}
+[0.880177] (omnicar) StdoutLine: {'line': b'2:                                                                                                    ^\n'}
+[0.880407] (omnicar) StdoutLine: {'line': b"2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.880580] (omnicar) StdoutLine: {'line': b'2:                                                                                            ^\n'}
+[0.880808] (omnicar) StdoutLine: {'line': b"2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.880997] (omnicar) StdoutLine: {'line': b'2:                                                                                                    ^\n'}
+[0.881150] (omnicar) StdoutLine: {'line': b"2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.881300] (omnicar) StdoutLine: {'line': b'2:                                                                                                     ^\n'}
+[0.881446] (omnicar) StdoutLine: {'line': b"2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.881593] (omnicar) StdoutLine: {'line': b'2:                                                                                                                         ^\n'}
+[0.881752] (omnicar) StdoutLine: {'line': b'2:     delayed_controller_manager = TimerAction(period=3.0,actions=[controller_manager])\n'}
+[0.881910] (omnicar) StdoutLine: {'line': b'2:                                                        ^\n'}
+[0.882067] (omnicar) StdoutLine: {'line': b'2:     diff_drive_spawner = Node(\n'}
+[0.882437] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.882709] (omnicar) StdoutLine: {'line': b'2:     package="controller_manager",\n'}
+[0.883030] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.883259] (omnicar) StdoutLine: {'line': b'2:     executable="spawner",\n'}
+[0.883487] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.883674] (omnicar) StdoutLine: {'line': b'2:     arguments=["diff_cont"],\n'}
+[0.883818] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.883954] (omnicar) StdoutLine: {'line': b'2:     joint_broad_spawner = Node(\n'}
+[0.884094] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.884227] (omnicar) StdoutLine: {'line': b'2: def generate_launch_description():\n'}
+[0.884361] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.884495] (omnicar) StdoutLine: {'line': b"2:     package_name='omnicar'\n"}
+[0.884680] (omnicar) StdoutLine: {'line': b'2:                 ^\n'}
+[0.884870] (omnicar) StdoutLine: {'line': b'2:     rsp = IncludeLaunchDescription(\n'}
+[0.885017] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.885154] (omnicar) StdoutLine: {'line': b"2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.885293] (omnicar) StdoutLine: {'line': b'2:       ^\n'}
+[0.885431] (omnicar) StdoutLine: {'line': b"2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.885703] (omnicar) StdoutLine: {'line': b'2:                                                ^\n'}
+[0.885936] (omnicar) StdoutLine: {'line': b"2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.886189] (omnicar) StdoutLine: {'line': b'2:                                                         ^\n'}
+[0.886343] (omnicar) StdoutLine: {'line': b"2:       get_package_share_directory(package_name),'launch','rsp.launch.py')]), \n"}
+[0.886479] (omnicar) StdoutLine: {'line': b'2:                                                                             ^\n'}
+[0.886619] (omnicar) StdoutLine: {'line': b'2:     # Include the Gazebo launch file, provided by the gazebo_ros package\n'}
+[0.886756] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.886892] (omnicar) StdoutLine: {'line': b"2:       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])\n"}
+[0.887029] (omnicar) StdoutLine: {'line': b'2:                                                                                                    ^\n'}
+[0.887160] (omnicar) StdoutLine: {'line': b"2:     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.\n"}
+[0.887324] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.887549] (omnicar) StdoutLine: {'line': b"2:     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.\n"}
+[0.887700] (omnicar) StdoutLine: {'line': b'2:                                                                                                    ^\n'}
+[0.887837] (omnicar) StdoutLine: {'line': b"2:       package='gazebo_ros', \n"}
+[0.887975] (omnicar) StdoutLine: {'line': b'2:                            ^\n'}
+[0.888114] (omnicar) StdoutLine: {'line': b'2:     diff_drive_spawner = Node(\n'}
+[0.888249] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.888384] (omnicar) StdoutLine: {'line': b'2:     joint_broad_spawner = Node(\n'}
+[0.888517] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.888655] (omnicar) StdoutLine: {'line': b'2:     # Launch them all!\n'}
+[0.888887] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.889283] (omnicar) StdoutLine: {'line': b'2: import os\n'}
+[0.889618] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.890354] (omnicar) StdoutLine: {'line': b'2: from ament_index_python.packages import get_package_share_directory\n'}
+[0.890660] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.890810] (omnicar) StdoutLine: {'line': b'2: from launch.substitutions import LaunchConfiguration\n'}
+[0.890949] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.891084] (omnicar) StdoutLine: {'line': b'2: from launch.actions import DeclareLaunchArgument\n'}
+[0.891218] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.891352] (omnicar) StdoutLine: {'line': b'2: import xacro\n'}
+[0.891486] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.891625] (omnicar) StdoutLine: {'line': b'2: def generate_launch_description():\n'}
+[0.891761] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.891989] (omnicar) StdoutLine: {'line': b"2:         Node(package='joint_state_publisher_gui', executable='joint_state_publisher_gui', output='screen'),\n"}
+[0.892166] (omnicar) StdoutLine: {'line': b'2:                                                                                                    ^\n'}
+[0.892310] (omnicar) StdoutLine: {'line': b'2:         \n'}
+[0.892444] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.892580] (omnicar) StdoutLine: {'line': b'2:     ])      ^\n'}
+[0.892716] (omnicar) StdoutLine: {'line': b'2: from launch.actions import DeclareLaunchArgument\n'}
+[0.892851] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.892987] (omnicar) StdoutLine: {'line': b'2: def generate_launch_description():\n'}
+[0.893122] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.893316] (omnicar) StdoutLine: {'line': b"2:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')\n"}
+[0.893533] (omnicar) StdoutLine: {'line': b'2:                                       ^\n'}
+[0.893687] (omnicar) StdoutLine: {'line': b"2:     xacro_file = os.path.join(pkg_path,'description','robot.urdf.xacro')\n"}
+[0.893827] (omnicar) StdoutLine: {'line': b'2:                                                     ^\n'}
+[0.894066] (omnicar) StdoutLine: {'line': b'2:     \n'}
+[0.894210] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.894342] (omnicar) StdoutLine: {'line': b'2:     return LaunchDescription([\n'}
+[0.894476] (omnicar) StdoutLine: {'line': b'2:     ^\n'}
+[0.894611] (omnicar) StdoutLine: {'line': b"2:         Node(package='robot_state_publisher', executable='robot_state_publisher', output='screen', parameters=[params])\n"}
+[0.894746] (omnicar) StdoutLine: {'line': b'2:                                                                                                    ^\n'}
+[0.894883] (omnicar) StdoutLine: {'line': b'2:     ])      ^\n'}
+[0.895023] (omnicar) StdoutLine: {'line': b'2: def generate_launch_description():\n'}
+[0.895162] (omnicar) StdoutLine: {'line': b'2: ^\n'}
+[0.895300] (omnicar) StdoutLine: {'line': b"2:   joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')\n"}
+[0.895436] (omnicar) StdoutLine: {'line': b'2:   ^\n'}
+[0.895568] (omnicar) StdoutLine: {'line': b"2:   joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')\n"}
+[0.895717] (omnicar) StdoutLine: {'line': b'2:                                                                   ^\n'}
+[0.895849] (omnicar) StdoutLine: {'line': b"2:   joy_params = os.path.join(get_package_share_directory('omnicar'),'config','joystick.yaml')\n"}
+[0.896107] (omnicar) StdoutLine: {'line': b'2:                                                                            ^\n'}
+[0.896259] (omnicar) StdoutLine: {'line': b'2:   joy_node = Node(\n'}
+[0.896397] (omnicar) StdoutLine: {'line': b'2:   ^\n'}
+[0.896533] (omnicar) StdoutLine: {'line': b'2:   teleop_node = Node(\n'}
+[0.896670] (omnicar) StdoutLine: {'line': b'2:   ^\n'}
+[0.896800] (omnicar) StdoutLine: {'line': b"2:     name = 'teleop_node',\n"}
+[0.896932] (omnicar) StdoutLine: {'line': b'2:         ^\n'}
+[0.897062] (omnicar) StdoutLine: {'line': b"2:     name = 'teleop_node',\n"}
+[0.897194] (omnicar) StdoutLine: {'line': b'2:           ^\n'}
+[0.897330] (omnicar) StdoutLine: {'line': b'2:   return LaunchDescription([\n'}
+[0.897461] (omnicar) StdoutLine: {'line': b'2:   ^\n'}
+[0.897592] (omnicar) StdoutLine: {'line': b'2: 4     E111 indentation is not a multiple of 4\n'}
+[0.897722] (omnicar) StdoutLine: {'line': b'2: 4     E122 continuation line missing indentation or outdented\n'}
+[0.897855] (omnicar) StdoutLine: {'line': b'2: 2     E225 missing whitespace around operator\n'}
+[0.898122] (omnicar) StdoutLine: {'line': b"2: 10    E231 missing whitespace after ','\n"}
+[0.898300] (omnicar) StdoutLine: {'line': b'2: 2     E251 unexpected spaces around keyword / parameter equals\n'}
+[0.898442] (omnicar) StdoutLine: {'line': b'2: 3     E302 expected 2 blank lines, found 0\n'}
+[0.898586] (omnicar) StdoutLine: {'line': b'2: 11    E303 too many blank lines (2)\n'}
+[0.898722] (omnicar) StdoutLine: {'line': b'2: 7     E501 line too long (107 > 99 characters)\n'}
+[0.898854] (omnicar) StdoutLine: {'line': b"2: 6     F401 'os' imported but unused\n"}
+[0.898988] (omnicar) StdoutLine: {'line': b"2: 1     F811 redefinition of unused 'IncludeLaunchDescription' from line 6\n"}
+[0.899130] (omnicar) StdoutLine: {'line': b"2: 1     F821 undefined name 'Command'\n"}
+[0.899489] (omnicar) StdoutLine: {'line': b'2: 3     W291 trailing whitespace\n'}
+[0.899691] (omnicar) StdoutLine: {'line': b'2: 2     W292 no newline at end of file\n'}
+[0.899925] (omnicar) StdoutLine: {'line': b'2: 2     W293 blank line contains whitespace\n'}
+[0.900071] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.900200] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_bot.launch.py:10:1: F811 redefinition of unused 'IncludeLaunchDescription' from line 6\n"}
+[0.900326] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.900436] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:16:17: E225 missing whitespace around operator\n'}
+[0.900551] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.900671] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_bot.launch.py:17:25: F821 undefined name 'Command'\n"}
+[0.900795] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.900992] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:17:100: E501 line too long (103 > 99 characters)\n'}
+[0.901140] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.901261] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:20:5: E303 too many blank lines (2)\n'}
+[0.901388] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.901521] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_bot.launch.py:20:89: E231 missing whitespace after ','\n"}
+[0.901637] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.901750] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:20:100: E501 line too long (111 > 99 characters)\n'}
+[0.901867] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.901979] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_bot.launch.py:23:92: E231 missing whitespace after ','\n"}
+[0.902100] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.902224] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:23:100: E501 line too long (120 > 99 characters)\n'}
+[0.902367] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.902486] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_bot.launch.py:23:101: E231 missing whitespace after ','\n"}
+[0.902616] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.902801] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:23:121: W291 trailing whitespace\n'}
+[0.902970] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.903124] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_bot.launch.py:32:56: E231 missing whitespace after ','\n"}
+[0.903258] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.903384] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:36:5: E303 too many blank lines (3)\n'}
+[0.903503] (-) TimerEvent: {}
+[0.903757] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.903918] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:37:5: E122 continuation line missing indentation or outdented\n'}
+[0.904039] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.904156] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:38:5: E122 continuation line missing indentation or outdented\n'}
+[0.904278] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.904389] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:39:5: E122 continuation line missing indentation or outdented\n'}
+[0.904498] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.904608] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_bot.launch.py:49:5: E303 too many blank lines (2)\n'}
+[0.904720] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.904838] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:14:1: E303 too many blank lines (3)\n'}
+[0.905017] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.905167] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:15:17: E225 missing whitespace around operator\n'}
+[0.905282] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.905393] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:18:5: E303 too many blank lines (2)\n'}
+[0.905498] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.905605] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:20:7: E122 continuation line missing indentation or outdented\n'}
+[0.905713] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.905815] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_sim.launch.py:20:48: E231 missing whitespace after ','\n"}
+[0.905927] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.906039] (omnicar) StdoutLine: {'line': b"2: ./launch/launch_sim.launch.py:20:57: E231 missing whitespace after ','\n"}
+[0.906152] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.906261] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:20:77: W291 trailing whitespace\n'}
+[0.906375] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.906492] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:25:5: E303 too many blank lines (2)\n'}
+[0.906705] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.906838] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:27:100: E501 line too long (124 > 99 characters)\n'}
+[0.906994] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.907140] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:31:5: E303 too many blank lines (2)\n'}
+[0.907259] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.907376] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:31:100: E501 line too long (126 > 99 characters)\n'}
+[0.907501] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.907620] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:33:28: W291 trailing whitespace\n'}
+[0.907730] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.907836] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:40:5: E303 too many blank lines (2)\n'}
+[0.907952] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.908068] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:47:5: E303 too many blank lines (2)\n'}
+[0.908183] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.908285] (omnicar) StdoutLine: {'line': b'2: ./launch/launch_sim.launch.py:54:5: E303 too many blank lines (2)\n'}
+[0.908403] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.908550] (omnicar) StdoutLine: {'line': b"2: ./launch/joint_pub.launch.py:1:1: F401 'os' imported but unused\n"}
+[0.908676] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.908845] (omnicar) StdoutLine: {'line': b"2: ./launch/joint_pub.launch.py:3:1: F401 'ament_index_python.packages.get_package_share_directory' imported but unused\n"}
+[0.909010] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.909152] (omnicar) StdoutLine: {'line': b"2: ./launch/joint_pub.launch.py:6:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused\n"}
+[0.909283] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.909410] (omnicar) StdoutLine: {'line': b"2: ./launch/joint_pub.launch.py:7:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused\n"}
+[0.909604] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.909909] (omnicar) StdoutLine: {'line': b"2: ./launch/joint_pub.launch.py:10:1: F401 'xacro' imported but unused\n"}
+[0.910425] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.910640] (omnicar) StdoutLine: {'line': b'2: ./launch/joint_pub.launch.py:11:1: E302 expected 2 blank lines, found 0\n'}
+[0.910828] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.910985] (omnicar) StdoutLine: {'line': b'2: ./launch/joint_pub.launch.py:15:100: E501 line too long (107 > 99 characters)\n'}
+[0.911136] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.911280] (omnicar) StdoutLine: {'line': b'2: ./launch/joint_pub.launch.py:16:1: W293 blank line contains whitespace\n'}
+[0.911437] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.911593] (omnicar) StdoutLine: {'line': b'2: ./launch/joint_pub.launch.py:17:7: W292 no newline at end of file\n'}
+[0.911775] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.912017] (omnicar) StdoutLine: {'line': b"2: ./launch/rsp.launch.py:7:1: F401 'launch.actions.DeclareLaunchArgument' imported but unused\n"}
+[0.912271] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.912474] (omnicar) StdoutLine: {'line': b'2: ./launch/rsp.launch.py:11:1: E302 expected 2 blank lines, found 0\n'}
+[0.912647] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.912807] (omnicar) StdoutLine: {'line': b"2: ./launch/rsp.launch.py:17:39: E231 missing whitespace after ','\n"}
+[0.912974] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.913139] (omnicar) StdoutLine: {'line': b"2: ./launch/rsp.launch.py:17:53: E231 missing whitespace after ','\n"}
+[0.913299] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.913460] (omnicar) StdoutLine: {'line': b'2: ./launch/rsp.launch.py:19:1: W293 blank line contains whitespace\n'}
+[0.913633] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.913801] (omnicar) StdoutLine: {'line': b'2: ./launch/rsp.launch.py:25:5: E303 too many blank lines (3)\n'}
+[0.914024] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.914282] (omnicar) StdoutLine: {'line': b'2: ./launch/rsp.launch.py:27:100: E501 line too long (119 > 99 characters)\n'}
+[0.914468] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.914629] (omnicar) StdoutLine: {'line': b'2: ./launch/rsp.launch.py:28:7: W292 no newline at end of file\n'}
+[0.914796] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.915061] (omnicar) StdoutLine: {'line': b'2: ./launch/joystick.launch.py:5:1: E302 expected 2 blank lines, found 0\n'}
+[0.915288] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.915502] (omnicar) StdoutLine: {'line': b'2: ./launch/joystick.launch.py:6:3: E111 indentation is not a multiple of 4\n'}
+[0.915713] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.915915] (omnicar) StdoutLine: {'line': b"2: ./launch/joystick.launch.py:6:67: E231 missing whitespace after ','\n"}
+[0.916257] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.916476] (omnicar) StdoutLine: {'line': b"2: ./launch/joystick.launch.py:6:76: E231 missing whitespace after ','\n"}
+[0.916672] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.916836] (omnicar) StdoutLine: {'line': b'2: ./launch/joystick.launch.py:8:3: E111 indentation is not a multiple of 4\n'}
+[0.916997] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.917157] (omnicar) StdoutLine: {'line': b'2: ./launch/joystick.launch.py:14:3: E111 indentation is not a multiple of 4\n'}
+[0.917320] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.917497] (omnicar) StdoutLine: {'line': b'2: ./launch/joystick.launch.py:17:9: E251 unexpected spaces around keyword / parameter equals\n'}
+[0.917661] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.917830] (omnicar) StdoutLine: {'line': b'2: ./launch/joystick.launch.py:17:11: E251 unexpected spaces around keyword / parameter equals\n'}
+[0.918006] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.918279] (omnicar) StdoutLine: {'line': b'2: ./launch/joystick.launch.py:22:3: E111 indentation is not a multiple of 4\n'}
+[0.918449] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.918609] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.918785] (omnicar) StdoutLine: {'line': b'2: 5 files checked\n'}
+[0.918950] (omnicar) StdoutLine: {'line': b'2: 58 errors\n'}
+[0.919109] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.919264] (omnicar) StdoutLine: {'line': b"2: 'E'-type errors: 43\n"}
+[0.919421] (omnicar) StdoutLine: {'line': b"2: 'F'-type errors: 8\n"}
+[0.919576] (omnicar) StdoutLine: {'line': b"2: 'W'-type errors: 7\n"}
+[0.919780] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.919974] (omnicar) StdoutLine: {'line': b'2: Checked files:\n'}
+[0.920223] (omnicar) StdoutLine: {'line': b'2: \n'}
+[0.920392] (omnicar) StdoutLine: {'line': b'2: * ./launch/launch_bot.launch.py\n'}
+[0.920557] (omnicar) StdoutLine: {'line': b'2: * ./launch/launch_sim.launch.py\n'}
+[0.920721] (omnicar) StdoutLine: {'line': b'2: * ./launch/joint_pub.launch.py\n'}
+[0.920872] (omnicar) StdoutLine: {'line': b'2: * ./launch/rsp.launch.py\n'}
+[0.921027] (omnicar) StdoutLine: {'line': b'2: * ./launch/joystick.launch.py\n'}
+[0.921178] (omnicar) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[0.921388] (omnicar) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/flake8.xunit.xml'\n"}
+[0.928835] (omnicar) StdoutLine: {'line': b'2/5 Test #2: flake8 ...........................***Failed    0.48 sec\n'}
+[0.929582] (omnicar) StdoutLine: {'line': b'test 3\n'}
+[0.930039] (omnicar) StdoutLine: {'line': b'    Start 3: lint_cmake\n'}
+[0.930235] (omnicar) StdoutLine: {'line': b'\n'}
+[0.930391] (omnicar) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml"\n'}
+[0.930727] (omnicar) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[1.003722] (-) TimerEvent: {}
+[1.016206] (omnicar) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':\n"}
+[1.016660] (omnicar) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml\n'}
+[1.023828] (arduino_hardware_controller) StdoutLine: {'line': b'1: ../../src/arduino_controller/test/test_urdf_xacro.py F                   [100%]\n'}
+[1.024439] (arduino_hardware_controller) StdoutLine: {'line': b'1: \n'}
+[1.024609] (arduino_hardware_controller) StdoutLine: {'line': b'1: =================================== FAILURES ===================================\n'}
+[1.024748] (arduino_hardware_controller) StdoutLine: {'line': b'1: _______________________________ test_urdf_xacro ________________________________\n'}
+[1.024880] (arduino_hardware_controller) StdoutLine: {'line': b'1: \n'}
+[1.025006] (arduino_hardware_controller) StdoutLine: {'line': b'1:     def test_urdf_xacro():\n'}
+[1.025147] (arduino_hardware_controller) StdoutLine: {'line': b'1:         # General Arguments\n'}
+[1.025275] (arduino_hardware_controller) StdoutLine: {'line': b'1:         description_package = "arduino_hardware_controller"\n'}
+[1.025402] (arduino_hardware_controller) StdoutLine: {'line': b'1:         description_file = "diffbot.urdf.xacro"\n'}
+[1.025536] (arduino_hardware_controller) StdoutLine: {'line': b'1:     \n'}
+[1.025658] (arduino_hardware_controller) StdoutLine: {'line': b'1:         description_file_path = os.path.join(\n'}
+[1.025849] (arduino_hardware_controller) StdoutLine: {'line': b'1:             get_package_share_directory(description_package), "urdf", description_file\n'}
+[1.025991] (arduino_hardware_controller) StdoutLine: {'line': b'1:         )\n'}
+[1.026116] (arduino_hardware_controller) StdoutLine: {'line': b'1:     \n'}
+[1.026235] (arduino_hardware_controller) StdoutLine: {'line': b'1:         (_, tmp_urdf_output_file) = tempfile.mkstemp(suffix=".urdf")\n'}
+[1.026356] (arduino_hardware_controller) StdoutLine: {'line': b'1:     \n'}
+[1.026475] (arduino_hardware_controller) StdoutLine: {'line': b'1:         # Compose `xacro` and `check_urdf` command\n'}
+[1.026596] (arduino_hardware_controller) StdoutLine: {'line': b'1:         xacro_command = (\n'}
+[1.026718] (arduino_hardware_controller) StdoutLine: {'line': b'1:             f"{shutil.which(\'xacro\')}" f" {description_file_path}" f" > {tmp_urdf_output_file}"\n'}
+[1.027037] (arduino_hardware_controller) StdoutLine: {'line': b'1:         )\n'}
+[1.027179] (arduino_hardware_controller) StdoutLine: {'line': b'1:         check_urdf_command = f"{shutil.which(\'check_urdf\')} {tmp_urdf_output_file}"\n'}
+[1.027254] (arduino_hardware_controller) StdoutLine: {'line': b'1:     \n'}
+[1.027321] (arduino_hardware_controller) StdoutLine: {'line': b'1:         # Try to call processes but finally remove the temp file\n'}
+[1.027472] (arduino_hardware_controller) StdoutLine: {'line': b'1:         try:\n'}
+[1.027576] (arduino_hardware_controller) StdoutLine: {'line': b'1:             xacro_process = subprocess.run(\n'}
+[1.027644] (arduino_hardware_controller) StdoutLine: {'line': b'1:                 xacro_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True\n'}
+[1.027711] (arduino_hardware_controller) StdoutLine: {'line': b'1:             )\n'}
+[1.027773] (arduino_hardware_controller) StdoutLine: {'line': b'1:     \n'}
+[1.027834] (arduino_hardware_controller) StdoutLine: {'line': b'1: >           assert xacro_process.returncode == 0, " --- XACRO command failed ---"\n'}
+[1.027912] (arduino_hardware_controller) StdoutLine: {'line': b'1: E           AssertionError:  --- XACRO command failed ---\n'}
+[1.027972] (arduino_hardware_controller) StdoutLine: {'line': b'1: E           assert 2 == 0\n'}
+[1.028033] (arduino_hardware_controller) StdoutLine: {'line': b"1: E            +  where 2 = CompletedProcess(args='/opt/ros/humble/bin/xacro /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share...nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro\\n').returncode\n"}
+[1.028125] (arduino_hardware_controller) StdoutLine: {'line': b'1: \n'}
+[1.028187] (arduino_hardware_controller) StdoutLine: {'line': b'1: ../../src/arduino_controller/test/test_urdf_xacro.py:62: AssertionError\n'}
+[1.028245] (arduino_hardware_controller) StdoutLine: {'line': b'1: - generated xml file: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml -\n'}
+[1.028302] (arduino_hardware_controller) StdoutLine: {'line': b'1: =========================== short test summary info ============================\n'}
+[1.028359] (arduino_hardware_controller) StdoutLine: {'line': b'1: FAILED ../../src/arduino_controller/test/test_urdf_xacro.py::test_urdf_xacro\n'}
+[1.028417] (arduino_hardware_controller) StdoutLine: {'line': b'1: ============================== 1 failed in 0.23s ===============================\n'}
+[1.099171] (arduino_hardware_controller) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[1.099681] (arduino_hardware_controller) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/example_2_urdf_xacro.xunit.xml'\n"}
+[1.103846] (-) TimerEvent: {}
+[1.112457] (arduino_hardware_controller) StdoutLine: {'line': b'1/3 Test #1: example_2_urdf_xacro .............***Failed    0.91 sec\n'}
+[1.113032] (arduino_hardware_controller) StdoutLine: {'line': b'test 2\n'}
+[1.113154] (arduino_hardware_controller) StdoutLine: {'line': b'    Start 2: view_example_2_launch\n'}
+[1.113228] (arduino_hardware_controller) StdoutLine: {'line': b'\n'}
+[1.113315] (arduino_hardware_controller) StdoutLine: {'line': b'2: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml" "--package-name" "arduino_hardware_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_view_robot_launch.py" "-o" "cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch/.cache" "--junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml" "--junit-prefix=arduino_hardware_controller"\n'}
+[1.113414] (arduino_hardware_controller) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[1.139469] (omnicar) StdoutLine: {'line': b'3: \n'}
+[1.139901] (omnicar) StdoutLine: {'line': b'3: No problems found\n'}
+[1.153137] (omnicar) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[1.153652] (omnicar) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/lint_cmake.xunit.xml'\n"}
+[1.166570] (omnicar) StdoutLine: {'line': b'3/5 Test #3: lint_cmake .......................   Passed    0.24 sec\n'}
+[1.167148] (omnicar) StdoutLine: {'line': b'test 4\n'}
+[1.167285] (omnicar) StdoutLine: {'line': b'    Start 4: pep257\n'}
+[1.167388] (omnicar) StdoutLine: {'line': b'\n'}
+[1.167485] (omnicar) StdoutLine: {'line': b'4: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml"\n'}
+[1.167590] (omnicar) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[1.197067] (arduino_hardware_controller) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller':\n"}
+[1.197503] (arduino_hardware_controller) StdoutLine: {'line': b'2:  - /usr/bin/python3 -u -m pytest /home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_view_robot_launch.py -o cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch/.cache --junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml --junit-prefix=arduino_hardware_controller\n'}
+[1.204085] (-) TimerEvent: {}
+[1.258933] (omnicar) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':\n"}
+[1.259384] (omnicar) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml\n'}
+[1.304205] (-) TimerEvent: {}
+[1.348214] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_reference_msg_received_expect_updated_commands_and_status_message (559 ms)\n'}
+[1.348556] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_reference_msg_is_too_old_expect_unset_reference\n'}
+[1.366422] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273319.323872625] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[1.367030] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ERROR] [1742273319.324159564] [test_mecanum_drive_controller]: Received message has timestamp 1742273318.3240063190 older by 1.0001461050 than allowed timeout (0.9000).\n'}
+[1.404387] (-) TimerEvent: {}
+[1.467857] (omnicar) StdoutLine: {'line': b'4: checking ./launch/joint_pub.launch.py\n'}
+[1.468327] (omnicar) StdoutLine: {'line': b'4: checking ./launch/joystick.launch.py\n'}
+[1.468744] (omnicar) StdoutLine: {'line': b'4: checking ./launch/launch_bot.launch.py\n'}
+[1.468897] (omnicar) StdoutLine: {'line': b'4: checking ./launch/launch_sim.launch.py\n'}
+[1.468986] (omnicar) StdoutLine: {'line': b'4: checking ./launch/rsp.launch.py\n'}
+[1.469079] (omnicar) StdoutLine: {'line': b'4: No problems found\n'}
+[1.490933] (omnicar) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[1.491343] (omnicar) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/pep257.xunit.xml'\n"}
+[1.503332] (omnicar) StdoutLine: {'line': b'4/5 Test #4: pep257 ...........................   Passed    0.34 sec\n'}
+[1.503645] (omnicar) StdoutLine: {'line': b'test 5\n'}
+[1.503854] (omnicar) StdoutLine: {'line': b'    Start 5: xmllint\n'}
+[1.503979] (omnicar) StdoutLine: {'line': b'\n'}
+[1.504094] (omnicar) StdoutLine: {'line': b'5: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/xmllint.xunit.xml" "--package-name" "omnicar" "--output-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/xmllint.xunit.xml"\n'}
+[1.504233] (omnicar) StdoutLine: {'line': b'5: Test timeout computed to be: 60\n'}
+[1.504530] (-) TimerEvent: {}
+[1.600816] (omnicar) StdoutLine: {'line': b"5: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':\n"}
+[1.601140] (omnicar) StdoutLine: {'line': b'5:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/xmllint.xunit.xml\n'}
+[1.604723] (-) TimerEvent: {}
+[1.615483] (arduino_hardware_controller) StdoutLine: {'line': b'2: ============================= test session starts ==============================\n'}
+[1.615795] (arduino_hardware_controller) StdoutLine: {'line': b'2: platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[1.621625] (arduino_hardware_controller) StdoutLine: {'line': b'2: cachedir: build/arduino_hardware_controller/ament_cmake_pytest/view_example_2_launch/.cache\n'}
+[1.622121] (arduino_hardware_controller) StdoutLine: {'line': b'2: rootdir: /home/nwhit210/omnicar_2_ws\n'}
+[1.622288] (arduino_hardware_controller) StdoutLine: {'line': b'2: plugins: ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-flake8-0.12.11, launch-testing-1.0.7, launch-testing-ros-0.19.8, ament-lint-0.12.11, ament-copyright-0.12.11, cov-3.0.0, colcon-core-0.19.0\n'}
+[1.704893] (-) TimerEvent: {}
+[1.768452] (arduino_hardware_controller) StdoutLine: {'line': b'2: collected 1 item\n'}
+[1.769083] (arduino_hardware_controller) StdoutLine: {'line': b'2: \n'}
+[1.805064] (-) TimerEvent: {}
+[1.877850] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_reference_msg_is_too_old_expect_unset_reference (530 ms)\n'}
+[1.878120] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_reference_msg_has_timestamp_zero_expect_reference_set_and_timestamp_set_to_current_time\n'}
+[1.896522] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273319.853703622] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[1.896881] (mecanum_drive_controller) StdoutLine: {'line': b'2: [WARN] [1742273319.854047177] [test_mecanum_drive_controller]: Timestamp in header is missing, using current time as command timestamp.\n'}
+[1.905178] (-) TimerEvent: {}
+[1.972053] (arduino_hardware_controller) StdoutLine: {'line': b'2: ../../src/arduino_controller/test/test_view_robot_launch.py F            [100%]\n'}
+[1.972333] (arduino_hardware_controller) StdoutLine: {'line': b'2: \n'}
+[1.972782] (arduino_hardware_controller) StdoutLine: {'line': b'2: =================================== FAILURES ===================================\n'}
+[1.973074] (arduino_hardware_controller) StdoutLine: {'line': b'2: _____________________ launch tests: test_view_robot_launch _____________________\n'}
+[1.973179] (arduino_hardware_controller) StdoutLine: {'line': b'2: \n'}
+[1.973321] (arduino_hardware_controller) StdoutLine: {'line': b'2: ----------------------------- Captured stdout call -----------------------------\n'}
+[1.973640] (arduino_hardware_controller) StdoutLine: {'line': b'2: [INFO] [launch]: All log files can be found below /home/nwhit210/.ros/log/2025-03-18-14-48-39-727507-nwhit210-2717\n'}
+[1.973750] (arduino_hardware_controller) StdoutLine: {'line': b'2: [INFO] [launch]: Default logging verbosity is set to INFO\n'}
+[1.973912] (arduino_hardware_controller) StdoutLine: {'line': b'2: [ERROR] [launch]: Caught exception in launch (see debug for traceback): executed command failed. Command: /opt/ros/humble/bin/xacro /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro prefix:=""\n'}
+[1.974063] (arduino_hardware_controller) StdoutLine: {'line': b'2: Captured stderr output: error: package not found: "package \'ros2_control_demo_description\' not found, searching: [\'/home/nwhit210/omnicar_2_ws/install/omnicar\', \'/home/nwhit210/omnicar_2_ws/install/mecanum_drive_controller\', \'/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller\', \'/opt/ros/humble\']"\n'}
+[1.974244] (arduino_hardware_controller) StdoutLine: {'line': b'2: when processing file: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro\n'}
+[1.974536] (arduino_hardware_controller) StdoutLine: {'line': b'2: \n'}
+[1.974645] (arduino_hardware_controller) StdoutLine: {'line': b'2: Processes under test stopped before tests completed\n'}
+[1.974743] (arduino_hardware_controller) StdoutLine: {'line': b'2: - generated xml file: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml -\n'}
+[1.974835] (arduino_hardware_controller) StdoutLine: {'line': b'2: =========================== short test summary info ============================\n'}
+[1.974917] (arduino_hardware_controller) StdoutLine: {'line': b'2: FAILED ../../src/arduino_controller/test/test_view_robot_launch.py::test_view_robot_launch\n'}
+[1.974997] (arduino_hardware_controller) StdoutLine: {'line': b'2: ============================== 1 failed in 0.36s ===============================\n'}
+[2.005376] (-) TimerEvent: {}
+[2.056480] (arduino_hardware_controller) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[2.056797] (arduino_hardware_controller) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/view_example_2_launch.xunit.xml'\n"}
+[2.070703] (arduino_hardware_controller) StdoutLine: {'line': b'2/3 Test #2: view_example_2_launch ............***Failed    0.96 sec\n'}
+[2.071212] (arduino_hardware_controller) StdoutLine: {'line': b'test 3\n'}
+[2.071370] (arduino_hardware_controller) StdoutLine: {'line': b'    Start 3: run_example_2_launch\n'}
+[2.071518] (arduino_hardware_controller) StdoutLine: {'line': b'\n'}
+[2.071627] (arduino_hardware_controller) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml" "--package-name" "arduino_hardware_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch.txt" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_diffbot_launch.py" "-o" "cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch/.cache" "--junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml" "--junit-prefix=arduino_hardware_controller"\n'}
+[2.071750] (arduino_hardware_controller) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[2.105538] (-) TimerEvent: {}
+[2.158738] (arduino_hardware_controller) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller':\n"}
+[2.159042] (arduino_hardware_controller) StdoutLine: {'line': b'3:  - /usr/bin/python3 -u -m pytest /home/nwhit210/omnicar_2_ws/src/arduino_controller/test/test_diffbot_launch.py -o cache_dir=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch/.cache --junit-xml=/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml --junit-prefix=arduino_hardware_controller\n'}
+[2.205777] (-) TimerEvent: {}
+[2.306596] (-) TimerEvent: {}
+[2.407347] (-) TimerEvent: {}
+[2.415326] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_reference_msg_has_timestamp_zero_expect_reference_set_and_timestamp_set_to_current_time (537 ms)\n'}
+[2.415725] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_message_has_valid_timestamp_expect_reference_set\n'}
+[2.447066] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273320.404255939] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[2.507691] (-) TimerEvent: {}
+[2.608322] (-) TimerEvent: {}
+[2.680200] (arduino_hardware_controller) StdoutLine: {'line': b'3: ============================= test session starts ==============================\n'}
+[2.680550] (arduino_hardware_controller) StdoutLine: {'line': b'3: platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[2.687176] (arduino_hardware_controller) StdoutLine: {'line': b'3: cachedir: build/arduino_hardware_controller/ament_cmake_pytest/run_example_2_launch/.cache\n'}
+[2.687649] (arduino_hardware_controller) StdoutLine: {'line': b'3: rootdir: /home/nwhit210/omnicar_2_ws\n'}
+[2.687839] (arduino_hardware_controller) StdoutLine: {'line': b'3: plugins: ament-xmllint-0.12.11, ament-pep257-0.12.11, ament-flake8-0.12.11, launch-testing-1.0.7, launch-testing-ros-0.19.8, ament-lint-0.12.11, ament-copyright-0.12.11, cov-3.0.0, colcon-core-0.19.0\n'}
+[2.708489] (-) TimerEvent: {}
+[2.809325] (-) TimerEvent: {}
+[2.905843] (arduino_hardware_controller) StdoutLine: {'line': b'3: collected 0 items / 1 error\n'}
+[2.909473] (-) TimerEvent: {}
+[2.961648] (arduino_hardware_controller) StdoutLine: {'line': b'3: \n'}
+[2.962434] (arduino_hardware_controller) StdoutLine: {'line': b'3: ==================================== ERRORS ====================================\n'}
+[2.962640] (arduino_hardware_controller) StdoutLine: {'line': b'3: ________________________ ERROR collecting test session _________________________\n'}
+[2.962759] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__\n'}
+[2.962864] (arduino_hardware_controller) StdoutLine: {'line': b'3:     return self._hookexec(self, self.get_hookimpls(), kwargs)\n'}
+[2.962964] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec\n'}
+[2.963084] (arduino_hardware_controller) StdoutLine: {'line': b'3:     return self._inner_hookexec(hook, methods, kwargs)\n'}
+[2.963296] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/pluggy/manager.py:83: in <lambda>\n'}
+[2.964125] (arduino_hardware_controller) StdoutLine: {'line': b'3:     self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(\n'}
+[2.964416] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/_pytest/python.py:200: in pytest_collect_file\n'}
+[2.964536] (arduino_hardware_controller) StdoutLine: {'line': b'3:     module: Module = ihook.pytest_pycollect_makemodule(path=path, parent=parent)\n'}
+[2.964796] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__\n'}
+[2.964961] (arduino_hardware_controller) StdoutLine: {'line': b'3:     return self._hookexec(self, self.get_hookimpls(), kwargs)\n'}
+[2.965074] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec\n'}
+[2.965178] (arduino_hardware_controller) StdoutLine: {'line': b'3:     return self._inner_hookexec(hook, methods, kwargs)\n'}
+[2.965277] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/pluggy/manager.py:83: in <lambda>\n'}
+[2.965374] (arduino_hardware_controller) StdoutLine: {'line': b'3:     self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(\n'}
+[2.965472] (arduino_hardware_controller) StdoutLine: {'line': b'3: /opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:193: in pytest_pycollect_makemodule\n'}
+[2.965539] (arduino_hardware_controller) StdoutLine: {'line': b'3:     entrypoint = find_launch_test_entrypoint(path)\n'}
+[2.965601] (arduino_hardware_controller) StdoutLine: {'line': b'3: /opt/ros/humble/lib/python3.10/site-packages/launch_testing/pytest/hooks.py:186: in find_launch_test_entrypoint\n'}
+[2.965661] (arduino_hardware_controller) StdoutLine: {'line': b'3:     module = path.pyimport()\n'}
+[2.965722] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/py/_path/local.py:704: in pyimport\n'}
+[2.965786] (arduino_hardware_controller) StdoutLine: {'line': b'3:     __import__(modname)\n'}
+[2.965856] (arduino_hardware_controller) StdoutLine: {'line': b'3: /usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:170: in exec_module\n'}
+[2.966044] (arduino_hardware_controller) StdoutLine: {'line': b'3:     exec(co, module.__dict__)\n'}
+[2.966183] (arduino_hardware_controller) StdoutLine: {'line': b'3: ../../src/arduino_controller/test/test_diffbot_launch.py:43: in <module>\n'}
+[2.966302] (arduino_hardware_controller) StdoutLine: {'line': b'3:     from ros2_control_demo_testing.test_utils import (\n'}
+[2.966416] (arduino_hardware_controller) StdoutLine: {'line': b"3: E   ModuleNotFoundError: No module named 'ros2_control_demo_testing'\n"}
+[2.966524] (arduino_hardware_controller) StdoutLine: {'line': b'3: - generated xml file: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml -\n'}
+[2.966642] (arduino_hardware_controller) StdoutLine: {'line': b'3: =========================== short test summary info ============================\n'}
+[2.966734] (arduino_hardware_controller) StdoutLine: {'line': b"3: ERROR ../.. - ModuleNotFoundError: No module named 'ros2_control_demo_testing'\n"}
+[2.966832] (arduino_hardware_controller) StdoutLine: {'line': b'3: !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n'}
+[2.966926] (arduino_hardware_controller) StdoutLine: {'line': b'3: =============================== 1 error in 0.28s ===============================\n'}
+[2.979230] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_message_has_valid_timestamp_expect_reference_set (564 ms)\n'}
+[2.979643] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_ref_msg_old_expect_cmnd_itfs_set_to_zero_otherwise_to_valid_cmnds\n'}
+[3.009684] (-) TimerEvent: {}
+[3.020242] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273320.977567976] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[3.056000] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_ref_msg_old_expect_cmnd_itfs_set_to_zero_otherwise_to_valid_cmnds (77 ms)\n'}
+[3.056378] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_controller_in_chainable_mode_expect_receiving_commands_from_reference_interfaces_directly\n'}
+[3.063241] (arduino_hardware_controller) StdoutLine: {'line': b'3: -- run_test.py: return code 2\n'}
+[3.068536] (arduino_hardware_controller) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/test_results/arduino_hardware_controller/run_example_2_launch.xunit.xml'\n"}
+[3.080433] (arduino_hardware_controller) StdoutLine: {'line': b'3/3 Test #3: run_example_2_launch .............***Failed    1.01 sec\n'}
+[3.081154] (arduino_hardware_controller) StdoutLine: {'line': b'\n'}
+[3.082119] (arduino_hardware_controller) StdoutLine: {'line': b'0% tests passed\x1b[0;0m, \x1b[0;31m3 tests failed\x1b[0;0m out of 3\n'}
+[3.082463] (arduino_hardware_controller) StdoutLine: {'line': b'\n'}
+[3.082604] (arduino_hardware_controller) StdoutLine: {'line': b'Label Time Summary:\n'}
+[3.082718] (arduino_hardware_controller) StdoutLine: {'line': b'pytest    =   2.87 sec*proc (3 tests)\n'}
+[3.082830] (arduino_hardware_controller) StdoutLine: {'line': b'\n'}
+[3.082949] (arduino_hardware_controller) StdoutLine: {'line': b'Total Test time (real) =   2.88 sec\n'}
+[3.083180] (arduino_hardware_controller) StdoutLine: {'line': b'\n'}
+[3.083308] (arduino_hardware_controller) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[3.083417] (arduino_hardware_controller) StdoutLine: {'line': b'\t\x1b[0;31m  1 - example_2_urdf_xacro (Failed)\x1b[0;0m\n'}
+[3.083530] (arduino_hardware_controller) StdoutLine: {'line': b'\t\x1b[0;31m  2 - view_example_2_launch (Failed)\x1b[0;0m\n'}
+[3.083756] (arduino_hardware_controller) StdoutLine: {'line': b'\t\x1b[0;31m  3 - run_example_2_launch (Failed)\x1b[0;0m\n'}
+[3.084584] (arduino_hardware_controller) StderrLine: {'line': b'Errors while running CTest\n'}
+[3.084911] (arduino_hardware_controller) StderrLine: {'line': b'Output from these tests are in: /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller/Testing/Temporary/LastTest.log\n'}
+[3.085083] (arduino_hardware_controller) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[3.088798] (arduino_hardware_controller) CommandEnded: {'returncode': 8}
+[3.089524] (arduino_hardware_controller) TestFailure: {'identifier': 'arduino_hardware_controller'}
+[3.089599] (arduino_hardware_controller) JobEnded: {'identifier': 'arduino_hardware_controller', 'rc': 0}
+[3.097367] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273321.054706840] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[3.109915] (-) TimerEvent: {}
+[3.126994] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_controller_in_chainable_mode_expect_receiving_commands_from_reference_interfaces_directly (71 ms)\n'}
+[3.127446] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_reference_timeout_is_zero_expect_reference_msg_being_used_only_once\n'}
+[3.163104] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273321.120535658] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[3.189396] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_reference_timeout_is_zero_expect_reference_msg_being_used_only_once (62 ms)\n'}
+[3.189955] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.when_ref_timeout_zero_for_reference_callback_expect_reference_msg_being_used_only_once\n'}
+[3.210111] (-) TimerEvent: {}
+[3.224546] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273321.181843092] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[3.310307] (-) TimerEvent: {}
+[3.410754] (-) TimerEvent: {}
+[3.511262] (-) TimerEvent: {}
+[3.611707] (-) TimerEvent: {}
+[3.712183] (-) TimerEvent: {}
+[3.748843] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.when_ref_timeout_zero_for_reference_callback_expect_reference_msg_being_used_only_once (560 ms)\n'}
+[3.749133] (mecanum_drive_controller) StdoutLine: {'line': b'2: [ RUN      ] MecanumDriveControllerTest.SideToSideAndRotationOdometryTest\n'}
+[3.766367] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273321.723970320] [test_mecanum_drive_controller_with_rotation]: MecanumDriveController configured successfully\n'}
+[3.766898] (mecanum_drive_controller) StdoutLine: {'line': b'2: [INFO] [1742273321.724328175] [test_mecanum_drive_controller_with_rotation]: odometry: -0.004899, 0.040010, 0.000000\n'}
+[3.778299] (mecanum_drive_controller) StdoutLine: {'line': b'2: [       OK ] MecanumDriveControllerTest.SideToSideAndRotationOdometryTest (29 ms)\n'}
+[3.778664] (mecanum_drive_controller) StdoutLine: {'line': b'2: [----------] 16 tests from MecanumDriveControllerTest (3317 ms total)\n'}
+[3.779039] (mecanum_drive_controller) StdoutLine: {'line': b'2: \n'}
+[3.779225] (mecanum_drive_controller) StdoutLine: {'line': b'2: [----------] Global test environment tear-down\n'}
+[3.779553] (mecanum_drive_controller) StdoutLine: {'line': b'2: [==========] 16 tests from 1 test suite ran. (3317 ms total)\n'}
+[3.779681] (mecanum_drive_controller) StdoutLine: {'line': b'2: [  PASSED  ] 16 tests.\n'}
+[3.812292] (-) TimerEvent: {}
+[3.885259] (mecanum_drive_controller) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[3.885928] (mecanum_drive_controller) StdoutLine: {'line': b"2: -- run_test.py: inject classname prefix into gtest result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml'\n"}
+[3.886446] (mecanum_drive_controller) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml'\n"}
+[3.904518] (mecanum_drive_controller) StdoutLine: {'line': b'2/3 Test #2: test_mecanum_drive_controller ..............   Passed    3.57 sec\n'}
+[3.905794] (mecanum_drive_controller) StdoutLine: {'line': b'test 3\n'}
+[3.905916] (mecanum_drive_controller) StdoutLine: {'line': b'    Start 3: test_mecanum_drive_controller_preceeding\n'}
+[3.906082] (mecanum_drive_controller) StdoutLine: {'line': b'\n'}
+[3.906159] (mecanum_drive_controller) StdoutLine: {'line': b'3: Test command: /usr/bin/python3 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml" "--package-name" "mecanum_drive_controller" "--output-file" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.txt" "--command" "/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_mecanum_drive_controller_preceeding" "--ros-args" "--params-file" "/home/nwhit210/omnicar_2_ws/src/mecanum_drive_controller/test/mecanum_drive_controller_preceeding_params.yaml" "--" "--gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml"\n'}
+[3.906256] (mecanum_drive_controller) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[3.912490] (-) TimerEvent: {}
+[3.974063] (mecanum_drive_controller) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller':\n"}
+[3.974283] (mecanum_drive_controller) StdoutLine: {'line': b'3:  - /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_mecanum_drive_controller_preceeding --ros-args --params-file /home/nwhit210/omnicar_2_ws/src/mecanum_drive_controller/test/mecanum_drive_controller_preceeding_params.yaml -- --gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml\n'}
+[3.991146] (mecanum_drive_controller) StdoutLine: {'line': b'3: [==========] Running 2 tests from 1 test suite.\n'}
+[3.991440] (mecanum_drive_controller) StdoutLine: {'line': b'3: [----------] Global test environment set-up.\n'}
+[3.991551] (mecanum_drive_controller) StdoutLine: {'line': b'3: [----------] 2 tests from MecanumDriveControllerTest\n'}
+[3.991648] (mecanum_drive_controller) StdoutLine: {'line': b'3: [ RUN      ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set\n'}
+[4.012730] (-) TimerEvent: {}
+[4.052346] (mecanum_drive_controller) StdoutLine: {'line': b'3: [INFO] [1742273322.009870094] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[4.091749] (mecanum_drive_controller) StdoutLine: {'line': b'3: [       OK ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set (101 ms)\n'}
+[4.092106] (mecanum_drive_controller) StdoutLine: {'line': b'3: [ RUN      ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces\n'}
+[4.113094] (-) TimerEvent: {}
+[4.124885] (mecanum_drive_controller) StdoutLine: {'line': b'3: [INFO] [1742273322.082175325] [test_mecanum_drive_controller]: MecanumDriveController configured successfully\n'}
+[4.153959] (mecanum_drive_controller) StdoutLine: {'line': b'3: [       OK ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces (62 ms)\n'}
+[4.154531] (mecanum_drive_controller) StdoutLine: {'line': b'3: [----------] 2 tests from MecanumDriveControllerTest (163 ms total)\n'}
+[4.154712] (mecanum_drive_controller) StdoutLine: {'line': b'3: \n'}
+[4.154846] (mecanum_drive_controller) StdoutLine: {'line': b'3: [----------] Global test environment tear-down\n'}
+[4.154969] (mecanum_drive_controller) StdoutLine: {'line': b'3: [==========] 2 tests from 1 test suite ran. (163 ms total)\n'}
+[4.155091] (mecanum_drive_controller) StdoutLine: {'line': b'3: [  PASSED  ] 2 tests.\n'}
+[4.213269] (-) TimerEvent: {}
+[4.258001] (mecanum_drive_controller) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[4.258684] (mecanum_drive_controller) StdoutLine: {'line': b"3: -- run_test.py: inject classname prefix into gtest result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml'\n"}
+[4.258983] (mecanum_drive_controller) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller_preceeding.gtest.xml'\n"}
+[4.268698] (mecanum_drive_controller) StdoutLine: {'line': b'3/3 Test #3: test_mecanum_drive_controller_preceeding ...   Passed    0.36 sec\n'}
+[4.269115] (mecanum_drive_controller) StdoutLine: {'line': b'\n'}
+[4.269198] (mecanum_drive_controller) StdoutLine: {'line': b'67% tests passed\x1b[0;0m, \x1b[0;31m1 tests failed\x1b[0;0m out of 3\n'}
+[4.269250] (mecanum_drive_controller) StdoutLine: {'line': b'\n'}
+[4.269298] (mecanum_drive_controller) StdoutLine: {'line': b'Label Time Summary:\n'}
+[4.269342] (mecanum_drive_controller) StdoutLine: {'line': b'gmock    =   0.13 sec*proc (1 test)\n'}
+[4.269395] (mecanum_drive_controller) StdoutLine: {'line': b'\n'}
+[4.269439] (mecanum_drive_controller) StdoutLine: {'line': b'Total Test time (real) =   4.06 sec\n'}
+[4.269479] (mecanum_drive_controller) StdoutLine: {'line': b'\n'}
+[4.269521] (mecanum_drive_controller) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[4.269562] (mecanum_drive_controller) StdoutLine: {'line': b'\t\x1b[0;31m  1 - test_load_mecanum_drive_controller (Failed)\x1b[0;0m\n'}
+[4.271026] (mecanum_drive_controller) StderrLine: {'line': b'Errors while running CTest\n'}
+[4.271209] (mecanum_drive_controller) StderrLine: {'line': b'Output from these tests are in: /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/Testing/Temporary/LastTest.log\n'}
+[4.271315] (mecanum_drive_controller) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[4.273701] (mecanum_drive_controller) CommandEnded: {'returncode': 8}
+[4.274274] (mecanum_drive_controller) TestFailure: {'identifier': 'mecanum_drive_controller'}
+[4.274302] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[4.313474] (-) TimerEvent: {}
+[4.414221] (-) TimerEvent: {}
+[4.515050] (-) TimerEvent: {}
+[4.616358] (-) TimerEvent: {}
+[4.717038] (-) TimerEvent: {}
+[4.817961] (-) TimerEvent: {}
+[4.919115] (-) TimerEvent: {}
+[5.020232] (-) TimerEvent: {}
+[5.121621] (-) TimerEvent: {}
+[5.222979] (-) TimerEvent: {}
+[5.323824] (-) TimerEvent: {}
+[5.424876] (-) TimerEvent: {}
+[5.525729] (-) TimerEvent: {}
+[5.626364] (-) TimerEvent: {}
+[5.726969] (-) TimerEvent: {}
+[5.827703] (-) TimerEvent: {}
+[5.928662] (-) TimerEvent: {}
+[6.029304] (-) TimerEvent: {}
+[6.129814] (-) TimerEvent: {}
+[6.230317] (-) TimerEvent: {}
+[6.330782] (-) TimerEvent: {}
+[6.431410] (-) TimerEvent: {}
+[6.531879] (-) TimerEvent: {}
+[6.632403] (-) TimerEvent: {}
+[6.732950] (-) TimerEvent: {}
+[6.833652] (-) TimerEvent: {}
+[6.934221] (-) TimerEvent: {}
+[7.034732] (-) TimerEvent: {}
+[7.135166] (-) TimerEvent: {}
+[7.235636] (-) TimerEvent: {}
+[7.336136] (-) TimerEvent: {}
+[7.436772] (-) TimerEvent: {}
+[7.537426] (-) TimerEvent: {}
+[7.638107] (-) TimerEvent: {}
+[7.738718] (-) TimerEvent: {}
+[7.839312] (-) TimerEvent: {}
+[7.940055] (-) TimerEvent: {}
+[8.040572] (-) TimerEvent: {}
+[8.141323] (-) TimerEvent: {}
+[8.242122] (-) TimerEvent: {}
+[8.342891] (-) TimerEvent: {}
+[8.443518] (-) TimerEvent: {}
+[8.544153] (-) TimerEvent: {}
+[8.644697] (-) TimerEvent: {}
+[8.745262] (-) TimerEvent: {}
+[8.845857] (-) TimerEvent: {}
+[8.946585] (-) TimerEvent: {}
+[9.047374] (-) TimerEvent: {}
+[9.147890] (-) TimerEvent: {}
+[9.248564] (-) TimerEvent: {}
+[9.349368] (-) TimerEvent: {}
+[9.450420] (-) TimerEvent: {}
+[9.551123] (-) TimerEvent: {}
+[9.651716] (-) TimerEvent: {}
+[9.752574] (-) TimerEvent: {}
+[9.853511] (-) TimerEvent: {}
+[9.954206] (-) TimerEvent: {}
+[10.054729] (-) TimerEvent: {}
+[10.155589] (-) TimerEvent: {}
+[10.256610] (-) TimerEvent: {}
+[10.357376] (-) TimerEvent: {}
+[10.458268] (-) TimerEvent: {}
+[10.559073] (-) TimerEvent: {}
+[10.659646] (-) TimerEvent: {}
+[10.760362] (-) TimerEvent: {}
+[10.860954] (-) TimerEvent: {}
+[10.961675] (-) TimerEvent: {}
+[11.062735] (-) TimerEvent: {}
+[11.163943] (-) TimerEvent: {}
+[11.265414] (-) TimerEvent: {}
+[11.366602] (-) TimerEvent: {}
+[11.468068] (-) TimerEvent: {}
+[11.569693] (-) TimerEvent: {}
+[11.671307] (-) TimerEvent: {}
+[11.772772] (-) TimerEvent: {}
+[11.874157] (-) TimerEvent: {}
+[11.975396] (-) TimerEvent: {}
+[12.076475] (-) TimerEvent: {}
+[12.177842] (-) TimerEvent: {}
+[12.279501] (-) TimerEvent: {}
+[12.380896] (-) TimerEvent: {}
+[12.482221] (-) TimerEvent: {}
+[12.583586] (-) TimerEvent: {}
+[12.684384] (-) TimerEvent: {}
+[12.785193] (-) TimerEvent: {}
+[12.886384] (-) TimerEvent: {}
+[12.987856] (-) TimerEvent: {}
+[13.089300] (-) TimerEvent: {}
+[13.191197] (-) TimerEvent: {}
+[13.292695] (-) TimerEvent: {}
+[13.394095] (-) TimerEvent: {}
+[13.495525] (-) TimerEvent: {}
+[13.596890] (-) TimerEvent: {}
+[13.699107] (-) TimerEvent: {}
+[13.800753] (-) TimerEvent: {}
+[13.902244] (-) TimerEvent: {}
+[14.003633] (-) TimerEvent: {}
+[14.105237] (-) TimerEvent: {}
+[14.206935] (-) TimerEvent: {}
+[14.308284] (-) TimerEvent: {}
+[14.409668] (-) TimerEvent: {}
+[14.511431] (-) TimerEvent: {}
+[14.612954] (-) TimerEvent: {}
+[14.714223] (-) TimerEvent: {}
+[14.815750] (-) TimerEvent: {}
+[14.917387] (-) TimerEvent: {}
+[15.019334] (-) TimerEvent: {}
+[15.121192] (-) TimerEvent: {}
+[15.222622] (-) TimerEvent: {}
+[15.323549] (-) TimerEvent: {}
+[15.425088] (-) TimerEvent: {}
+[15.526536] (-) TimerEvent: {}
+[15.628076] (-) TimerEvent: {}
+[15.729427] (-) TimerEvent: {}
+[15.831110] (-) TimerEvent: {}
+[15.932117] (-) TimerEvent: {}
+[16.033448] (-) TimerEvent: {}
+[16.134851] (-) TimerEvent: {}
+[16.236212] (-) TimerEvent: {}
+[16.337812] (-) TimerEvent: {}
+[16.440201] (-) TimerEvent: {}
+[16.541556] (-) TimerEvent: {}
+[16.643219] (-) TimerEvent: {}
+[16.744841] (-) TimerEvent: {}
+[16.846241] (-) TimerEvent: {}
+[16.947715] (-) TimerEvent: {}
+[17.048985] (-) TimerEvent: {}
+[17.150390] (-) TimerEvent: {}
+[17.251856] (-) TimerEvent: {}
+[17.353440] (-) TimerEvent: {}
+[17.455130] (-) TimerEvent: {}
+[17.556686] (-) TimerEvent: {}
+[17.658244] (-) TimerEvent: {}
+[17.759583] (-) TimerEvent: {}
+[17.861095] (-) TimerEvent: {}
+[17.962249] (-) TimerEvent: {}
+[18.063178] (-) TimerEvent: {}
+[18.164382] (-) TimerEvent: {}
+[18.265722] (-) TimerEvent: {}
+[18.367744] (-) TimerEvent: {}
+[18.469044] (-) TimerEvent: {}
+[18.570446] (-) TimerEvent: {}
+[18.671820] (-) TimerEvent: {}
+[18.773096] (-) TimerEvent: {}
+[18.874354] (-) TimerEvent: {}
+[18.975330] (-) TimerEvent: {}
+[19.076927] (-) TimerEvent: {}
+[19.178556] (-) TimerEvent: {}
+[19.279763] (-) TimerEvent: {}
+[19.380756] (-) TimerEvent: {}
+[19.483425] (-) TimerEvent: {}
+[19.584747] (-) TimerEvent: {}
+[19.686189] (-) TimerEvent: {}
+[19.787494] (-) TimerEvent: {}
+[19.889013] (-) TimerEvent: {}
+[19.991773] (-) TimerEvent: {}
+[20.092817] (-) TimerEvent: {}
+[20.193935] (-) TimerEvent: {}
+[20.295063] (-) TimerEvent: {}
+[20.396479] (-) TimerEvent: {}
+[20.498121] (-) TimerEvent: {}
+[20.600056] (-) TimerEvent: {}
+[20.701647] (-) TimerEvent: {}
+[20.803813] (-) TimerEvent: {}
+[20.905223] (-) TimerEvent: {}
+[21.006616] (-) TimerEvent: {}
+[21.108105] (-) TimerEvent: {}
+[21.209169] (-) TimerEvent: {}
+[21.310722] (-) TimerEvent: {}
+[21.411988] (-) TimerEvent: {}
+[21.513705] (-) TimerEvent: {}
+[21.614969] (-) TimerEvent: {}
+[21.716420] (-) TimerEvent: {}
+[21.817958] (-) TimerEvent: {}
+[21.919409] (-) TimerEvent: {}
+[22.020939] (-) TimerEvent: {}
+[22.122723] (-) TimerEvent: {}
+[22.224617] (-) TimerEvent: {}
+[22.326156] (-) TimerEvent: {}
+[22.427548] (-) TimerEvent: {}
+[22.528720] (-) TimerEvent: {}
+[22.629613] (-) TimerEvent: {}
+[22.730601] (-) TimerEvent: {}
+[22.832466] (-) TimerEvent: {}
+[22.933863] (-) TimerEvent: {}
+[23.034759] (-) TimerEvent: {}
+[23.136312] (-) TimerEvent: {}
+[23.237810] (-) TimerEvent: {}
+[23.339255] (-) TimerEvent: {}
+[23.440734] (-) TimerEvent: {}
+[23.542032] (-) TimerEvent: {}
+[23.643595] (-) TimerEvent: {}
+[23.744981] (-) TimerEvent: {}
+[23.846241] (-) TimerEvent: {}
+[23.947787] (-) TimerEvent: {}
+[24.049316] (-) TimerEvent: {}
+[24.151149] (-) TimerEvent: {}
+[24.252764] (-) TimerEvent: {}
+[24.354734] (-) TimerEvent: {}
+[24.456153] (-) TimerEvent: {}
+[24.557438] (-) TimerEvent: {}
+[24.660096] (-) TimerEvent: {}
+[24.761639] (-) TimerEvent: {}
+[24.863218] (-) TimerEvent: {}
+[24.964607] (-) TimerEvent: {}
+[25.065753] (-) TimerEvent: {}
+[25.166432] (-) TimerEvent: {}
+[25.267515] (-) TimerEvent: {}
+[25.368926] (-) TimerEvent: {}
+[25.470297] (-) TimerEvent: {}
+[25.571849] (-) TimerEvent: {}
+[25.673190] (-) TimerEvent: {}
+[25.774719] (-) TimerEvent: {}
+[25.876254] (-) TimerEvent: {}
+[25.977797] (-) TimerEvent: {}
+[26.079208] (-) TimerEvent: {}
+[26.180703] (-) TimerEvent: {}
+[26.281996] (-) TimerEvent: {}
+[26.383141] (-) TimerEvent: {}
+[26.483837] (-) TimerEvent: {}
+[26.584393] (-) TimerEvent: {}
+[26.685400] (-) TimerEvent: {}
+[26.786528] (-) TimerEvent: {}
+[26.887541] (-) TimerEvent: {}
+[26.988761] (-) TimerEvent: {}
+[27.089601] (-) TimerEvent: {}
+[27.191545] (-) TimerEvent: {}
+[27.292831] (-) TimerEvent: {}
+[27.394154] (-) TimerEvent: {}
+[27.495738] (-) TimerEvent: {}
+[27.597202] (-) TimerEvent: {}
+[27.697919] (-) TimerEvent: {}
+[27.798622] (-) TimerEvent: {}
+[27.899621] (-) TimerEvent: {}
+[28.001403] (-) TimerEvent: {}
+[28.102847] (-) TimerEvent: {}
+[28.204015] (-) TimerEvent: {}
+[28.304965] (-) TimerEvent: {}
+[28.406332] (-) TimerEvent: {}
+[28.507827] (-) TimerEvent: {}
+[28.608976] (-) TimerEvent: {}
+[28.709965] (-) TimerEvent: {}
+[28.810555] (-) TimerEvent: {}
+[28.911466] (-) TimerEvent: {}
+[29.012833] (-) TimerEvent: {}
+[29.115493] (-) TimerEvent: {}
+[29.217666] (-) TimerEvent: {}
+[29.319126] (-) TimerEvent: {}
+[29.420245] (-) TimerEvent: {}
+[29.522229] (-) TimerEvent: {}
+[29.623577] (-) TimerEvent: {}
+[29.724734] (-) TimerEvent: {}
+[29.826178] (-) TimerEvent: {}
+[29.927505] (-) TimerEvent: {}
+[30.029263] (-) TimerEvent: {}
+[30.132992] (-) TimerEvent: {}
+[30.234542] (-) TimerEvent: {}
+[30.335344] (-) TimerEvent: {}
+[30.436547] (-) TimerEvent: {}
+[30.537913] (-) TimerEvent: {}
+[30.639231] (-) TimerEvent: {}
+[30.740609] (-) TimerEvent: {}
+[30.842088] (-) TimerEvent: {}
+[30.943606] (-) TimerEvent: {}
+[31.044922] (-) TimerEvent: {}
+[31.146415] (-) TimerEvent: {}
+[31.248383] (-) TimerEvent: {}
+[31.349159] (-) TimerEvent: {}
+[31.450861] (-) TimerEvent: {}
+[31.552400] (-) TimerEvent: {}
+[31.654150] (-) TimerEvent: {}
+[31.755256] (-) TimerEvent: {}
+[31.856893] (-) TimerEvent: {}
+[31.957861] (-) TimerEvent: {}
+[32.059396] (-) TimerEvent: {}
+[32.160857] (-) TimerEvent: {}
+[32.261864] (-) TimerEvent: {}
+[32.362815] (-) TimerEvent: {}
+[32.465225] (-) TimerEvent: {}
+[32.566482] (-) TimerEvent: {}
+[32.667971] (-) TimerEvent: {}
+[32.769209] (-) TimerEvent: {}
+[32.870219] (-) TimerEvent: {}
+[32.971699] (-) TimerEvent: {}
+[33.073908] (-) TimerEvent: {}
+[33.175304] (-) TimerEvent: {}
+[33.277265] (-) TimerEvent: {}
+[33.379303] (-) TimerEvent: {}
+[33.481176] (-) TimerEvent: {}
+[33.582564] (-) TimerEvent: {}
+[33.684287] (-) TimerEvent: {}
+[33.786020] (-) TimerEvent: {}
+[33.887272] (-) TimerEvent: {}
+[33.988856] (-) TimerEvent: {}
+[34.090663] (-) TimerEvent: {}
+[34.191934] (-) TimerEvent: {}
+[34.293121] (-) TimerEvent: {}
+[34.395126] (-) TimerEvent: {}
+[34.496616] (-) TimerEvent: {}
+[34.598088] (-) TimerEvent: {}
+[34.699404] (-) TimerEvent: {}
+[34.800923] (-) TimerEvent: {}
+[34.902041] (-) TimerEvent: {}
+[35.003365] (-) TimerEvent: {}
+[35.104573] (-) TimerEvent: {}
+[35.205459] (-) TimerEvent: {}
+[35.306336] (-) TimerEvent: {}
+[35.407656] (-) TimerEvent: {}
+[35.508969] (-) TimerEvent: {}
+[35.610084] (-) TimerEvent: {}
+[35.712055] (-) TimerEvent: {}
+[35.814060] (-) TimerEvent: {}
+[35.915493] (-) TimerEvent: {}
+[36.016729] (-) TimerEvent: {}
+[36.118049] (-) TimerEvent: {}
+[36.219431] (-) TimerEvent: {}
+[36.320638] (-) TimerEvent: {}
+[36.421213] (-) TimerEvent: {}
+[36.521982] (-) TimerEvent: {}
+[36.622622] (-) TimerEvent: {}
+[36.723900] (-) TimerEvent: {}
+[36.825548] (-) TimerEvent: {}
+[36.926832] (-) TimerEvent: {}
+[37.028334] (-) TimerEvent: {}
+[37.130031] (-) TimerEvent: {}
+[37.231269] (-) TimerEvent: {}
+[37.332727] (-) TimerEvent: {}
+[37.434424] (-) TimerEvent: {}
+[37.535766] (-) TimerEvent: {}
+[37.636790] (-) TimerEvent: {}
+[37.737629] (-) TimerEvent: {}
+[37.838436] (-) TimerEvent: {}
+[37.939346] (-) TimerEvent: {}
+[38.040769] (-) TimerEvent: {}
+[38.142151] (-) TimerEvent: {}
+[38.243375] (-) TimerEvent: {}
+[38.344866] (-) TimerEvent: {}
+[38.446154] (-) TimerEvent: {}
+[38.547678] (-) TimerEvent: {}
+[38.649069] (-) TimerEvent: {}
+[38.750568] (-) TimerEvent: {}
+[38.852559] (-) TimerEvent: {}
+[38.954160] (-) TimerEvent: {}
+[39.055770] (-) TimerEvent: {}
+[39.157093] (-) TimerEvent: {}
+[39.258965] (-) TimerEvent: {}
+[39.360624] (-) TimerEvent: {}
+[39.461567] (-) TimerEvent: {}
+[39.563090] (-) TimerEvent: {}
+[39.664525] (-) TimerEvent: {}
+[39.766197] (-) TimerEvent: {}
+[39.867717] (-) TimerEvent: {}
+[39.968696] (-) TimerEvent: {}
+[40.069891] (-) TimerEvent: {}
+[40.170843] (-) TimerEvent: {}
+[40.271691] (-) TimerEvent: {}
+[40.372983] (-) TimerEvent: {}
+[40.474986] (-) TimerEvent: {}
+[40.576370] (-) TimerEvent: {}
+[40.677320] (-) TimerEvent: {}
+[40.778595] (-) TimerEvent: {}
+[40.880702] (-) TimerEvent: {}
+[40.982696] (-) TimerEvent: {}
+[41.084425] (-) TimerEvent: {}
+[41.185661] (-) TimerEvent: {}
+[41.286872] (-) TimerEvent: {}
+[41.388249] (-) TimerEvent: {}
+[41.489533] (-) TimerEvent: {}
+[41.590581] (-) TimerEvent: {}
+[41.692005] (-) TimerEvent: {}
+[41.793240] (-) TimerEvent: {}
+[41.894375] (-) TimerEvent: {}
+[41.995268] (-) TimerEvent: {}
+[42.095844] (-) TimerEvent: {}
+[42.196378] (-) TimerEvent: {}
+[42.296932] (-) TimerEvent: {}
+[42.397864] (-) TimerEvent: {}
+[42.499120] (-) TimerEvent: {}
+[42.600157] (-) TimerEvent: {}
+[42.701064] (-) TimerEvent: {}
+[42.801942] (-) TimerEvent: {}
+[42.903109] (-) TimerEvent: {}
+[43.004176] (-) TimerEvent: {}
+[43.105503] (-) TimerEvent: {}
+[43.208000] (-) TimerEvent: {}
+[43.309930] (-) TimerEvent: {}
+[43.411856] (-) TimerEvent: {}
+[43.513597] (-) TimerEvent: {}
+[43.614714] (-) TimerEvent: {}
+[43.716366] (-) TimerEvent: {}
+[43.817450] (-) TimerEvent: {}
+[43.918612] (-) TimerEvent: {}
+[44.019775] (-) TimerEvent: {}
+[44.121058] (-) TimerEvent: {}
+[44.222327] (-) TimerEvent: {}
+[44.323932] (-) TimerEvent: {}
+[44.425547] (-) TimerEvent: {}
+[44.526897] (-) TimerEvent: {}
+[44.628780] (-) TimerEvent: {}
+[44.730201] (-) TimerEvent: {}
+[44.831394] (-) TimerEvent: {}
+[44.932778] (-) TimerEvent: {}
+[45.034147] (-) TimerEvent: {}
+[45.134943] (-) TimerEvent: {}
+[45.235474] (-) TimerEvent: {}
+[45.336491] (-) TimerEvent: {}
+[45.437476] (-) TimerEvent: {}
+[45.538079] (-) TimerEvent: {}
+[45.639093] (-) TimerEvent: {}
+[45.740748] (-) TimerEvent: {}
+[45.841929] (-) TimerEvent: {}
+[45.942900] (-) TimerEvent: {}
+[46.044524] (-) TimerEvent: {}
+[46.145414] (-) TimerEvent: {}
+[46.246860] (-) TimerEvent: {}
+[46.349969] (-) TimerEvent: {}
+[46.452138] (-) TimerEvent: {}
+[46.553691] (-) TimerEvent: {}
+[46.655290] (-) TimerEvent: {}
+[46.756845] (-) TimerEvent: {}
+[46.858143] (-) TimerEvent: {}
+[46.960007] (-) TimerEvent: {}
+[47.061434] (-) TimerEvent: {}
+[47.163068] (-) TimerEvent: {}
+[47.264486] (-) TimerEvent: {}
+[47.365949] (-) TimerEvent: {}
+[47.467123] (-) TimerEvent: {}
+[47.568310] (-) TimerEvent: {}
+[47.669322] (-) TimerEvent: {}
+[47.771059] (-) TimerEvent: {}
+[47.872663] (-) TimerEvent: {}
+[47.974136] (-) TimerEvent: {}
+[48.075640] (-) TimerEvent: {}
+[48.177191] (-) TimerEvent: {}
+[48.278672] (-) TimerEvent: {}
+[48.380437] (-) TimerEvent: {}
+[48.481827] (-) TimerEvent: {}
+[48.583194] (-) TimerEvent: {}
+[48.684382] (-) TimerEvent: {}
+[48.785619] (-) TimerEvent: {}
+[48.887456] (-) TimerEvent: {}
+[48.988593] (-) TimerEvent: {}
+[49.089121] (-) TimerEvent: {}
+[49.190035] (-) TimerEvent: {}
+[49.291020] (-) TimerEvent: {}
+[49.391645] (-) TimerEvent: {}
+[49.492775] (-) TimerEvent: {}
+[49.594287] (-) TimerEvent: {}
+[49.696743] (-) TimerEvent: {}
+[49.797810] (-) TimerEvent: {}
+[49.898899] (-) TimerEvent: {}
+[49.999983] (-) TimerEvent: {}
+[50.100781] (-) TimerEvent: {}
+[50.202219] (-) TimerEvent: {}
+[50.303646] (-) TimerEvent: {}
+[50.405046] (-) TimerEvent: {}
+[50.506524] (-) TimerEvent: {}
+[50.607853] (-) TimerEvent: {}
+[50.709280] (-) TimerEvent: {}
+[50.810649] (-) TimerEvent: {}
+[50.912432] (-) TimerEvent: {}
+[51.013630] (-) TimerEvent: {}
+[51.115410] (-) TimerEvent: {}
+[51.216777] (-) TimerEvent: {}
+[51.318216] (-) TimerEvent: {}
+[51.420244] (-) TimerEvent: {}
+[51.521646] (-) TimerEvent: {}
+[51.622907] (-) TimerEvent: {}
+[51.731608] (-) TimerEvent: {}
+[51.833036] (-) TimerEvent: {}
+[51.934106] (-) TimerEvent: {}
+[52.035345] (-) TimerEvent: {}
+[52.136778] (-) TimerEvent: {}
+[52.238300] (-) TimerEvent: {}
+[52.339588] (-) TimerEvent: {}
+[52.440800] (-) TimerEvent: {}
+[52.541801] (-) TimerEvent: {}
+[52.642953] (-) TimerEvent: {}
+[52.744504] (-) TimerEvent: {}
+[52.846093] (-) TimerEvent: {}
+[52.947850] (-) TimerEvent: {}
+[53.048943] (-) TimerEvent: {}
+[53.150123] (-) TimerEvent: {}
+[53.251502] (-) TimerEvent: {}
+[53.353007] (-) TimerEvent: {}
+[53.454248] (-) TimerEvent: {}
+[53.555485] (-) TimerEvent: {}
+[53.657017] (-) TimerEvent: {}
+[53.758567] (-) TimerEvent: {}
+[53.859917] (-) TimerEvent: {}
+[53.961255] (-) TimerEvent: {}
+[54.062259] (-) TimerEvent: {}
+[54.163232] (-) TimerEvent: {}
+[54.264568] (-) TimerEvent: {}
+[54.366348] (-) TimerEvent: {}
+[54.468333] (-) TimerEvent: {}
+[54.569336] (-) TimerEvent: {}
+[54.670924] (-) TimerEvent: {}
+[54.772684] (-) TimerEvent: {}
+[54.874940] (-) TimerEvent: {}
+[54.976204] (-) TimerEvent: {}
+[55.077067] (-) TimerEvent: {}
+[55.178799] (-) TimerEvent: {}
+[55.280301] (-) TimerEvent: {}
+[55.381744] (-) TimerEvent: {}
+[55.483501] (-) TimerEvent: {}
+[55.584667] (-) TimerEvent: {}
+[55.686361] (-) TimerEvent: {}
+[55.787936] (-) TimerEvent: {}
+[55.888748] (-) TimerEvent: {}
+[55.989892] (-) TimerEvent: {}
+[56.091301] (-) TimerEvent: {}
+[56.192621] (-) TimerEvent: {}
+[56.294035] (-) TimerEvent: {}
+[56.395523] (-) TimerEvent: {}
+[56.496914] (-) TimerEvent: {}
+[56.598534] (-) TimerEvent: {}
+[56.701367] (-) TimerEvent: {}
+[56.802685] (-) TimerEvent: {}
+[56.903729] (-) TimerEvent: {}
+[57.005332] (-) TimerEvent: {}
+[57.106832] (-) TimerEvent: {}
+[57.208316] (-) TimerEvent: {}
+[57.309434] (-) TimerEvent: {}
+[57.410791] (-) TimerEvent: {}
+[57.512042] (-) TimerEvent: {}
+[57.613236] (-) TimerEvent: {}
+[57.714813] (-) TimerEvent: {}
+[57.816195] (-) TimerEvent: {}
+[57.917622] (-) TimerEvent: {}
+[58.019480] (-) TimerEvent: {}
+[58.121290] (-) TimerEvent: {}
+[58.223010] (-) TimerEvent: {}
+[58.324204] (-) TimerEvent: {}
+[58.425189] (-) TimerEvent: {}
+[58.526256] (-) TimerEvent: {}
+[58.626996] (-) TimerEvent: {}
+[58.727653] (-) TimerEvent: {}
+[58.828255] (-) TimerEvent: {}
+[58.928942] (-) TimerEvent: {}
+[59.030395] (-) TimerEvent: {}
+[59.131775] (-) TimerEvent: {}
+[59.233467] (-) TimerEvent: {}
+[59.334714] (-) TimerEvent: {}
+[59.436545] (-) TimerEvent: {}
+[59.538949] (-) TimerEvent: {}
+[59.641715] (-) TimerEvent: {}
+[59.742344] (-) TimerEvent: {}
+[59.842946] (-) TimerEvent: {}
+[59.943433] (-) TimerEvent: {}
+[60.043971] (-) TimerEvent: {}
+[60.145064] (-) TimerEvent: {}
+[60.247531] (-) TimerEvent: {}
+[60.348535] (-) TimerEvent: {}
+[60.449927] (-) TimerEvent: {}
+[60.551596] (-) TimerEvent: {}
+[60.653209] (-) TimerEvent: {}
+[60.754485] (-) TimerEvent: {}
+[60.855820] (-) TimerEvent: {}
+[60.957135] (-) TimerEvent: {}
+[61.058245] (-) TimerEvent: {}
+[61.158941] (-) TimerEvent: {}
+[61.260245] (-) TimerEvent: {}
+[61.361196] (-) TimerEvent: {}
+[61.462867] (-) TimerEvent: {}
+[61.555980] (omnicar) StdoutLine: {'line': b'5/5 Test #5: xmllint ..........................***Timeout  60.05 sec\n'}
+[61.557816] (omnicar) StdoutLine: {'line': b'\n'}
+[61.558614] (omnicar) StdoutLine: {'line': b'40% tests passed\x1b[0;0m, \x1b[0;31m3 tests failed\x1b[0;0m out of 5\n'}
+[61.559078] (omnicar) StdoutLine: {'line': b'\n'}
+[61.559426] (omnicar) StdoutLine: {'line': b'Label Time Summary:\n'}
+[61.559887] (omnicar) StdoutLine: {'line': b'copyright     =   0.25 sec*proc (1 test)\n'}
+[61.560262] (omnicar) StdoutLine: {'line': b'flake8        =   0.48 sec*proc (1 test)\n'}
+[61.560760] (omnicar) StdoutLine: {'line': b'lint_cmake    =   0.24 sec*proc (1 test)\n'}
+[61.561119] (omnicar) StdoutLine: {'line': b'linter        =  61.35 sec*proc (5 tests)\n'}
+[61.561344] (omnicar) StdoutLine: {'line': b'pep257        =   0.34 sec*proc (1 test)\n'}
+[61.561537] (omnicar) StdoutLine: {'line': b'xmllint       =  60.05 sec*proc (1 test)\n'}
+[61.561730] (omnicar) StdoutLine: {'line': b'\n'}
+[61.561919] (omnicar) StdoutLine: {'line': b'Total Test time (real) =  61.36 sec\n'}
+[61.562105] (omnicar) StdoutLine: {'line': b'\n'}
+[61.562286] (omnicar) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[61.562547] (omnicar) StdoutLine: {'line': b'\t\x1b[0;31m  1 - copyright (Failed)\x1b[0;0m\n'}
+[61.562818] (omnicar) StdoutLine: {'line': b'\t\x1b[0;31m  2 - flake8 (Failed)\x1b[0;0m\n'}
+[61.563149] (-) TimerEvent: {}
+[61.563592] (omnicar) StdoutLine: {'line': b'\t\x1b[0;31m  5 - xmllint (Timeout)\x1b[0;0m\n'}
+[61.566744] (omnicar) StderrLine: {'line': b'Errors while running CTest\n'}
+[61.567430] (omnicar) StderrLine: {'line': b'Output from these tests are in: /home/nwhit210/omnicar_2_ws/build/omnicar/Testing/Temporary/LastTest.log\n'}
+[61.567794] (omnicar) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[61.577487] (omnicar) CommandEnded: {'returncode': 8}
+[61.579159] (omnicar) TestFailure: {'identifier': 'omnicar'}
+[61.581584] (omnicar) JobEnded: {'identifier': 'omnicar', 'rc': 0}
+[61.583790] (-) EventReactorShutdown: {}

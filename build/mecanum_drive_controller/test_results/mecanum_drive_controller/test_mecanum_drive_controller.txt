@@ -1,0 +1,67 @@
+-- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller':
+ - /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_mecanum_drive_controller --ros-args --params-file /home/nwhit210/omnicar_2_ws/src/mecanum_drive_controller/test/mecanum_drive_controller_params.yaml -- --gtest_output=xml:/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml
+
+[==========] Running 16 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 16 tests from MecanumDriveControllerTest
+[ RUN      ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set
+[INFO] [1742273318.476633321] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_is_configured_expect_all_parameters_set (72 ms)
+[ RUN      ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces
+[INFO] [1742273318.513938922] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_configured_expect_properly_exported_interfaces (40 ms)
+[ RUN      ] MecanumDriveControllerTest.when_controller_is_activated_expect_reference_reset
+[INFO] [1742273318.558916433] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_is_activated_expect_reference_reset (47 ms)
+[ RUN      ] MecanumDriveControllerTest.when_controller_active_and_update_called_expect_success
+[INFO] [1742273318.601467423] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_active_and_update_called_expect_success (41 ms)
+[ RUN      ] MecanumDriveControllerTest.when_active_controller_is_deactivated_expect_success
+[INFO] [1742273318.643297074] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_active_controller_is_deactivated_expect_success (45 ms)
+[ RUN      ] MecanumDriveControllerTest.when_controller_is_reactivated_expect_cmd_itfs_not_set_and_update_success
+[INFO] [1742273318.689314149] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_is_reactivated_expect_cmd_itfs_not_set_and_update_success (41 ms)
+[ RUN      ] MecanumDriveControllerTest.when_update_is_called_expect_status_message
+[INFO] [1742273318.724476510] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_update_is_called_expect_status_message (42 ms)
+[ RUN      ] MecanumDriveControllerTest.when_reference_msg_received_expect_updated_commands_and_status_message
+[INFO] [1742273318.771121207] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_reference_msg_received_expect_updated_commands_and_status_message (559 ms)
+[ RUN      ] MecanumDriveControllerTest.when_reference_msg_is_too_old_expect_unset_reference
+[INFO] [1742273319.323872625] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[ERROR] [1742273319.324159564] [test_mecanum_drive_controller]: Received message has timestamp 1742273318.3240063190 older by 1.0001461050 than allowed timeout (0.9000).
+[       OK ] MecanumDriveControllerTest.when_reference_msg_is_too_old_expect_unset_reference (530 ms)
+[ RUN      ] MecanumDriveControllerTest.when_reference_msg_has_timestamp_zero_expect_reference_set_and_timestamp_set_to_current_time
+[INFO] [1742273319.853703622] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[WARN] [1742273319.854047177] [test_mecanum_drive_controller]: Timestamp in header is missing, using current time as command timestamp.
+[       OK ] MecanumDriveControllerTest.when_reference_msg_has_timestamp_zero_expect_reference_set_and_timestamp_set_to_current_time (537 ms)
+[ RUN      ] MecanumDriveControllerTest.when_message_has_valid_timestamp_expect_reference_set
+[INFO] [1742273320.404255939] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_message_has_valid_timestamp_expect_reference_set (564 ms)
+[ RUN      ] MecanumDriveControllerTest.when_ref_msg_old_expect_cmnd_itfs_set_to_zero_otherwise_to_valid_cmnds
+[INFO] [1742273320.977567976] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_ref_msg_old_expect_cmnd_itfs_set_to_zero_otherwise_to_valid_cmnds (77 ms)
+[ RUN      ] MecanumDriveControllerTest.when_controller_in_chainable_mode_expect_receiving_commands_from_reference_interfaces_directly
+[INFO] [1742273321.054706840] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_controller_in_chainable_mode_expect_receiving_commands_from_reference_interfaces_directly (71 ms)
+[ RUN      ] MecanumDriveControllerTest.when_reference_timeout_is_zero_expect_reference_msg_being_used_only_once
+[INFO] [1742273321.120535658] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_reference_timeout_is_zero_expect_reference_msg_being_used_only_once (62 ms)
+[ RUN      ] MecanumDriveControllerTest.when_ref_timeout_zero_for_reference_callback_expect_reference_msg_being_used_only_once
+[INFO] [1742273321.181843092] [test_mecanum_drive_controller]: MecanumDriveController configured successfully
+[       OK ] MecanumDriveControllerTest.when_ref_timeout_zero_for_reference_callback_expect_reference_msg_being_used_only_once (560 ms)
+[ RUN      ] MecanumDriveControllerTest.SideToSideAndRotationOdometryTest
+[INFO] [1742273321.723970320] [test_mecanum_drive_controller_with_rotation]: MecanumDriveController configured successfully
+[INFO] [1742273321.724328175] [test_mecanum_drive_controller_with_rotation]: odometry: -0.004899, 0.040010, 0.000000
+[       OK ] MecanumDriveControllerTest.SideToSideAndRotationOdometryTest (29 ms)
+[----------] 16 tests from MecanumDriveControllerTest (3317 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test suite ran. (3317 ms total)
+[  PASSED  ] 16 tests.
+
+
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml'
+-- run_test.py: verify result file '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller/test_results/mecanum_drive_controller/test_mecanum_drive_controller.gtest.xml'

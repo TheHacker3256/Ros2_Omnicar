@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="omnicar.pep257"
+  tests="5"
+  errors="0"
+  failures="0"
+  time="0.028"
+>
+  <testcase
+    name="./launch/joint_pub.launch.py"
+    classname="omnicar.pep257"/>
+  <testcase
+    name="./launch/joystick.launch.py"
+    classname="omnicar.pep257"/>
+  <testcase
+    name="./launch/launch_bot.launch.py"
+    classname="omnicar.pep257"/>
+  <testcase
+    name="./launch/launch_sim.launch.py"
+    classname="omnicar.pep257"/>
+  <testcase
+    name="./launch/rsp.launch.py"
+    classname="omnicar.pep257"/>
+  <system-out>Checked files:
+* ./launch/joint_pub.launch.py
+* ./launch/joystick.launch.py
+* ./launch/launch_bot.launch.py
+* ./launch/launch_sim.launch.py
+* ./launch/rsp.launch.py</system-out>
+</testsuite>

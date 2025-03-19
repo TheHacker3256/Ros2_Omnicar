@@ -1,0 +1,49 @@
+[0.034s] Invoking command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller -- -j8 -l8
+[0.082s] [35m[1mConsolidate compiler generated dependencies of target arduino_hardware_controller[0m
+[0.123s] [ 50%] [32mBuilding CXX object CMakeFiles/arduino_hardware_controller.dir/hardware/arduino_hardware.cpp.o[0m
+[4.152s] [100%] [32m[1mLinking CXX shared library libarduino_hardware_controller.so[0m
+[4.569s] [100%] Built target arduino_hardware_controller
+[4.583s] Invoked command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller -- -j8 -l8
+[4.585s] Invoking command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller
+[4.592s] -- Install configuration: ""
+[4.592s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/arduino_hardware_controller.xml
+[4.592s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/include/arduino_hardware_controller
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/include/arduino_hardware_controller/arduino_hardware_controller
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/include/arduino_hardware_controller/arduino_hardware_controller/arduino_hardware.hpp
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/include/arduino_hardware_controller/arduino_hardware_controller/arduino_comms.hpp
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/launch
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/launch/view_robot.launch.py
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/ros2_control
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/ros2_control/diffbot.ros2_control.xacro
+[4.593s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf
+[4.594s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/urdf/diffbot.urdf.xacro
+[4.594s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/launch
+[4.594s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/launch/view_robot.launch.py
+[4.594s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/launch/arduino.launch.py
+[4.594s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/config
+[4.594s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/config/diffbot_controllers.yaml
+[4.594s] -- Installing: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/lib/libarduino_hardware_controller.so
+[4.598s] -- Set runtime path of "/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/lib/libarduino_hardware_controller.so" to ""
+[4.598s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/environment/library_path.sh
+[4.598s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/environment/library_path.dsv
+[4.598s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/ament_index/resource_index/package_run_dependencies/arduino_hardware_controller
+[4.599s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/ament_index/resource_index/parent_prefix_path/arduino_hardware_controller
+[4.599s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/environment/ament_prefix_path.sh
+[4.599s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/environment/ament_prefix_path.dsv
+[4.600s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/environment/path.sh
+[4.600s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/environment/path.dsv
+[4.600s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/local_setup.bash
+[4.600s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/local_setup.sh
+[4.600s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/local_setup.zsh
+[4.603s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/local_setup.dsv
+[4.604s] -- Installing: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/package.dsv
+[4.604s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/ament_index/resource_index/packages/arduino_hardware_controller
+[4.604s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/arduino_hardware_controller
+[4.605s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/export_arduino_hardware_controllerExport.cmake
+[4.606s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/export_arduino_hardware_controllerExport-noconfig.cmake
+[4.606s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/ament_cmake_export_targets-extras.cmake
+[4.607s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.607s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/arduino_hardware_controllerConfig.cmake
+[4.607s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/arduino_hardware_controllerConfig-version.cmake
+[4.610s] -- Up-to-date: /home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/package.xml
+[4.611s] Invoked command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller

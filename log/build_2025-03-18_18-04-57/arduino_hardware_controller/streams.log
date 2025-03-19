@@ -1,0 +1,8 @@
+[0.021s] Invoking command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller -- -j8 -l8
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/arduino_hardware_controller.dir/hardware/arduino_hardware.cpp.o[0m
+[0.082s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/nwhit210/omnicar_2_ws/src/arduino_controller/hardware/arduino_hardware.cpp: No such file or directory
+[0.082s] compilation terminated.
+[0.082s] gmake[2]: *** [CMakeFiles/arduino_hardware_controller.dir/build.make:76: CMakeFiles/arduino_hardware_controller.dir/hardware/arduino_hardware.cpp.o] Error 1
+[0.082s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/arduino_hardware_controller.dir/all] Error 2
+[0.089s] gmake: *** [Makefile:146: all] Error 2
+[0.089s] Invoked command in '/home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_2_ws/build/arduino_hardware_controller -- -j8 -l8

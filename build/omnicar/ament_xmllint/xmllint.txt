@@ -1,0 +1,3 @@
+-- run_test.py: invoking following command in '/home/nwhit210/omnicar_2_ws/src/omnicar':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/nwhit210/omnicar_2_ws/build/omnicar/test_results/omnicar/xmllint.xunit.xml
+
