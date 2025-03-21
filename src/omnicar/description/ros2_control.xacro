@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-  <xacro:unless value="$(arg sim_mode)">
+  <xacro:if value="$(arg sim_mode)">
     <ros2_control name="GazeboSystem" type="system">
       <hardware>
           <plugin>gazebo_ros2_control/GazeboSystem</plugin>
@@ -48,12 +48,12 @@
         <parameters>$(find omnicar)/config/sim.yaml</parameters>
       </plugin>
     </gazebo>
-  </xacro:unless>
+  </xacro:if>
 
-  <xacro:if value="$(arg sim_mode)">
+  <xacro:unless value="$(arg sim_mode)">
     <ros2_control name="RealBot" type="system">
       <hardware>
-          <plugin>arduino_hardware_controller/ArduinoHardwareController</plugin>
+          <plugin>arduino_hardware_controller/ArduinoSysHardware</plugin>
           <param name="front_left_wheel_name">front_left_wheel_joint</param>
           <param name="front_right_wheel_name">front_right_wheel_joint</param>
           <param name="back_left_wheel_name">rear_left_wheel_joint</param>
@@ -106,6 +106,6 @@
           <parameters>$(find omnicar)/config/my_controllers.yaml</parameters>
         </plugin>
     </gazebo>
-  </xacro:if>
+  </xacro:unless>
 
 </robot>
