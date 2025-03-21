@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.358" timestamp="2025-03-18T14:48:39.568290" hostname="nwhit210"><testcase classname="arduino_hardware_controller.src.arduino_controller.test.test_view_robot_launch" name="test_view_robot_launch" time="0.193"><failure message="">
-</failure></testcase></testsuite></testsuites>

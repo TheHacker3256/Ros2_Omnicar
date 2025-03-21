@@ -1,8 +1,0 @@
-[0.024s] Invoking command in '/home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_2_ws/build/mecanum_drive_controller -- -j8 -l8
-[0.059s] [ 12%] Built target mecanum_drive_controller_parameters
-[0.063s] [ 25%] Built target gmock_main
-[0.066s] [ 43%] Built target gmock
-[0.084s] [ 62%] Built target mecanum_drive_controller
-[0.092s] [ 75%] Built target test_load_mecanum_drive_controller
-[0.108s] [ 87%] Built target test_mecanum_drive_controller_preceeding
-[0.109s] [100%] Built target test_mecanum_drive_controller

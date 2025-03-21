@@ -1,3 +1,0 @@
-/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/lib/libarduino_hardware_controller.so
-/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/export_arduino_hardware_controllerExport.cmake
-/home/nwhit210/omnicar_2_ws/install/arduino_hardware_controller/share/arduino_hardware_controller/cmake/export_arduino_hardware_controllerExport-noconfig.cmake

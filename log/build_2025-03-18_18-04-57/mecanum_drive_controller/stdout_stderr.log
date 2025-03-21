@@ -1,7 +1,0 @@
-[ 12%] Built target mecanum_drive_controller_parameters
-[ 25%] Built target gmock_main
-[ 43%] Built target gmock
-[ 62%] Built target mecanum_drive_controller
-[ 75%] Built target test_load_mecanum_drive_controller
-[ 87%] Built target test_mecanum_drive_controller_preceeding
-[100%] Built target test_mecanum_drive_controller
