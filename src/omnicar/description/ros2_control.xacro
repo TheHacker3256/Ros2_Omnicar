@@ -61,7 +61,7 @@
           <param name="loop_rate">30.00</param>
           <param name="device">/dev/ttyUSB0</param>
           <param name="baud_rate">9600</param>
-          <param name="timeout">1000</param>
+          <param name="timeout_ms">1000</param>
         </hardware>
 
       <joint name="rear_right_wheel_joint">
