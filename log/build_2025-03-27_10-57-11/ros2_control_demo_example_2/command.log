@@ -1,0 +1,2 @@
+Invoking command in '/home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2 -- -j8 -l8
+Invoked command in '/home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2 -- -j8 -l8

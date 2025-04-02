@@ -1,0 +1,52 @@
+[0.088s] Invoking command in '/home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2 -- -j8 -l8
+[0.329s] [35m[1mConsolidate compiler generated dependencies of target ros2_control_demo_example_2[0m
+[0.368s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_control_demo_example_2.dir/hardware/diffbot_system.cpp.o[0m
+[16.011s] [01m[K/home/nwhit210/omnicar_ws/src/example_2/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type ros2_control_demo_example_2::DiffBotSystemHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[16.011s] [01m[K/home/nwhit210/omnicar_ws/src/example_2/hardware/diffbot_system.cpp:172:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[16.011s]   172 |   const rclcpp::Time & /*time*/, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[16.011s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[18.588s] [100%] [32m[1mLinking CXX shared library libros2_control_demo_example_2.so[0m
+[19.196s] [100%] Built target ros2_control_demo_example_2
+[19.225s] Invoked command in '/home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2 -- -j8 -l8
+[19.231s] Invoking command in '/home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2
+[19.246s] -- Install configuration: ""
+[19.247s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control_demo_example_2.xml
+[19.248s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2
+[19.248s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2
+[19.249s] -- Installing: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2/diffbot_system.hpp
+[19.250s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2/arduino_comms.hpp
+[19.250s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch
+[19.251s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch/view_robot.launch.py
+[19.251s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control
+[19.251s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control/diffbot.ros2_control.xacro
+[19.251s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/urdf
+[19.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/urdf/diffbot.urdf.xacro
+[19.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch
+[19.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch/diffbot.launch.py
+[19.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/config
+[19.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/config/diffbot_controllers.yaml
+[19.252s] -- Installing: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/lib/libros2_control_demo_example_2.so
+[19.256s] -- Set runtime path of "/home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/lib/libros2_control_demo_example_2.so" to ""
+[19.256s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/library_path.sh
+[19.257s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/library_path.dsv
+[19.257s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_example_2
+[19.257s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_example_2
+[19.268s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/ament_prefix_path.sh
+[19.270s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/ament_prefix_path.dsv
+[19.270s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/path.sh
+[19.270s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/path.dsv
+[19.270s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.bash
+[19.271s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.sh
+[19.271s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.zsh
+[19.271s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.dsv
+[19.271s] -- Installing: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.dsv
+[19.271s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/packages/ros2_control_demo_example_2
+[19.272s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_control_demo_example_2
+[19.272s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/export_ros2_control_demo_example_2Export.cmake
+[19.275s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/export_ros2_control_demo_example_2Export-noconfig.cmake
+[19.276s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ament_cmake_export_targets-extras.cmake
+[19.276s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ament_cmake_export_dependencies-extras.cmake
+[19.276s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ros2_control_demo_example_2Config.cmake
+[19.277s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ros2_control_demo_example_2Config-version.cmake
+[19.277s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.xml
+[19.278s] Invoked command in '/home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2

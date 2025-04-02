@@ -1,0 +1,34 @@
+[0.070s] Invoking command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nwhit210/omnicar_ws/src/diffdrive_arduino -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar_ws/install/diffdrive_arduino
+[1.288s] -- The C compiler identification is GNU 11.4.0
+[6.813s] -- The CXX compiler identification is GNU 11.4.0
+[9.288s] -- Detecting C compiler ABI info
+[10.345s] -- Detecting C compiler ABI info - done
+[10.362s] -- Check for working C compiler: /usr/bin/cc - skipped
+[10.365s] -- Detecting C compile features
+[10.368s] -- Detecting C compile features - done
+[10.388s] -- Detecting CXX compiler ABI info
+[11.394s] -- Detecting CXX compiler ABI info - done
+[11.450s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[11.451s] -- Detecting CXX compile features
+[11.454s] -- Detecting CXX compile features - done
+[11.502s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[12.398s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[19.358s] [31mCMake Error at CMakeLists.txt:15 (find_package):
+[19.359s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[19.359s]   asked CMake to find a package configuration file provided by "serial", but
+[19.359s]   CMake did not find one.
+[19.359s] 
+[19.360s]   Could not find a package configuration file provided by "serial" with any
+[19.360s]   of the following names:
+[19.360s] 
+[19.360s]     serialConfig.cmake
+[19.360s]     serial-config.cmake
+[19.361s] 
+[19.361s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[19.361s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[19.361s]   provides a separate development package or SDK, be sure it has been
+[19.361s]   installed.
+[19.362s] 
+[19.362s] [0m
+[19.362s] -- Configuring incomplete, errors occurred!
+[19.363s] See also "/home/nwhit210/omnicar_ws/build/diffdrive_arduino/CMakeFiles/CMakeOutput.log".
