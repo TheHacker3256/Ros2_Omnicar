@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(arduino_hardware_controller LANGUAGES CXX)
+project(ros2_control_demo_example_2 LANGUAGES CXX)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
   add_compile_options(-Wall -Wextra)
@@ -25,40 +25,38 @@ endforeach()
 
 ## COMPILE
 add_library(
-  arduino_hardware_controller
+  ros2_control_demo_example_2
   SHARED
-  hardware/arduino_hardware.cpp
+  hardware/diffbot_system.cpp
 )
-target_compile_features(arduino_hardware_controller PUBLIC cxx_std_17)
-target_include_directories(arduino_hardware_controller PUBLIC
+target_compile_features(ros2_control_demo_example_2 PUBLIC cxx_std_17)
+target_include_directories(ros2_control_demo_example_2 PUBLIC
 $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/hardware/include>
-$<INSTALL_INTERFACE:include/arduino_hardware_controller>
+$<INSTALL_INTERFACE:include/ros2_control_demo_example_2>
 )
 ament_target_dependencies(
-  arduino_hardware_controller PUBLIC
+  ros2_control_demo_example_2 PUBLIC
   ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
-target_link_libraries(arduino_hardware_controller PUBLIC serial)
-
 # Export hardware plugins
-pluginlib_export_plugin_description_file(hardware_interface arduino_hardware_controller.xml)
+pluginlib_export_plugin_description_file(hardware_interface ros2_control_demo_example_2.xml)
 
 # INSTALL
 install(
   DIRECTORY hardware/include/
-  DESTINATION include/arduino_hardware_controller
+  DESTINATION include/ros2_control_demo_example_2
 )
 install(
   DIRECTORY description/launch description/ros2_control description/urdf
-  DESTINATION share/arduino_hardware_controller
+  DESTINATION share/ros2_control_demo_example_2
 )
 install(
   DIRECTORY bringup/launch bringup/config
-  DESTINATION share/arduino_hardware_controller
+  DESTINATION share/ros2_control_demo_example_2
 )
-install(TARGETS arduino_hardware_controller
-  EXPORT export_arduino_hardware_controller
+install(TARGETS ros2_control_demo_example_2
+  EXPORT export_ros2_control_demo_example_2
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
@@ -73,6 +71,6 @@ if(BUILD_TESTING)
 endif()
 
 ## EXPORTS
-ament_export_targets(export_arduino_hardware_controller HAS_LIBRARY_TARGET)
+ament_export_targets(export_ros2_control_demo_example_2 HAS_LIBRARY_TARGET)
 ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
 ament_package()

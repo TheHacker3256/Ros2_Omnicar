@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "arduino_hardware_controller/arduino_hardware.hpp"
+#include "ros2_control_demo_example_2/diffbot_system.hpp"
 
 #include <chrono>
 #include <cmath>
@@ -27,9 +27,9 @@
 #include "hardware_interface/types/hardware_interface_type_values.hpp"
 #include "rclcpp/rclcpp.hpp"
 
-namespace arduino_hardware_controller
+namespace ros2_control_demo_example_2
 {
-hardware_interface::CallbackReturn ArduinoSysHardware::on_init(
+hardware_interface::CallbackReturn DiffBotSystemHardware::on_init(
   const hardware_interface::HardwareInfo & info)
 {
   if (
@@ -42,6 +42,7 @@ hardware_interface::CallbackReturn ArduinoSysHardware::on_init(
     rclcpp::get_logger("controller_manager.resource_manager.hardware_component.system.DiffBot"));
   clock_ = std::make_shared<rclcpp::Clock>(rclcpp::Clock());
 
+ 
   cfg_.front_left_wheel_name = info_.hardware_parameters["front_left_wheel_name"];
   cfg_.front_right_wheel_name = info_.hardware_parameters["front_right_wheel_name"];
   cfg_.back_left_wheel_name = info_.hardware_parameters["back_left_wheel_name"];
@@ -55,7 +56,6 @@ hardware_interface::CallbackReturn ArduinoSysHardware::on_init(
   frw_.name = cfg_.front_right_wheel_name;
   blw_.name = cfg_.back_left_wheel_name;
   brw_.name = cfg_.back_right_wheel_name;
- 
 
 
   for (const hardware_interface::ComponentInfo & joint : info_.joints)
@@ -108,25 +108,19 @@ hardware_interface::CallbackReturn ArduinoSysHardware::on_init(
   return hardware_interface::CallbackReturn::SUCCESS;
 }
 
-
-
-
-std::vector<hardware_interface::StateInterface> ArduinoSysHardware::export_state_interfaces()
+std::vector<hardware_interface::StateInterface> DiffBotSystemHardware::export_state_interfaces()
 {
   std::vector<hardware_interface::StateInterface> state_interfaces;
-
   //example state interface
   // state_interfaces.emplace_back(hardware_interface::StateInterface(
   //   flw_.name, hardware_interface::HW_IF_POSITION, &flw_.pos));
   // state_interfaces.emplace_back(hardware_interface::StateInterface(
   //   flw_.name, hardware_interface::HW_IF_VELOCITY, &flw_.vel));
-  
+
   return state_interfaces;
 }
 
-
-
-std::vector<hardware_interface::CommandInterface> ArduinoSysHardware::export_command_interfaces()
+std::vector<hardware_interface::CommandInterface> DiffBotSystemHardware::export_command_interfaces()
 {
   std::vector<hardware_interface::CommandInterface> command_interfaces;
 
@@ -145,28 +139,26 @@ std::vector<hardware_interface::CommandInterface> ArduinoSysHardware::export_com
   return command_interfaces;
 }
 
-
-
-hardware_interface::CallbackReturn ArduinoSysHardware::on_activate(
+hardware_interface::CallbackReturn DiffBotSystemHardware::on_activate(
   const rclcpp_lifecycle::State & /*previous_state*/)
 {
-  // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
+  //set default values
+  flw_.cmd = 0;
+  frw_.cmd = 0;
+  blw_.cmd = 0;
+  brw_.cmd = 0;
+
   RCLCPP_INFO(get_logger(), "Activating ...please wait...");
-
   comms_.connect(cfg_.device, cfg_.baud_rate, cfg_.timeout_ms);
-
   RCLCPP_INFO(get_logger(), "Successfully activated!");
+  RCLCPP_INFO(get_logger(), "Connection failed");
 
   return hardware_interface::CallbackReturn::SUCCESS;
 }
 
-
-
-
-hardware_interface::CallbackReturn ArduinoSysHardware::on_deactivate(
+hardware_interface::CallbackReturn DiffBotSystemHardware::on_deactivate(
   const rclcpp_lifecycle::State & /*previous_state*/)
 {
-  // BEGIN: This part here is for exemplary purposes - Please do not copy to your production code
   RCLCPP_INFO(get_logger(), "Deactivating ...please wait...");
 
   comms_.disconnect();
@@ -176,28 +168,24 @@ hardware_interface::CallbackReturn ArduinoSysHardware::on_deactivate(
   return hardware_interface::CallbackReturn::SUCCESS;
 }
 
-// hardware_interface::return_type ArduinoSysHardware::read(
-//   const rclcpp::Time & /*time*/, const rclcpp::Duration & period)
-// {
-//   //coms_.read_encodevalues
-
-//   return hardware_interface::return_type::OK;
-// }
-
-
-
-hardware_interface::return_type arduino_hardware_controller ::ArduinoSysHardware::write(
-  const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
+hardware_interface::return_type DiffBotSystemHardware::read(
+  const rclcpp::Time & /*time*/, const rclcpp::Duration & period)
 {
+
   comms_.set_motor_values(flw_.cmd, frw_.cmd, blw_.cmd, brw_.cmd);
 
   return hardware_interface::return_type::OK;
 }
 
+hardware_interface::return_type ros2_control_demo_example_2 ::DiffBotSystemHardware::write(
+  const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
+{
+ 
+  return hardware_interface::return_type::OK;
+}
 
-
-}  // namespace arduino_hardware_controller
+}  // namespace ros2_control_demo_example_2
 
 #include "pluginlib/class_list_macros.hpp"
 PLUGINLIB_EXPORT_CLASS(
-  arduino_hardware_controller::ArduinoSysHardware, hardware_interface::SystemInterface)
+  ros2_control_demo_example_2::DiffBotSystemHardware, hardware_interface::SystemInterface)

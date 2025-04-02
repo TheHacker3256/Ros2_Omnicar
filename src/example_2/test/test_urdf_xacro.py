@@ -38,7 +38,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def test_urdf_xacro():
     # General Arguments
-    description_package = "arduino_hardware_controller"
+    description_package = "ros2_control_demo_example_2"
     description_file = "diffbot.urdf.xacro"
 
     description_file_path = os.path.join(

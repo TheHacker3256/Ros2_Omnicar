@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#ifndef ARDUINO_HARDWARE_CONRTOLLER__DIFFBOT_SYSTEM_HPP_
-#define ARDUINO_HARDWARE_CONRTOLLER__DIFFBOT_SYSTEM_HPP_
+#ifndef ROS2_CONTROL_DEMO_EXAMPLE_2__DIFFBOT_SYSTEM_HPP_
+#define ROS2_CONTROL_DEMO_EXAMPLE_2__DIFFBOT_SYSTEM_HPP_
 
 #include <memory>
 #include <string>
@@ -30,40 +30,39 @@
 #include "rclcpp/time.hpp"
 #include "rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp"
 #include "rclcpp_lifecycle/state.hpp"
+#include "ros2_control_demo_example_2/arduino_comms.hpp"
 
-#include "arduino_hardware_controller/arduino_comms.hpp"
-
-namespace arduino_hardware_controller
+namespace ros2_control_demo_example_2
 {
-class ArduinoSysHardware : public hardware_interface::SystemInterface
+class DiffBotSystemHardware : public hardware_interface::SystemInterface
 {
-
-struct Config{
-  std::string front_left_wheel_name = "";
-  std::string front_right_wheel_name = "";
-  std::string back_left_wheel_name = "";
-  std::string back_right_wheel_name = "";
-  float loop_rate = 0.0;
-  std::string device = "";
-  int baud_rate = 0;
-  int timeout_ms = 0;
-  int enc_counts_per_rev = 0;
-  int pid_p = 0;
-  int pid_d = 0;
-  int pid_i = 0;
-  int pid_o = 0;
-};
-
-struct Wheel{
-  std::string name = "";
-  int enc = 0;
-  double cmd = 0;
-  double pos = 0;
-  double vel = 0;
-};
-
 public:
-  RCLCPP_SHARED_PTR_DEFINITIONS(ArduinoSysHardware);
+  struct Config{
+    std::string front_left_wheel_name = "";
+    std::string front_right_wheel_name = "";
+    std::string back_left_wheel_name = "";
+    std::string back_right_wheel_name = "";
+    float loop_rate = 0.0;
+    std::string device = "";
+    int baud_rate = 0;
+    int timeout_ms = 0;
+    int enc_counts_per_rev = 0;
+    int pid_p = 0;
+    int pid_d = 0;
+    int pid_i = 0;
+    int pid_o = 0;
+  };
+
+  struct Wheel{
+    std::string name = "";
+    int enc = 0;
+    double cmd = 0;
+    double pos = 0;
+    double vel = 0;
+  };
+
+
+  RCLCPP_SHARED_PTR_DEFINITIONS(DiffBotSystemHardware);
 
   hardware_interface::CallbackReturn on_init(
     const hardware_interface::HardwareInfo & info) override;
@@ -97,7 +96,7 @@ public:
   rclcpp::Clock::SharedPtr get_clock() const { return clock_; }
 
 private:
-
+  // Objects for logging
   std::shared_ptr<rclcpp::Logger> logger_;
   rclcpp::Clock::SharedPtr clock_;
 
@@ -109,6 +108,6 @@ private:
   Wheel brw_;
 };
 
-}  // namespace arduino_hardware_controller
+}  // namespace ros2_control_demo_example_2
 
-#endif  // ARDUINO_HARDWARE_CONRTOLLER__DIFFBOT_SYSTEM_HPP_
+#endif  // ROS2_CONTROL_DEMO_EXAMPLE_2__DIFFBOT_SYSTEM_HPP_

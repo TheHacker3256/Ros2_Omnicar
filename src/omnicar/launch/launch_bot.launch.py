@@ -24,19 +24,35 @@ def generate_launch_description():
       launch_arguments={'use_sim_time': 'false', 'sim_mode': 'false'}.items()
     )
 
+
     controller_manager = Node(
       package='controller_manager',
       executable='ros2_control_node',
-      parameters=[{'robot_description': robot_description}, controller_params],
+      parameters=[controller_params],
+      output="both",
+      remappings=[
+          ("~/robot_description", "/robot_description"),
+          # ("/diffbot_base_controller/cmd_vel", "/cmd_vel"),
+      ],    
     )
-    delayed_controller_manager = TimerAction(period=5.0,actions=[controller_manager])
-
-
-
     diff_drive_spawner = Node(
-    package="controller_manager",
-    executable="spawner",
-    arguments=["diff_cont"],
+      package="controller_manager",
+      executable="spawner",
+      arguments=["diff_cont"],
+    )
+    joint_broad_spawner = Node(
+      package="controller_manager",
+      executable="spawner",
+      arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+    )
+
+
+
+    delayed_joint_broad_spawner = RegisterEventHandler(
+      event_handler=OnProcessStart(
+        target_action=controller_manager,
+        on_start=[joint_broad_spawner],
+      )
     )
     delayed_diff_drive_spawner = RegisterEventHandler(
       event_handler=OnProcessStart(
@@ -45,19 +61,11 @@ def generate_launch_description():
       )
     )
 
-
-    joint_broad_spawner = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["joint_broad"],
-    )
-    delayed_joint_broad_spawner = RegisterEventHandler(
-      event_handler=OnProcessStart(
-        target_action=controller_manager,
-        on_start=[joint_broad_spawner],
-      )
-    )
-
+    # delayed_joint_broad_spawner = TimerAction(period=5.0,actions=[joint_broad_spawner])
+    # delayed_diff_drive_spawner = TimerAction(period=5.0,actions=[diff_drive_spawner]);
+    delayed_controller_manager = TimerAction(period=5.0,actions=[controller_manager])
+   
+   
     # Launch them all!
     return LaunchDescription([
       rsp,
