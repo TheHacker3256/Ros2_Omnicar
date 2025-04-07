@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o[0m
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduinoHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:225:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_l_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fl_[m[K’?
+  225 |   comms_.read_encoder_values([01;31m[Kwheel_l_[m[K.enc, wheel_r_.enc);
+      |                              [01;31m[K^~~~~~~~[m[K
+      |                              [32m[Kwheel_fl_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:225:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_r_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fr_[m[K’?
+  225 |   comms_.read_encoder_values(wheel_l_.enc, [01;31m[Kwheel_r_[m[K.enc);
+      |                                            [01;31m[K^~~~~~~~[m[K
+      |                                            [32m[Kwheel_fr_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduinoHardware::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:248:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_l_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fl_[m[K’?
+  248 |   int motor_l_counts_per_loop = [01;31m[Kwheel_l_[m[K.cmd / wheel_l_.rads_per_count / cfg_.loop_rate;
+      |                                 [01;31m[K^~~~~~~~[m[K
+      |                                 [32m[Kwheel_fl_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:249:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_r_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fr_[m[K’?
+  249 |   int motor_r_counts_per_loop = [01;31m[Kwheel_r_[m[K.cmd / wheel_r_.rads_per_count / cfg_.loop_rate;
+      |                                 [01;31m[K^~~~~~~~[m[K
+      |                                 [32m[Kwheel_fr_[m[K
+gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

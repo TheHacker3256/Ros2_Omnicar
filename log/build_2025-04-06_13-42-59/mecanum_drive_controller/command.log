@@ -1,0 +1,4 @@
+Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller
+Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller

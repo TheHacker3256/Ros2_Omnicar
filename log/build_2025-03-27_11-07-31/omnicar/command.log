@@ -1,6 +1,0 @@
-Invoking command in '/home/nwhit210/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/omnicar_ws/src/omnicar -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar_ws/install/omnicar
-Invoked command in '/home/nwhit210/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/omnicar_ws/src/omnicar -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar_ws/install/omnicar
-Invoking command in '/home/nwhit210/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/omnicar -- -j8 -l8
-Invoked command in '/home/nwhit210/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/omnicar -- -j8 -l8
-Invoking command in '/home/nwhit210/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/omnicar
-Invoked command in '/home/nwhit210/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/omnicar

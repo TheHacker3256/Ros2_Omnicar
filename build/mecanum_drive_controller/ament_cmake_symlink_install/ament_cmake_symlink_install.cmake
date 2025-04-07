@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/omnicar_ws/install/mecanum_drive_controller/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/omnicar_ws/install/mecanum_drive_controller/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/omnicar_ws/install/mecanum_drive_controller/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/${destination}")
+      set(destination "/home/pi/omnicar_ws/install/mecanum_drive_controller/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -310,68 +310,68 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/include/mecanum_drive_controller" "DESTINATION" "include")
-ament_cmake_symlink_install_directory("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" DIRECTORY "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/include/mecanum_drive_controller" "DESTINATION" "include")
+# install(DIRECTORY "/home/pi/omnicar_ws/build/mecanum_drive_controller/include/mecanum_drive_controller" "DESTINATION" "include")
+ament_cmake_symlink_install_directory("/home/pi/omnicar_ws/src/mecanum_drive_controller" DIRECTORY "/home/pi/omnicar_ws/build/mecanum_drive_controller/include/mecanum_drive_controller" "DESTINATION" "include")
 
 # install(FILES "mecanum_drive_controller.xml" "DESTINATION" "share/mecanum_drive_controller/")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "mecanum_drive_controller.xml" "DESTINATION" "share/mecanum_drive_controller/")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "mecanum_drive_controller.xml" "DESTINATION" "share/mecanum_drive_controller/")
 
 # install(DIRECTORY "include/" "DESTINATION" "include/mecanum_drive_controller")
-ament_cmake_symlink_install_directory("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" DIRECTORY "include/" "DESTINATION" "include/mecanum_drive_controller")
+ament_cmake_symlink_install_directory("/home/pi/omnicar_ws/src/mecanum_drive_controller" DIRECTORY "include/" "DESTINATION" "include/mecanum_drive_controller")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/mecanum_drive_controller/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/mecanum_drive_controller/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/mecanum_drive_controller")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/mecanum_drive_controller")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/mecanum_drive_controller")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/mecanum_drive_controller")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/mecanum_drive_controller")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/mecanum_drive_controller")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/mecanum_drive_controller")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/mecanum_drive_controller")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/mecanum_drive_controller")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/mecanum_drive_controller")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/mecanum_drive_controller")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/mecanum_drive_controller")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/mecanum_drive_controller")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/mecanum_drive_controller")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/mecanum_drive_controller")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/mecanum_drive_controller")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/mecanum_drive_controller")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/mecanum_drive_controller")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/mecanum_drive_controller")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/mecanum_drive_controller")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/packages/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/packages/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/packages/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/packages/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/controller_interface__pluginlib__plugin")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/controller_interface__pluginlib__plugin")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/controller_interface__pluginlib__plugin")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_index/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller" "DESTINATION" "share/ament_index/resource_index/controller_interface__pluginlib__plugin")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig.cmake" "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig-version.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig.cmake" "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig-version.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
+# install(FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig.cmake" "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig-version.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig.cmake" "/home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_core/mecanum_drive_controllerConfig-version.cmake" "DESTINATION" "share/mecanum_drive_controller/cmake")
 
-# install(FILES "/home/nwhit210/omnicar_ws/src/mecanum_drive_controller/package.xml" "DESTINATION" "share/mecanum_drive_controller")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/mecanum_drive_controller" FILES "/home/nwhit210/omnicar_ws/src/mecanum_drive_controller/package.xml" "DESTINATION" "share/mecanum_drive_controller")
+# install(FILES "/home/pi/omnicar_ws/src/mecanum_drive_controller/package.xml" "DESTINATION" "share/mecanum_drive_controller")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/mecanum_drive_controller" FILES "/home/pi/omnicar_ws/src/mecanum_drive_controller/package.xml" "DESTINATION" "share/mecanum_drive_controller")

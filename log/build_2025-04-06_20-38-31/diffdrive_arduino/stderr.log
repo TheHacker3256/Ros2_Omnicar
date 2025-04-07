@@ -1,0 +1,86 @@
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn diffdrive_arduino::DiffDriveArduinoHardware::on_init(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:39:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Kfront_left_wheel_name[m[K’; did you mean ‘[01m[Kleft_wheel_name[m[K’?
+   39 |   cfg_.[01;31m[Kfront_left_wheel_name[m[K = info_.hardware_parameters["front_left_wheel_name"];
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |        [32m[Kleft_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:40:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Kfront_right_wheel_name[m[K’; did you mean ‘[01m[Kright_wheel_name[m[K’?
+   40 |   cfg_.[01;31m[Kfront_right_wheel_name[m[K = info_.hardware_parameters["front_right_wheel_name"];
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |        [32m[Kright_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:41:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Krear_left_wheel_name[m[K’; did you mean ‘[01m[Kleft_wheel_name[m[K’?
+   41 |   cfg_.[01;31m[Krear_left_wheel_name[m[K = info_.hardware_parameters["rear_left_wheel_name"];
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |        [32m[Kleft_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:42:8:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Krear_right_wheel_name[m[K’; did you mean ‘[01m[Kright_wheel_name[m[K’?
+   42 |   cfg_.[01;31m[Krear_right_wheel_name[m[K = info_.hardware_parameters["rear_right_wheel_name"];
+      |        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |        [32m[Kright_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:61:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_fl_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_l_[m[K’?
+   61 |   [01;31m[Kwheel_fl_[m[K.setup(cfg_.front_left_wheel_name, cfg_.enc_counts_per_rev);
+      |   [01;31m[K^~~~~~~~~[m[K
+      |   [32m[Kwheel_l_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:61:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Kfront_left_wheel_name[m[K’; did you mean ‘[01m[Kleft_wheel_name[m[K’?
+   61 |   wheel_fl_.setup(cfg_.[01;31m[Kfront_left_wheel_name[m[K, cfg_.enc_counts_per_rev);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Kleft_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:62:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_fr_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_r_[m[K’?
+   62 |   [01;31m[Kwheel_fr_[m[K.setup(cfg_.front_right_wheel_name, cfg_.enc_counts_per_rev);
+      |   [01;31m[K^~~~~~~~~[m[K
+      |   [32m[Kwheel_r_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:62:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Kfront_right_wheel_name[m[K’; did you mean ‘[01m[Kright_wheel_name[m[K’?
+   62 |   wheel_fr_.setup(cfg_.[01;31m[Kfront_right_wheel_name[m[K, cfg_.enc_counts_per_rev);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Kright_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:63:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_rl_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_l_[m[K’?
+   63 |   [01;31m[Kwheel_rl_[m[K.setup(cfg_.rear_left_wheel_name, cfg_.enc_counts_per_rev);
+      |   [01;31m[K^~~~~~~~~[m[K
+      |   [32m[Kwheel_l_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:63:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Krear_left_wheel_name[m[K’; did you mean ‘[01m[Kleft_wheel_name[m[K’?
+   63 |   wheel_rl_.setup(cfg_.[01;31m[Krear_left_wheel_name[m[K, cfg_.enc_counts_per_rev);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Kleft_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:64:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_rr_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_r_[m[K’?
+   64 |   [01;31m[Kwheel_rr_[m[K.setup(cfg_.rear_right_wheel_name, cfg_.enc_counts_per_rev);
+      |   [01;31m[K^~~~~~~~~[m[K
+      |   [32m[Kwheel_r_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:64:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct diffdrive_arduino::DiffDriveArduinoHardware::Config[m[K’ has no member named ‘[01m[Krear_right_wheel_name[m[K’; did you mean ‘[01m[Kright_wheel_name[m[K’?
+   64 |   wheel_rr_.setup(cfg_.[01;31m[Krear_right_wheel_name[m[K, cfg_.enc_counts_per_rev);
+      |                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Kright_wheel_name[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::StateInterface> diffdrive_arduino::DiffDriveArduinoHardware::export_state_interfaces()[m[K’:
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_fl_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_l_[m[K’?
+  123 |     [01;31m[Kwheel_fl_[m[K.name, hardware_interface::HW_IF_POSITION, &wheel_fl_.pos));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_l_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:128:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_fr_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_r_[m[K’?
+  128 |     [01;31m[Kwheel_fr_[m[K.name, hardware_interface::HW_IF_POSITION, &wheel_fr_.pos));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_r_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:133:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_rl_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_l_[m[K’?
+  133 |     [01;31m[Kwheel_rl_[m[K.name, hardware_interface::HW_IF_POSITION, &wheel_rl_.pos));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_l_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:138:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_rr_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_r_[m[K’?
+  138 |     [01;31m[Kwheel_rr_[m[K.name, hardware_interface::HW_IF_POSITION, &wheel_rr_.pos));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_r_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::CommandInterface> diffdrive_arduino::DiffDriveArduinoHardware::export_command_interfaces()[m[K’:
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:150:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_fl_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_l_[m[K’?
+  150 |     [01;31m[Kwheel_fl_[m[K.name, hardware_interface::HW_IF_VELOCITY, &wheel_fl_.cmd));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_l_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:153:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_fr_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_r_[m[K’?
+  153 |     [01;31m[Kwheel_fr_[m[K.name, hardware_interface::HW_IF_VELOCITY, &wheel_fr_.cmd));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_r_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:156:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_rl_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_l_[m[K’?
+  156 |     [01;31m[Kwheel_rl_[m[K.name, hardware_interface::HW_IF_VELOCITY, &wheel_rl_.cmd));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_l_[m[K
+[01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:159:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_rr_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_r_[m[K’?
+  159 |     [01;31m[Kwheel_rr_[m[K.name, hardware_interface::HW_IF_VELOCITY, &wheel_rr_.cmd));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Kwheel_r_[m[K
+gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

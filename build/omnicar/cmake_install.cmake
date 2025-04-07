@@ -1,8 +1,8 @@
-# Install script for directory: /home/nwhit210/omnicar_ws/src/omnicar
+# Install script for directory: /home/pi/omnicar_ws/src/omnicar
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/nwhit210/omnicar_ws/install/omnicar")
+  set(CMAKE_INSTALL_PREFIX "/home/pi/omnicar_ws/install/omnicar")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/pi/omnicar_ws/build/omnicar/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nwhit210/omnicar_ws/build/omnicar/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pi/omnicar_ws/build/omnicar/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

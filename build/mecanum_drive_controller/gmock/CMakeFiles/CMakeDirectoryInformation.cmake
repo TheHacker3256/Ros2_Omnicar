@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/opt/ros/humble/src/gmock_vendor")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/nwhit210/omnicar_ws/build/mecanum_drive_controller")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/pi/omnicar_ws/build/mecanum_drive_controller")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

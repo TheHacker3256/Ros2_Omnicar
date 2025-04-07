@@ -1,1 +1,1 @@
-/home/nwhit210/omnicar_ws/src/omnicar/launch/joint_pub.launch.py
+/home/pi/omnicar_ws/src/omnicar/launch/joint_pub.launch.py

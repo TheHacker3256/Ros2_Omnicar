@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nwhit210/omnicar_ws/src/omnicar
+CMAKE_SOURCE_DIR = /home/pi/omnicar_ws/src/omnicar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nwhit210/omnicar_ws/build/omnicar
+CMAKE_BINARY_DIR = /home/pi/omnicar_ws/build/omnicar
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/nwhit210/omnicar_ws/build/omnicar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nwhit210/omnicar_ws/src/omnicar /home/nwhit210/omnicar_ws/src/omnicar /home/nwhit210/omnicar_ws/build/omnicar /home/nwhit210/omnicar_ws/build/omnicar /home/nwhit210/omnicar_ws/build/omnicar/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/omnicar_ws/build/omnicar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/omnicar_ws/src/omnicar /home/pi/omnicar_ws/src/omnicar /home/pi/omnicar_ws/build/omnicar /home/pi/omnicar_ws/build/omnicar /home/pi/omnicar_ws/build/omnicar/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

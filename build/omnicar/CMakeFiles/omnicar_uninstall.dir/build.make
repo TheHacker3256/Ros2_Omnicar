@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nwhit210/omnicar_ws/src/omnicar
+CMAKE_SOURCE_DIR = /home/pi/omnicar_ws/src/omnicar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nwhit210/omnicar_ws/build/omnicar
+CMAKE_BINARY_DIR = /home/pi/omnicar_ws/build/omnicar
 
 # Utility rule file for omnicar_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/omnicar_uninstall.dir/compiler_depend.make
 include CMakeFiles/omnicar_uninstall.dir/progress.make
 
 CMakeFiles/omnicar_uninstall:
-	/usr/bin/cmake -P /home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/pi/omnicar_ws/build/omnicar/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 omnicar_uninstall: CMakeFiles/omnicar_uninstall
 omnicar_uninstall: CMakeFiles/omnicar_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/omnicar_uninstall.dir/clean:
 .PHONY : CMakeFiles/omnicar_uninstall.dir/clean
 
 CMakeFiles/omnicar_uninstall.dir/depend:
-	cd /home/nwhit210/omnicar_ws/build/omnicar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nwhit210/omnicar_ws/src/omnicar /home/nwhit210/omnicar_ws/src/omnicar /home/nwhit210/omnicar_ws/build/omnicar /home/nwhit210/omnicar_ws/build/omnicar /home/nwhit210/omnicar_ws/build/omnicar/CMakeFiles/omnicar_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/omnicar_ws/build/omnicar && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/omnicar_ws/src/omnicar /home/pi/omnicar_ws/src/omnicar /home/pi/omnicar_ws/build/omnicar /home/pi/omnicar_ws/build/omnicar /home/pi/omnicar_ws/build/omnicar/CMakeFiles/omnicar_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/omnicar_uninstall.dir/depend
 

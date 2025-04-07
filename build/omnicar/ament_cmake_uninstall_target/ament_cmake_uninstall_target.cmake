@@ -2,7 +2,7 @@
 # ament_cmake_core/cmake/uninstall_target/ament_cmake_uninstall_target.cmake.in
 
 function(ament_cmake_uninstall_target_remove_empty_directories path)
-  set(install_space "/home/nwhit210/omnicar_ws/install/omnicar")
+  set(install_space "/home/pi/omnicar_ws/install/omnicar")
   if(install_space STREQUAL "")
     message(FATAL_ERROR "The CMAKE_INSTALL_PREFIX variable must not be empty")
   endif()
@@ -29,7 +29,7 @@ function(ament_cmake_uninstall_target_remove_empty_directories path)
 endfunction()
 
 # uninstall files installed using the standard install() function
-set(install_manifest "/home/nwhit210/omnicar_ws/build/omnicar/install_manifest.txt")
+set(install_manifest "/home/pi/omnicar_ws/build/omnicar/install_manifest.txt")
 if(NOT EXISTS "${install_manifest}")
   message(FATAL_ERROR "Cannot find install manifest: ${install_manifest}")
 endif()
@@ -57,4 +57,4 @@ message(STATUS "Execute custom uninstall script")
 # begin of custom uninstall code
 
 # uninstall files installed using the symlink install functions
-include("/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")
+include("/home/pi/omnicar_ws/build/omnicar/ament_cmake_symlink_install/ament_cmake_symlink_install_uninstall_script.cmake")

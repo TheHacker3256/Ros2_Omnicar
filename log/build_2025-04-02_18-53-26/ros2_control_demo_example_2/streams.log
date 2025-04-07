@@ -1,0 +1,85 @@
+[0.078s] Invoking command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/ros2_control_demo_example_2
+[0.585s] -- The CXX compiler identification is GNU 11.4.0
+[0.675s] -- Detecting CXX compiler ABI info
+[1.135s] -- Detecting CXX compiler ABI info - done
+[1.163s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.166s] -- Detecting CXX compile features
+[1.169s] -- Detecting CXX compile features - done
+[1.222s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.224s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.016s] -- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[3.441s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.492s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.563s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.657s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.792s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.461s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.491s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.702s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.001s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.017s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.101s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.115s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.150s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.188s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.279s] -- Looking for C++ include pthread.h
+[6.842s] -- Looking for C++ include pthread.h - found
+[6.843s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.369s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.374s] -- Found Threads: TRUE  
+[7.712s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[14.184s] -- Configuring done
+[14.663s] -- Generating done
+[14.722s] -- Build files have been written to: /home/pi/omnicar_ws/build/ros2_control_demo_example_2
+[14.794s] Invoked command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/example_2 -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/ros2_control_demo_example_2
+[14.800s] Invoking command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/ros2_control_demo_example_2 -- -j4 -l4
+[15.298s] [ 50%] [32mBuilding CXX object CMakeFiles/ros2_control_demo_example_2.dir/hardware/diffbot_system.cpp.o[0m
+[38.948s] [01m[K/home/pi/omnicar_ws/src/example_2/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type ros2_control_demo_example_2::DiffBotSystemHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[38.965s] [01m[K/home/pi/omnicar_ws/src/example_2/hardware/diffbot_system.cpp:172:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[38.966s]   172 |   const rclcpp::Time & /*time*/, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[38.967s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[58.689s] [100%] [32m[1mLinking CXX shared library libros2_control_demo_example_2.so[0m
+[60.753s] [100%] Built target ros2_control_demo_example_2
+[60.888s] Invoked command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/ros2_control_demo_example_2 -- -j4 -l4
+[60.951s] Invoking command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/ros2_control_demo_example_2
+[61.006s] -- Install configuration: ""
+[61.015s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control_demo_example_2.xml
+[61.026s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2
+[61.029s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2
+[61.032s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2/diffbot_system.hpp
+[61.041s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/include/ros2_control_demo_example_2/ros2_control_demo_example_2/arduino_comms.hpp
+[61.045s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch
+[61.053s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch/view_robot.launch.py
+[61.064s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control
+[61.066s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/ros2_control/diffbot.ros2_control.xacro
+[61.076s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/urdf
+[61.082s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/urdf/diffbot.urdf.xacro
+[61.090s] -- Up-to-date: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch
+[61.093s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/launch/diffbot.launch.py
+[61.099s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/config
+[61.102s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/config/diffbot_controllers.yaml
+[61.107s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib/libros2_control_demo_example_2.so
+[61.139s] -- Set runtime path of "/home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib/libros2_control_demo_example_2.so" to ""
+[61.150s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/library_path.sh
+[61.153s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/library_path.dsv
+[61.161s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/package_run_dependencies/ros2_control_demo_example_2
+[61.166s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/parent_prefix_path/ros2_control_demo_example_2
+[61.173s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/ament_prefix_path.sh
+[61.181s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/ament_prefix_path.dsv
+[61.184s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/path.sh
+[61.188s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/environment/path.dsv
+[61.192s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.bash
+[61.193s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.sh
+[61.194s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.zsh
+[61.199s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/local_setup.dsv
+[61.205s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.dsv
+[61.211s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/packages/ros2_control_demo_example_2
+[61.214s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ros2_control_demo_example_2
+[61.227s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/export_ros2_control_demo_example_2Export.cmake
+[61.231s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/export_ros2_control_demo_example_2Export-noconfig.cmake
+[61.236s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ament_cmake_export_targets-extras.cmake
+[61.244s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ament_cmake_export_dependencies-extras.cmake
+[61.252s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ros2_control_demo_example_2Config.cmake
+[61.263s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/cmake/ros2_control_demo_example_2Config-version.cmake
+[61.264s] -- Installing: /home/pi/omnicar_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.xml
+[61.301s] Invoked command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/ros2_control_demo_example_2

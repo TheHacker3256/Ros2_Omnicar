@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/nwhit210/omnicar_ws/install/omnicar/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/omnicar_ws/install/omnicar/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/nwhit210/omnicar_ws/install/omnicar/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/omnicar_ws/install/omnicar/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/nwhit210/omnicar_ws/install/omnicar/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/pi/omnicar_ws/install/omnicar/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/nwhit210/omnicar_ws/install/omnicar/${destination}")
+      set(destination "/home/pi/omnicar_ws/install/omnicar/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,46 +311,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/omnicar")
-ament_cmake_symlink_install_directory("/home/nwhit210/omnicar_ws/src/omnicar" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/omnicar")
+ament_cmake_symlink_install_directory("/home/pi/omnicar_ws/src/omnicar" DIRECTORY "config" "description" "launch" "worlds" "DESTINATION" "share/omnicar")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/omnicar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/omnicar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/omnicar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/omnicar" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/omnicar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/omnicar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/omnicar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/omnicar" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/omnicar/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/omnicar/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/omnicar/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/omnicar/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/omnicar/environment")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/omnicar/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/omnicar/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/omnicar/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/omnicar/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/omnicar/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/omnicar/environment")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/omnicar/environment")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/omnicar/environment")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/omnicar/environment")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/omnicar")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/omnicar")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/omnicar")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/omnicar")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/omnicar")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/omnicar")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/omnicar")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/omnicar")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/omnicar")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/omnicar")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/omnicar")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/omnicar")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/omnicar")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/omnicar")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/omnicar")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/omnicar")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/omnicar")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/omnicar")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/omnicar")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/omnicar")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/packages/omnicar" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/packages/omnicar" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/packages/omnicar" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_index/share/ament_index/resource_index/packages/omnicar" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig.cmake" "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig-version.cmake" "DESTINATION" "share/omnicar/cmake")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig.cmake" "/home/nwhit210/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig-version.cmake" "DESTINATION" "share/omnicar/cmake")
+# install(FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig.cmake" "/home/pi/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig-version.cmake" "DESTINATION" "share/omnicar/cmake")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig.cmake" "/home/pi/omnicar_ws/build/omnicar/ament_cmake_core/omnicarConfig-version.cmake" "DESTINATION" "share/omnicar/cmake")
 
-# install(FILES "/home/nwhit210/omnicar_ws/src/omnicar/package.xml" "DESTINATION" "share/omnicar")
-ament_cmake_symlink_install_files("/home/nwhit210/omnicar_ws/src/omnicar" FILES "/home/nwhit210/omnicar_ws/src/omnicar/package.xml" "DESTINATION" "share/omnicar")
+# install(FILES "/home/pi/omnicar_ws/src/omnicar/package.xml" "DESTINATION" "share/omnicar")
+ament_cmake_symlink_install_files("/home/pi/omnicar_ws/src/omnicar" FILES "/home/pi/omnicar_ws/src/omnicar/package.xml" "DESTINATION" "share/omnicar")

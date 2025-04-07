@@ -1,1 +1,1 @@
-/home/nwhit210/omnicar_ws/src/omnicar/launch/launch_bot.launch.py
+/home/pi/omnicar_ws/src/omnicar/launch/launch_bot.launch.py

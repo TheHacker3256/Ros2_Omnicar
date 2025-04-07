@@ -1,0 +1,25 @@
+[0.091s] Invoking command in '/home/pi/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/diffdrive_arduino -- -j4 -l4
+[0.425s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.625s] [ 50%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o[0m
+[11.011s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduinoHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[11.011s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:225:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_l_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fl_[m[K’?
+[11.012s]   225 |   comms_.read_encoder_values([01;31m[Kwheel_l_[m[K.enc, wheel_r_.enc);
+[11.013s]       |                              [01;31m[K^~~~~~~~[m[K
+[11.013s]       |                              [32m[Kwheel_fl_[m[K
+[11.030s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:225:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_r_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fr_[m[K’?
+[11.030s]   225 |   comms_.read_encoder_values(wheel_l_.enc, [01;31m[Kwheel_r_[m[K.enc);
+[11.031s]       |                                            [01;31m[K^~~~~~~~[m[K
+[11.031s]       |                                            [32m[Kwheel_fr_[m[K
+[11.051s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduinoHardware::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[11.052s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:248:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_l_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fl_[m[K’?
+[11.052s]   248 |   int motor_l_counts_per_loop = [01;31m[Kwheel_l_[m[K.cmd / wheel_l_.rads_per_count / cfg_.loop_rate;
+[11.053s]       |                                 [01;31m[K^~~~~~~~[m[K
+[11.053s]       |                                 [32m[Kwheel_fl_[m[K
+[11.070s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:249:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel_r_[m[K’ was not declared in this scope; did you mean ‘[01m[Kwheel_fr_[m[K’?
+[11.071s]   249 |   int motor_r_counts_per_loop = [01;31m[Kwheel_r_[m[K.cmd / wheel_r_.rads_per_count / cfg_.loop_rate;
+[11.071s]       |                                 [01;31m[K^~~~~~~~[m[K
+[11.072s]       |                                 [32m[Kwheel_fr_[m[K
+[13.258s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o] Error 1
+[13.258s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[13.259s] gmake: *** [Makefile:146: all] Error 2
+[13.268s] Invoked command in '/home/pi/omnicar_ws/build/diffdrive_arduino' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/diffdrive_arduino -- -j4 -l4

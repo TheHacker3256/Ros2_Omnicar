@@ -41,13 +41,10 @@ def generate_launch_description():
       arguments=["diff_cont"],
     )
     joint_broad_spawner = Node(
-      package="controller_manager",
-      executable="spawner",
-      arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_broad"],
     )
-
-
-
     delayed_joint_broad_spawner = RegisterEventHandler(
       event_handler=OnProcessStart(
         target_action=controller_manager,
@@ -61,12 +58,9 @@ def generate_launch_description():
       )
     )
 
-    # delayed_joint_broad_spawner = TimerAction(period=5.0,actions=[joint_broad_spawner])
-    # delayed_diff_drive_spawner = TimerAction(period=5.0,actions=[diff_drive_spawner]);
     delayed_controller_manager = TimerAction(period=5.0,actions=[controller_manager])
    
    
-    # Launch them all!
     return LaunchDescription([
       rsp,
       delayed_controller_manager,

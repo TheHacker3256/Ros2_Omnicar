@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nwhit210/omnicar_ws/src/example_2
+CMAKE_SOURCE_DIR = /home/pi/omnicar_ws/src/example_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2
+CMAKE_BINARY_DIR = /home/pi/omnicar_ws/build/ros2_control_demo_example_2
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nwhit210/omnicar_ws/src/example_2 /home/nwhit210/omnicar_ws/src/example_2 /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2 /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2 /home/nwhit210/omnicar_ws/build/ros2_control_demo_example_2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/omnicar_ws/build/ros2_control_demo_example_2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/omnicar_ws/src/example_2 /home/pi/omnicar_ws/src/example_2 /home/pi/omnicar_ws/build/ros2_control_demo_example_2 /home/pi/omnicar_ws/build/ros2_control_demo_example_2 /home/pi/omnicar_ws/build/ros2_control_demo_example_2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nwhit210/omnicar_ws/src/mecanum_drive_controller
+CMAKE_SOURCE_DIR = /home/pi/omnicar_ws/src/mecanum_drive_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nwhit210/omnicar_ws/build/mecanum_drive_controller
+CMAKE_BINARY_DIR = /home/pi/omnicar_ws/build/mecanum_drive_controller
 
 # Utility rule file for mecanum_drive_controller_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/mecanum_drive_controller_uninstall.dir/compiler_depend.make
 include CMakeFiles/mecanum_drive_controller_uninstall.dir/progress.make
 
 CMakeFiles/mecanum_drive_controller_uninstall:
-	/usr/bin/cmake -P /home/nwhit210/omnicar_ws/build/mecanum_drive_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/pi/omnicar_ws/build/mecanum_drive_controller/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 mecanum_drive_controller_uninstall: CMakeFiles/mecanum_drive_controller_uninstall
 mecanum_drive_controller_uninstall: CMakeFiles/mecanum_drive_controller_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/mecanum_drive_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/mecanum_drive_controller_uninstall.dir/clean
 
 CMakeFiles/mecanum_drive_controller_uninstall.dir/depend:
-	cd /home/nwhit210/omnicar_ws/build/mecanum_drive_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nwhit210/omnicar_ws/src/mecanum_drive_controller /home/nwhit210/omnicar_ws/src/mecanum_drive_controller /home/nwhit210/omnicar_ws/build/mecanum_drive_controller /home/nwhit210/omnicar_ws/build/mecanum_drive_controller /home/nwhit210/omnicar_ws/build/mecanum_drive_controller/CMakeFiles/mecanum_drive_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/omnicar_ws/build/mecanum_drive_controller && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/omnicar_ws/src/mecanum_drive_controller /home/pi/omnicar_ws/src/mecanum_drive_controller /home/pi/omnicar_ws/build/mecanum_drive_controller /home/pi/omnicar_ws/build/mecanum_drive_controller /home/pi/omnicar_ws/build/mecanum_drive_controller/CMakeFiles/mecanum_drive_controller_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mecanum_drive_controller_uninstall.dir/depend
 
