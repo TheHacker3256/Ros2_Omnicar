@@ -46,7 +46,5 @@
     <child link="camera_link_optical" />
   </joint>
   <link name="camera_link_optical"></link>
-
-
   
 </robot>
