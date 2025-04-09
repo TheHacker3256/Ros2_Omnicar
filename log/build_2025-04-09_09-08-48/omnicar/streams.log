@@ -1,0 +1,45 @@
+[0.100s] Invoking command in '/home/pi/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/omnicar -- -j4 -l4
+[0.585s] Invoked command in '/home/pi/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/omnicar -- -j4 -l4
+[0.634s] Invoking command in '/home/pi/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/omnicar
+[0.672s] -- Install configuration: ""
+[0.680s] -- Execute custom install script
+[0.688s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/empty.yaml
+[0.688s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/joystick.yaml
+[0.688s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/my_controllers.yaml
+[0.689s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/sim.yaml
+[0.690s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/camera.xacro
+[0.691s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/roller.stl
+[0.692s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/wheel.stl
+[0.693s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/roller.dae
+[0.694s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/wheel.dae
+[0.695s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/robot.urdf.xacro
+[0.696s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/robot_core.xacro
+[0.697s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/ros2_control.xacro
+[0.698s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel.urdf.xacro
+[0.699s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel_macro.xacro
+[0.700s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/rollers.xacro
+[0.701s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/wheel.xacro
+[0.703s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch.cpython-310.pyc
+[0.704s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch_sim.cpython-310.pyc
+[0.704s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/joint_pub.launch.py
+[0.705s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/joystick.launch.py
+[0.706s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/launch_bot.launch.py
+[0.707s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/launch_sim.launch.py
+[0.707s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/rsp.launch.py
+[0.709s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/worlds/empty.world
+[0.710s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/package_run_dependencies/omnicar
+[0.712s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/parent_prefix_path/omnicar
+[0.713s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.sh
+[0.714s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.dsv
+[0.716s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/path.sh
+[0.717s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/path.dsv
+[0.718s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.bash
+[0.719s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.sh
+[0.720s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.zsh
+[0.721s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.dsv
+[0.721s] -- Symlinking: /home/pi/omnicar_ws/install/omnicar/share/omnicar/package.dsv
+[0.767s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/packages/omnicar
+[0.767s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig.cmake
+[0.770s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig-version.cmake
+[0.773s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/package.xml
+[0.790s] Invoked command in '/home/pi/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/omnicar

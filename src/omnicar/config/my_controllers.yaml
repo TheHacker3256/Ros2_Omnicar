@@ -19,7 +19,7 @@ diff_cont:
     rear_left_wheel_command_joint_name: "rear_left_wheel_joint"
 
     kinematics:
-      base_frame_offset: { x: 0.0, y: 0.0, theta: 0.0 }
+      base_frame_offset: { x: 0.5, y: 1.0, theta: 0.0 }
       wheels_radius: 0.5
       sum_of_robot_center_projection_on_X_Y_axis: 1.0
 

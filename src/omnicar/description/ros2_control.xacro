@@ -61,7 +61,7 @@
             <param name="loop_rate">30</param>
             <param name="device">/dev/ttyACM0</param>
             <param name="baud_rate">57600</param>
-            <param name="timeout_ms">1000</param>
+            <param name="timeout_ms">1500</param>
             <param name="enc_counts_per_rev">3436</param>
         </hardware>
         <joint name="rear_left_wheel_joint">

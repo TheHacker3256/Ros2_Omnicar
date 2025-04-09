@@ -1,0 +1,338 @@
+[0.000000] (-) TimerEvent: {}
+[0.002227] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict()}
+[0.002888] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.003543] (omnicar) JobQueued: {'identifier': 'omnicar', 'dependencies': OrderedDict()}
+[0.003783] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.034200] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.059155] (omnicar) JobStarted: {'identifier': 'omnicar'}
+[0.089503] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.093559] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[0.096141] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/omnicar_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/pi/omnicar_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 31213 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib:/home/pi/omnicar_ws/install/mecanum_drive_controller/lib:/home/pi/omnicar_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/omnicar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 31213 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble')]), 'shell': False}
+[0.107107] (-) TimerEvent: {}
+[0.109519] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.113249] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'build'}
+[0.120057] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/omnicar_ws/build/mecanum_drive_controller', '--', '-j4', '-l4'], 'cwd': '/home/pi/omnicar_ws/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 31213 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib:/home/pi/omnicar_ws/install/mecanum_drive_controller/lib:/home/pi/omnicar_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/omnicar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/mecanum_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 31213 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble')]), 'shell': False}
+[0.137682] (omnicar) JobProgress: {'identifier': 'omnicar', 'progress': 'cmake'}
+[0.148583] (omnicar) JobProgress: {'identifier': 'omnicar', 'progress': 'build'}
+[0.149035] (omnicar) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/omnicar_ws/build/omnicar', '--', '-j4', '-l4'], 'cwd': '/home/pi/omnicar_ws/build/omnicar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 31213 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib:/home/pi/omnicar_ws/install/mecanum_drive_controller/lib:/home/pi/omnicar_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/omnicar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/omnicar'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 31213 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble')]), 'shell': False}
+[0.211228] (-) TimerEvent: {}
+[0.315296] (-) TimerEvent: {}
+[0.403426] (omnicar) CommandEnded: {'returncode': 0}
+[0.409703] (omnicar) JobProgress: {'identifier': 'omnicar', 'progress': 'install'}
+[0.419315] (-) TimerEvent: {}
+[0.451258] (omnicar) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/omnicar_ws/build/omnicar'], 'cwd': '/home/pi/omnicar_ws/build/omnicar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 31213 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib:/home/pi/omnicar_ws/install/mecanum_drive_controller/lib:/home/pi/omnicar_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/omnicar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/omnicar'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 31213 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble')]), 'shell': False}
+[0.483372] (diffdrive_arduino) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o\x1b[0m\n'}
+[0.497430] (omnicar) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.503011] (omnicar) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.508073] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/empty.yaml\n'}
+[0.512341] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/joystick.yaml\n'}
+[0.516260] (mecanum_drive_controller) StdoutLine: {'line': b'[ 25%] Built target mecanum_drive_controller_parameters\n'}
+[0.522034] (-) TimerEvent: {}
+[0.525647] (mecanum_drive_controller) StdoutLine: {'line': b'[ 25%] Built target gmock_main\n'}
+[0.529760] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/my_controllers.yaml\n'}
+[0.533646] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/sim.yaml\n'}
+[0.537882] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/camera.xacro\n'}
+[0.540314] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/roller.stl\n'}
+[0.544047] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/wheel.stl\n'}
+[0.546492] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/roller.dae\n'}
+[0.549310] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/wheel.dae\n'}
+[0.551995] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/robot.urdf.xacro\n'}
+[0.554529] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/robot_core.xacro\n'}
+[0.558312] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/ros2_control.xacro\n'}
+[0.561607] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel.urdf.xacro\n'}
+[0.565918] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel_macro.xacro\n'}
+[0.568935] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/rollers.xacro\n'}
+[0.571689] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/wheel.xacro\n'}
+[0.575297] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch.cpython-310.pyc\n'}
+[0.578877] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch_sim.cpython-310.pyc\n'}
+[0.582111] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/joint_pub.launch.py\n'}
+[0.585342] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/joystick.launch.py\n'}
+[0.587583] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/launch_bot.launch.py\n'}
+[0.589877] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/launch_sim.launch.py\n'}
+[0.591739] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/rsp.launch.py\n'}
+[0.595720] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/worlds/empty.world\n'}
+[0.597895] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/package_run_dependencies/omnicar\n'}
+[0.598485] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/parent_prefix_path/omnicar\n'}
+[0.598974] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.sh\n'}
+[0.599411] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.dsv\n'}
+[0.599724] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/path.sh\n'}
+[0.600096] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/path.dsv\n'}
+[0.600411] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.bash\n'}
+[0.600763] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.sh\n'}
+[0.601133] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.zsh\n'}
+[0.601516] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.dsv\n'}
+[0.601885] (omnicar) StdoutLine: {'line': b'-- Symlinking: /home/pi/omnicar_ws/install/omnicar/share/omnicar/package.dsv\n'}
+[0.602283] (mecanum_drive_controller) StdoutLine: {'line': b'[ 43%] Built target gmock\n'}
+[0.602699] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/packages/omnicar\n'}
+[0.603175] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig.cmake\n'}
+[0.603631] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig-version.cmake\n'}
+[0.604095] (omnicar) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/omnicar/share/omnicar/package.xml\n'}
+[0.604497] (omnicar) CommandEnded: {'returncode': 0}
+[0.622943] (-) TimerEvent: {}
+[0.679424] (mecanum_drive_controller) StdoutLine: {'line': b'[ 62%] Built target mecanum_drive_controller\n'}
+[0.719176] (omnicar) JobEnded: {'identifier': 'omnicar', 'rc': 0}
+[0.723207] (-) TimerEvent: {}
+[0.739870] (mecanum_drive_controller) StdoutLine: {'line': b'[ 75%] Built target test_load_mecanum_drive_controller\n'}
+[0.822390] (mecanum_drive_controller) StdoutLine: {'line': b'[ 87%] Built target test_mecanum_drive_controller\n'}
+[0.823292] (-) TimerEvent: {}
+[0.843560] (mecanum_drive_controller) StdoutLine: {'line': b'[100%] Built target test_mecanum_drive_controller_preceeding\n'}
+[0.900087] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[0.901725] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'install'}
+[0.901910] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/omnicar_ws/build/mecanum_drive_controller'], 'cwd': '/home/pi/omnicar_ws/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 31213 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib:/home/pi/omnicar_ws/install/mecanum_drive_controller/lib:/home/pi/omnicar_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/omnicar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/mecanum_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 31213 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble')]), 'shell': False}
+[0.923546] (-) TimerEvent: {}
+[0.934259] (mecanum_drive_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.936235] (mecanum_drive_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.938971] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp\n'}
+[0.941369] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller//mecanum_drive_controller.xml\n'}
+[0.943700] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp\n'}
+[0.945859] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp\n'}
+[0.948203] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h\n'}
+[0.950501] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh\n'}
+[0.952697] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv\n'}
+[0.955104] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller\n'}
+[0.958680] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller\n'}
+[0.960062] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh\n'}
+[0.960601] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv\n'}
+[0.961134] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh\n'}
+[0.961683] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv\n'}
+[0.962426] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash\n'}
+[0.962930] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh\n'}
+[0.963477] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh\n'}
+[0.963955] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv\n'}
+[0.964420] (mecanum_drive_controller) StdoutLine: {'line': b'-- Symlinking: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv\n'}
+[0.999752] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller\n'}
+[1.001180] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller\n'}
+[1.002308] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.003605] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[1.004703] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake\n'}
+[1.005641] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake\n'}
+[1.006656] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml\n'}
+[1.011416] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/pi/omnicar_ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so\n'}
+[1.012214] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake\n'}
+[1.012854] (mecanum_drive_controller) StdoutLine: {'line': b'-- Up-to-date: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake\n'}
+[1.020543] (mecanum_drive_controller) CommandEnded: {'returncode': 0}
+[1.023704] (-) TimerEvent: {}
+[1.109074] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 0}
+[1.123908] (-) TimerEvent: {}
+[1.224784] (-) TimerEvent: {}
+[1.325610] (-) TimerEvent: {}
+[1.426380] (-) TimerEvent: {}
+[1.527250] (-) TimerEvent: {}
+[1.628034] (-) TimerEvent: {}
+[1.728817] (-) TimerEvent: {}
+[1.829630] (-) TimerEvent: {}
+[1.930367] (-) TimerEvent: {}
+[2.031129] (-) TimerEvent: {}
+[2.131882] (-) TimerEvent: {}
+[2.232663] (-) TimerEvent: {}
+[2.333592] (-) TimerEvent: {}
+[2.434370] (-) TimerEvent: {}
+[2.535179] (-) TimerEvent: {}
+[2.635999] (-) TimerEvent: {}
+[2.736758] (-) TimerEvent: {}
+[2.837603] (-) TimerEvent: {}
+[2.938302] (-) TimerEvent: {}
+[3.039152] (-) TimerEvent: {}
+[3.140178] (-) TimerEvent: {}
+[3.240922] (-) TimerEvent: {}
+[3.341797] (-) TimerEvent: {}
+[3.442623] (-) TimerEvent: {}
+[3.543517] (-) TimerEvent: {}
+[3.644379] (-) TimerEvent: {}
+[3.745184] (-) TimerEvent: {}
+[3.846070] (-) TimerEvent: {}
+[3.947306] (-) TimerEvent: {}
+[4.048116] (-) TimerEvent: {}
+[4.149004] (-) TimerEvent: {}
+[4.249902] (-) TimerEvent: {}
+[4.350719] (-) TimerEvent: {}
+[4.451613] (-) TimerEvent: {}
+[4.552409] (-) TimerEvent: {}
+[4.653311] (-) TimerEvent: {}
+[4.754165] (-) TimerEvent: {}
+[4.854974] (-) TimerEvent: {}
+[4.955983] (-) TimerEvent: {}
+[5.056978] (-) TimerEvent: {}
+[5.158011] (-) TimerEvent: {}
+[5.259250] (-) TimerEvent: {}
+[5.360594] (-) TimerEvent: {}
+[5.461561] (-) TimerEvent: {}
+[5.562450] (-) TimerEvent: {}
+[5.586561] (diffdrive_arduino) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/include/diffdrive_arduino/diffbot_system.hpp:34\x1b[m\x1b[K,\n'}
+[5.587510] (diffdrive_arduino) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:15\x1b[m\x1b[K:\n'}
+[5.588229] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/include/diffdrive_arduino/arduino_comms.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::string ArduinoComms::send_msg(const string&, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.588943] (diffdrive_arduino) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/include/diffdrive_arduino/arduino_comms.hpp:57:61:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kprint_output\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.589487] (diffdrive_arduino) StderrLine: {'line': b'   57 |   std::string send_msg(const std::string &msg_to_send, \x1b[01;35m\x1b[Kbool print_output = false\x1b[m\x1b[K)\n'}
+[5.589925] (diffdrive_arduino) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.662701] (-) TimerEvent: {}
+[5.763620] (-) TimerEvent: {}
+[5.864442] (-) TimerEvent: {}
+[5.965253] (-) TimerEvent: {}
+[6.066094] (-) TimerEvent: {}
+[6.167004] (-) TimerEvent: {}
+[6.267997] (-) TimerEvent: {}
+[6.369343] (-) TimerEvent: {}
+[6.470617] (-) TimerEvent: {}
+[6.572076] (-) TimerEvent: {}
+[6.672928] (-) TimerEvent: {}
+[6.773736] (-) TimerEvent: {}
+[6.874608] (-) TimerEvent: {}
+[6.975487] (-) TimerEvent: {}
+[7.076369] (-) TimerEvent: {}
+[7.177183] (-) TimerEvent: {}
+[7.278021] (-) TimerEvent: {}
+[7.378888] (-) TimerEvent: {}
+[7.479739] (-) TimerEvent: {}
+[7.580593] (-) TimerEvent: {}
+[7.681454] (-) TimerEvent: {}
+[7.782280] (-) TimerEvent: {}
+[7.883169] (-) TimerEvent: {}
+[7.983993] (-) TimerEvent: {}
+[8.084817] (-) TimerEvent: {}
+[8.185755] (-) TimerEvent: {}
+[8.286896] (-) TimerEvent: {}
+[8.388060] (-) TimerEvent: {}
+[8.489148] (-) TimerEvent: {}
+[8.590103] (-) TimerEvent: {}
+[8.691097] (-) TimerEvent: {}
+[8.791926] (-) TimerEvent: {}
+[8.892786] (-) TimerEvent: {}
+[8.993829] (-) TimerEvent: {}
+[9.094888] (-) TimerEvent: {}
+[9.196029] (-) TimerEvent: {}
+[9.296894] (-) TimerEvent: {}
+[9.397774] (-) TimerEvent: {}
+[9.498623] (-) TimerEvent: {}
+[9.599542] (-) TimerEvent: {}
+[9.700456] (-) TimerEvent: {}
+[9.801334] (-) TimerEvent: {}
+[9.902208] (-) TimerEvent: {}
+[10.003086] (-) TimerEvent: {}
+[10.103939] (-) TimerEvent: {}
+[10.204752] (-) TimerEvent: {}
+[10.305619] (-) TimerEvent: {}
+[10.406599] (-) TimerEvent: {}
+[10.507468] (-) TimerEvent: {}
+[10.608336] (-) TimerEvent: {}
+[10.709158] (-) TimerEvent: {}
+[10.810060] (-) TimerEvent: {}
+[10.910951] (-) TimerEvent: {}
+[11.011807] (-) TimerEvent: {}
+[11.112703] (-) TimerEvent: {}
+[11.213536] (-) TimerEvent: {}
+[11.314389] (-) TimerEvent: {}
+[11.415220] (-) TimerEvent: {}
+[11.516080] (-) TimerEvent: {}
+[11.616902] (-) TimerEvent: {}
+[11.717721] (-) TimerEvent: {}
+[11.818555] (-) TimerEvent: {}
+[11.919381] (-) TimerEvent: {}
+[12.020188] (-) TimerEvent: {}
+[12.121011] (-) TimerEvent: {}
+[12.221807] (-) TimerEvent: {}
+[12.322601] (-) TimerEvent: {}
+[12.423454] (-) TimerEvent: {}
+[12.524267] (-) TimerEvent: {}
+[12.625113] (-) TimerEvent: {}
+[12.726106] (-) TimerEvent: {}
+[12.826935] (-) TimerEvent: {}
+[12.927841] (-) TimerEvent: {}
+[13.028652] (-) TimerEvent: {}
+[13.129461] (-) TimerEvent: {}
+[13.230286] (-) TimerEvent: {}
+[13.331156] (-) TimerEvent: {}
+[13.432023] (-) TimerEvent: {}
+[13.532853] (-) TimerEvent: {}
+[13.633680] (-) TimerEvent: {}
+[13.734483] (-) TimerEvent: {}
+[13.835412] (-) TimerEvent: {}
+[13.936335] (-) TimerEvent: {}
+[14.037220] (-) TimerEvent: {}
+[14.138107] (-) TimerEvent: {}
+[14.239006] (-) TimerEvent: {}
+[14.339863] (-) TimerEvent: {}
+[14.440674] (-) TimerEvent: {}
+[14.541487] (-) TimerEvent: {}
+[14.642353] (-) TimerEvent: {}
+[14.743514] (-) TimerEvent: {}
+[14.844388] (-) TimerEvent: {}
+[14.945199] (-) TimerEvent: {}
+[15.046012] (-) TimerEvent: {}
+[15.146885] (-) TimerEvent: {}
+[15.247811] (-) TimerEvent: {}
+[15.348847] (-) TimerEvent: {}
+[15.449805] (-) TimerEvent: {}
+[15.550665] (-) TimerEvent: {}
+[15.651415] (-) TimerEvent: {}
+[15.752340] (-) TimerEvent: {}
+[15.853301] (-) TimerEvent: {}
+[15.954202] (-) TimerEvent: {}
+[16.054996] (-) TimerEvent: {}
+[16.155791] (-) TimerEvent: {}
+[16.256732] (-) TimerEvent: {}
+[16.357916] (-) TimerEvent: {}
+[16.382112] (diffdrive_arduino) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[16.458098] (-) TimerEvent: {}
+[16.558902] (-) TimerEvent: {}
+[16.659732] (-) TimerEvent: {}
+[16.760922] (-) TimerEvent: {}
+[16.862171] (-) TimerEvent: {}
+[16.963209] (-) TimerEvent: {}
+[17.064362] (-) TimerEvent: {}
+[17.165535] (-) TimerEvent: {}
+[17.266751] (-) TimerEvent: {}
+[17.368180] (-) TimerEvent: {}
+[17.469058] (-) TimerEvent: {}
+[17.570126] (-) TimerEvent: {}
+[17.670922] (-) TimerEvent: {}
+[17.733362] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[17.771180] (-) TimerEvent: {}
+[17.780940] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[17.790272] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[17.799315] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/omnicar_ws/build/diffdrive_arduino'], 'cwd': '/home/pi/omnicar_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 31213 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2/lib:/home/pi/omnicar_ws/install/mecanum_drive_controller/lib:/home/pi/omnicar_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/pi/omnicar_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 31213 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/omnicar_ws/install/ros2_control_demo_example_2:/home/pi/omnicar_ws/install/omnicar:/home/pi/omnicar_ws/install/mecanum_drive_controller:/home/pi/omnicar_ws/install/diffdrive_arduino:/opt/ros/humble')]), 'shell': False}
+[17.831843] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[17.834519] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.836518] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino//diffdrive_arduino.xml\n'}
+[17.839256] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp\n'}
+[17.840775] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp\n'}
+[17.842138] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h\n'}
+[17.843803] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp\n'}
+[17.846299] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py\n'}
+[17.848557] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro\n'}
+[17.850926] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro\n'}
+[17.852392] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro\n'}
+[17.853931] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro\n'}
+[17.856142] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz\n'}
+[17.857566] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz\n'}
+[17.859911] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py\n'}
+[17.861956] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml\n'}
+[17.869899] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[17.871293] (-) TimerEvent: {}
+[17.872083] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[17.874278] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[17.876902] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[17.881313] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[17.883403] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[17.885227] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[17.887002] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[17.888774] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[17.890488] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[17.892317] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[17.894047] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[17.894819] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[17.933760] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[17.935784] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[17.937398] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.939198] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.941313] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[17.943133] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[17.944560] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[17.948921] (diffdrive_arduino) StdoutLine: {'line': b'-- Installing: /home/pi/omnicar_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[17.958889] (diffdrive_arduino) StdoutLine: {'line': b'-- Set runtime path of "/home/pi/omnicar_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so" to ""\n'}
+[17.962554] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake\n'}
+[17.963162] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date: /home/pi/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake\n'}
+[17.969382] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[17.974607] (-) TimerEvent: {}
+[18.075472] (-) TimerEvent: {}
+[18.086941] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[18.091921] (-) EventReactorShutdown: {}

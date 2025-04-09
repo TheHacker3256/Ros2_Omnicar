@@ -1,0 +1,6 @@
+Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/mecanum_drive_controller
+Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/mecanum_drive_controller
+Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller
+Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller

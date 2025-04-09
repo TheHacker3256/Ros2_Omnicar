@@ -1,0 +1,41 @@
+[0.089s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+[0.486s] [ 25%] Built target mecanum_drive_controller_parameters
+[0.494s] [ 25%] Built target gmock_main
+[0.568s] [ 43%] Built target gmock
+[0.645s] [ 62%] Built target mecanum_drive_controller
+[0.706s] [ 75%] Built target test_load_mecanum_drive_controller
+[0.788s] [ 87%] Built target test_mecanum_drive_controller
+[0.809s] [100%] Built target test_mecanum_drive_controller_preceeding
+[0.866s] Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+[0.868s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller
+[0.900s] -- Install configuration: ""
+[0.902s] -- Execute custom install script
+[0.906s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp
+[0.908s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller//mecanum_drive_controller.xml
+[0.911s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[0.913s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[0.915s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[0.917s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[0.920s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[0.923s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[0.925s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[0.926s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[0.926s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[0.927s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[0.928s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[0.928s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[0.929s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[0.929s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[0.930s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[0.930s] -- Symlinking: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[0.966s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[0.967s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[0.968s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.969s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[0.970s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[0.971s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[0.972s] -- Up-to-date symlink: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[0.977s] -- Up-to-date: /home/pi/omnicar_ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[0.978s] -- Up-to-date: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[0.979s] -- Up-to-date: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[0.987s] Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller

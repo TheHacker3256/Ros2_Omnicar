@@ -60,6 +60,7 @@ public:
     serial_conn_.Write(msg_to_send);
 
     std::string response = "";
+
     try
     {
       // Responses end with \r\n so we will read up to (and including) the \n.
@@ -86,15 +87,15 @@ public:
 
   void read_encoder_values(int &val_1, int &val_2)
   {
-    std::string response = send_msg("e\r");
+    // std::string response = send_msg("e\r");
 
-    std::string delimiter = " ";
-    size_t del_pos = response.find(delimiter);
-    std::string token_1 = response.substr(0, del_pos);
-    std::string token_2 = response.substr(del_pos + delimiter.length());
+    // std::string delimiter = " ";
+    // size_t del_pos = response.find(delimiter);
+    // std::string token_1 = response.substr(0, del_pos);
+    // std::string token_2 = response.substr(del_pos + delimiter.length());
 
-    val_1 = std::atoi(token_1.c_str());
-    val_2 = std::atoi(token_2.c_str());
+    // val_1 = std::atoi(token_1.c_str());
+    // val_2 = std::atoi(token_2.c_str());
     val_1 = 0;
     val_2 = 0;
   }
