@@ -71,7 +71,7 @@ public:
         std::cerr << "The sendmessage() call has timed out." << std::endl ;
     }
 
-    if (true)
+    if (print_output)
     {
       std::cout << "Sent: " << msg_to_send << " Recv: " << response << std::endl;
     }

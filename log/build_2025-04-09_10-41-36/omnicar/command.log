@@ -1,4 +1,0 @@
-Invoking command in '/home/pi/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/omnicar -- -j4 -l4
-Invoked command in '/home/pi/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/omnicar -- -j4 -l4
-Invoking command in '/home/pi/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/omnicar
-Invoked command in '/home/pi/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/omnicar

@@ -1,0 +1,27 @@
+[0.056s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': /usr/bin/cmake /home/pi/omnicar_ws/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/mecanum_drive_controller
+[1.461s] -- The CXX compiler identification is GNU 11.4.0
+[1.508s] -- Detecting CXX compiler ABI info
+[1.916s] -- Detecting CXX compiler ABI info - done
+[1.943s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.945s] -- Detecting CXX compile features
+[1.948s] -- Detecting CXX compile features - done
+[2.140s] [31mCMake Error at CMakeLists.txt:24 (find_package):
+[2.141s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.142s]   has asked CMake to find a package configuration file provided by
+[2.143s]   "ament_cmake", but CMake did not find one.
+[2.151s] 
+[2.152s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.153s]   any of the following names:
+[2.153s] 
+[2.154s]     ament_cmakeConfig.cmake
+[2.155s]     ament_cmake-config.cmake
+[2.155s] 
+[2.156s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.157s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.158s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.158s]   has been installed.
+[2.159s] 
+[2.160s] [0m
+[2.161s] -- Configuring incomplete, errors occurred!
+[2.161s] See also "/home/pi/omnicar_ws/build/mecanum_drive_controller/CMakeFiles/CMakeOutput.log".
+[2.164s] Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '1': /usr/bin/cmake /home/pi/omnicar_ws/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/mecanum_drive_controller

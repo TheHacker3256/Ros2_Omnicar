@@ -448,7 +448,7 @@ controller_interface::return_type MecanumDriveController::update_and_write_comma
       1.0 / params_.kinematics.wheels_radius *
       (velocity_in_center_frame_linear_x_ + velocity_in_center_frame_linear_y_ +
        params_.kinematics.sum_of_robot_center_projection_on_X_Y_axis *
-         velocity_in_center_frame_angular_z_);
+         velocity_in_center_frame_angular_z_ *-1);
     const double wheel_rear_right_vel =
       1.0 / params_.kinematics.wheels_radius *
       (velocity_in_center_frame_linear_x_ - velocity_in_center_frame_linear_y_ +
@@ -458,7 +458,7 @@ controller_interface::return_type MecanumDriveController::update_and_write_comma
       1.0 / params_.kinematics.wheels_radius *
       (velocity_in_center_frame_linear_x_ + velocity_in_center_frame_linear_y_ -
        params_.kinematics.sum_of_robot_center_projection_on_X_Y_axis *
-         velocity_in_center_frame_angular_z_);
+         velocity_in_center_frame_angular_z_ *-1);
 
     // Set wheels velocities - The joint names are sorted according to the order documented in the
     // header file!

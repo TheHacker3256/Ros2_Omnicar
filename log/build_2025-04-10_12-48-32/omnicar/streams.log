@@ -1,0 +1,66 @@
+[0.073s] Invoking command in '/home/pi/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/omnicar -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/omnicar
+[0.142s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.136s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.910s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.434s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.487s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.494s] -- Added test 'lint_cmake' to check CMake code style
+[2.499s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.521s] -- Added test 'xmllint' to check XML markup files
+[2.535s] -- Configuring done
+[2.555s] -- Generating done
+[2.562s] -- Build files have been written to: /home/pi/omnicar_ws/build/omnicar
+[2.572s] Invoked command in '/home/pi/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/omnicar -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/omnicar
+[2.583s] Invoking command in '/home/pi/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/omnicar -- -j4 -l4
+[2.726s] Invoked command in '/home/pi/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/omnicar -- -j4 -l4
+[2.767s] Invoking command in '/home/pi/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/omnicar
+[2.794s] -- Install configuration: ""
+[2.795s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config
+[2.796s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/my_controllers.yaml
+[2.797s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/joystick.yaml
+[2.799s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/sim.yaml
+[2.800s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/config/empty.yaml
+[2.802s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description
+[2.802s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/ros2_control.xacro
+[2.804s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf
+[2.805s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel.urdf.xacro
+[2.806s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/rollers.xacro
+[2.808s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/wheel.xacro
+[2.810s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel_macro.xacro
+[2.812s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/camera.xacro
+[2.814s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/robot.urdf.xacro
+[2.816s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/robot_core.xacro
+[2.817s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh
+[2.819s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision
+[2.820s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/wheel.stl
+[2.822s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/roller.stl
+[2.833s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual
+[2.833s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/wheel.dae
+[2.854s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/roller.dae
+[2.871s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch
+[2.872s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__
+[2.873s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch_sim.cpython-310.pyc
+[2.874s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch.cpython-310.pyc
+[2.876s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/launch_bot.launch.py
+[2.878s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/joystick.launch.py
+[2.880s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/launch_sim.launch.py
+[2.882s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/rsp.launch.py
+[2.884s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/launch/joint_pub.launch.py
+[2.886s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/worlds
+[2.887s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/worlds/empty.world
+[2.889s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/package_run_dependencies/omnicar
+[2.891s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/parent_prefix_path/omnicar
+[2.893s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.sh
+[2.894s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.dsv
+[2.895s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/path.sh
+[2.897s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/environment/path.dsv
+[2.898s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.bash
+[2.898s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.sh
+[2.900s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.zsh
+[2.901s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/local_setup.dsv
+[2.902s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/package.dsv
+[2.904s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/ament_index/resource_index/packages/omnicar
+[2.905s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig.cmake
+[2.906s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig-version.cmake
+[2.907s] -- Installing: /home/pi/omnicar_ws/install/omnicar/share/omnicar/package.xml
+[2.918s] Invoked command in '/home/pi/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/omnicar

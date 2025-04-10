@@ -1,0 +1,32 @@
+[0.061s] Invoking command in '/home/pi/omnicar_ws/build/omnicar': /usr/bin/cmake /home/pi/omnicar_ws/src/omnicar -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/omnicar
+[1.424s] -- The C compiler identification is GNU 11.4.0
+[1.688s] -- The CXX compiler identification is GNU 11.4.0
+[1.723s] -- Detecting C compiler ABI info
+[2.055s] -- Detecting C compiler ABI info - done
+[2.080s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.081s] -- Detecting C compile features
+[2.082s] -- Detecting C compile features - done
+[2.094s] -- Detecting CXX compiler ABI info
+[2.428s] -- Detecting CXX compiler ABI info - done
+[2.456s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.457s] -- Detecting CXX compile features
+[2.459s] -- Detecting CXX compile features - done
+[2.612s] [31mCMake Error at CMakeLists.txt:19 (find_package):
+[2.612s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.612s]   has asked CMake to find a package configuration file provided by
+[2.613s]   "ament_cmake", but CMake did not find one.
+[2.613s] 
+[2.613s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.614s]   any of the following names:
+[2.614s] 
+[2.614s]     ament_cmakeConfig.cmake
+[2.615s]     ament_cmake-config.cmake
+[2.615s] 
+[2.616s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.616s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.617s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.617s]   has been installed.
+[2.617s] 
+[2.618s] [0m
+[2.618s] -- Configuring incomplete, errors occurred!
+[2.618s] See also "/home/pi/omnicar_ws/build/omnicar/CMakeFiles/CMakeOutput.log".

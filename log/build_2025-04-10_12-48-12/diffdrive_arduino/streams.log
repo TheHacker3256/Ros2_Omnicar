@@ -1,0 +1,27 @@
+[0.055s] Invoking command in '/home/pi/omnicar_ws/build/diffdrive_arduino': /usr/bin/cmake /home/pi/omnicar_ws/src/diffdrive_arduino -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/diffdrive_arduino
+[1.491s] -- The CXX compiler identification is GNU 11.4.0
+[1.534s] -- Detecting CXX compiler ABI info
+[1.947s] -- Detecting CXX compiler ABI info - done
+[1.974s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.975s] -- Detecting CXX compile features
+[1.977s] -- Detecting CXX compile features - done
+[2.144s] [31mCMake Error at CMakeLists.txt:17 (find_package):
+[2.145s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[2.146s]   has asked CMake to find a package configuration file provided by
+[2.147s]   "ament_cmake", but CMake did not find one.
+[2.148s] 
+[2.149s]   Could not find a package configuration file provided by "ament_cmake" with
+[2.150s]   any of the following names:
+[2.151s] 
+[2.152s]     ament_cmakeConfig.cmake
+[2.154s]     ament_cmake-config.cmake
+[2.157s] 
+[2.157s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[2.159s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[2.160s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[2.161s]   has been installed.
+[2.165s] 
+[2.166s] [0m
+[2.167s] -- Configuring incomplete, errors occurred!
+[2.189s] See also "/home/pi/omnicar_ws/build/diffdrive_arduino/CMakeFiles/CMakeOutput.log".
+[2.191s] Invoked command in '/home/pi/omnicar_ws/build/diffdrive_arduino' returned '1': /usr/bin/cmake /home/pi/omnicar_ws/src/diffdrive_arduino -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/diffdrive_arduino

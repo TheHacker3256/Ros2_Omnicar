@@ -1,4 +1,0 @@
-Invoking command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/ros2_control_demo_example_2 -- -j4 -l4
-Invoked command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/ros2_control_demo_example_2 -- -j4 -l4
-Invoking command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/ros2_control_demo_example_2
-Invoked command in '/home/pi/omnicar_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/ros2_control_demo_example_2

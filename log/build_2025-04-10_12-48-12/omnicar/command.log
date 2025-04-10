@@ -1,0 +1,1 @@
+Invoking command in '/home/pi/omnicar_ws/build/omnicar': /usr/bin/cmake /home/pi/omnicar_ws/src/omnicar -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/omnicar

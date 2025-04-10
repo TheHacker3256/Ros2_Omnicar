@@ -1,0 +1,126 @@
+[0.000000] (-) TimerEvent: {}
+[0.001740] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict()}
+[0.002205] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.002430] (omnicar) JobQueued: {'identifier': 'omnicar', 'dependencies': OrderedDict()}
+[0.002729] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.030914] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.039344] (omnicar) JobStarted: {'identifier': 'omnicar'}
+[0.053180] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.055338] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/omnicar_ws/src/diffdrive_arduino', '-DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/diffdrive_arduino'], 'cwd': '/home/pi/omnicar_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 22574 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('PATH', '/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 22574 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.069837] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.077525] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/omnicar_ws/src/mecanum_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/mecanum_drive_controller'], 'cwd': '/home/pi/omnicar_ws/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 22574 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('PATH', '/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/mecanum_drive_controller'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 22574 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.088575] (omnicar) JobProgress: {'identifier': 'omnicar', 'progress': 'cmake'}
+[0.093443] (omnicar) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/omnicar_ws/src/omnicar', '-DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/omnicar'], 'cwd': '/home/pi/omnicar_ws/build/omnicar', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.135 22574 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('OLDPWD', '/home/pi'), ('SSH_TTY', '/dev/pts/0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'pi'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('PATH', '/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/pi/omnicar_ws/build/omnicar'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.135 22574 192.168.1.104 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.101892] (-) TimerEvent: {}
+[0.204414] (-) TimerEvent: {}
+[0.305389] (-) TimerEvent: {}
+[0.406146] (-) TimerEvent: {}
+[0.507011] (-) TimerEvent: {}
+[0.608259] (-) TimerEvent: {}
+[0.709480] (-) TimerEvent: {}
+[0.810590] (-) TimerEvent: {}
+[0.912716] (-) TimerEvent: {}
+[1.013625] (-) TimerEvent: {}
+[1.114626] (-) TimerEvent: {}
+[1.215814] (-) TimerEvent: {}
+[1.316855] (-) TimerEvent: {}
+[1.418082] (-) TimerEvent: {}
+[1.462638] (omnicar) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.492288] (mecanum_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.493358] (diffdrive_arduino) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.518232] (-) TimerEvent: {}
+[1.536109] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.539775] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.619778] (-) TimerEvent: {}
+[1.720644] (-) TimerEvent: {}
+[1.727486] (omnicar) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.762119] (omnicar) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.823728] (-) TimerEvent: {}
+[1.926925] (-) TimerEvent: {}
+[1.947204] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.949322] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.973848] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.976069] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.976881] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.977626] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.979398] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.980119] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.027690] (-) TimerEvent: {}
+[2.094631] (omnicar) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.119615] (omnicar) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.120493] (omnicar) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.121968] (omnicar) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.127822] (-) TimerEvent: {}
+[2.133251] (omnicar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.146447] (diffdrive_arduino) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:17 (find_package):\n'}
+[2.147575] (diffdrive_arduino) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.148240] (diffdrive_arduino) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.149043] (diffdrive_arduino) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.150520] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[2.151664] (diffdrive_arduino) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.152521] (diffdrive_arduino) StderrLine: {'line': b'  any of the following names:\n'}
+[2.153198] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[2.154006] (diffdrive_arduino) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.154908] (diffdrive_arduino) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.157620] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[2.159683] (diffdrive_arduino) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.160364] (diffdrive_arduino) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.162417] (diffdrive_arduino) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.163049] (diffdrive_arduino) StderrLine: {'line': b'  has been installed.\n'}
+[2.164240] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[2.167661] (diffdrive_arduino) StderrLine: {'line': b'\x1b[0m\n'}
+[2.169163] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.170520] (mecanum_drive_controller) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:24 (find_package):\n'}
+[2.172293] (mecanum_drive_controller) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.173170] (mecanum_drive_controller) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.174013] (mecanum_drive_controller) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.175318] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[2.183622] (mecanum_drive_controller) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.184393] (mecanum_drive_controller) StderrLine: {'line': b'  any of the following names:\n'}
+[2.185007] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[2.185603] (mecanum_drive_controller) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.186279] (mecanum_drive_controller) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.186894] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[2.187567] (mecanum_drive_controller) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.188367] (mecanum_drive_controller) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.189159] (mecanum_drive_controller) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.189944] (mecanum_drive_controller) StderrLine: {'line': b'  has been installed.\n'}
+[2.190650] (mecanum_drive_controller) StderrLine: {'line': b'\n'}
+[2.191206] (mecanum_drive_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[2.191850] (diffdrive_arduino) StdoutLine: {'line': b'See also "/home/pi/omnicar_ws/build/diffdrive_arduino/CMakeFiles/CMakeOutput.log".\n'}
+[2.192405] (mecanum_drive_controller) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.192908] (mecanum_drive_controller) StdoutLine: {'line': b'See also "/home/pi/omnicar_ws/build/mecanum_drive_controller/CMakeFiles/CMakeOutput.log".\n'}
+[2.193593] (diffdrive_arduino) CommandEnded: {'returncode': 1}
+[2.195725] (mecanum_drive_controller) CommandEnded: {'returncode': 1}
+[2.227985] (-) TimerEvent: {}
+[2.277489] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 1}
+[2.281563] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 'SIGINT'}
+[2.328249] (-) TimerEvent: {}
+[2.429144] (-) TimerEvent: {}
+[2.468003] (omnicar) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.495852] (omnicar) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.496695] (omnicar) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.498319] (omnicar) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.529292] (-) TimerEvent: {}
+[2.629962] (-) TimerEvent: {}
+[2.651023] (omnicar) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[2.651839] (omnicar) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.652192] (omnicar) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.652485] (omnicar) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.652785] (omnicar) StderrLine: {'line': b'\n'}
+[2.653081] (omnicar) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.653406] (omnicar) StderrLine: {'line': b'  any of the following names:\n'}
+[2.653747] (omnicar) StderrLine: {'line': b'\n'}
+[2.654093] (omnicar) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.654613] (omnicar) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.655050] (omnicar) StderrLine: {'line': b'\n'}
+[2.655607] (omnicar) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.656172] (omnicar) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.656515] (omnicar) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.656815] (omnicar) StderrLine: {'line': b'  has been installed.\n'}
+[2.657100] (omnicar) StderrLine: {'line': b'\n'}
+[2.657413] (omnicar) StderrLine: {'line': b'\x1b[0m\n'}
+[2.657707] (omnicar) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.658044] (omnicar) StdoutLine: {'line': b'See also "/home/pi/omnicar_ws/build/omnicar/CMakeFiles/CMakeOutput.log".\n'}
+[2.661859] (omnicar) JobEnded: {'identifier': 'omnicar', 'rc': 'SIGINT'}
+[2.665058] (-) EventReactorShutdown: {}
