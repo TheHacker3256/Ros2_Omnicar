@@ -1,0 +1,285 @@
+[0.963s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.963s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f33a64c1720>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f33a64c0eb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f33a64c0eb0>>, mixin_verb=('build',))
+[1.814s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.817s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.817s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nwhit210/omnicar_ws'
+[1.817s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.818s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.819s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.820s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.821s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.822s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.823s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.894s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.895s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.896s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.897s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.899s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.900s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.901s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.904s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.905s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[1.907s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[1.908s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[1.909s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[1.910s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[1.922s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[1.923s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.924s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extension 'ignore'
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extension 'ignore_ament_install'
+[1.925s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extensions ['colcon_pkg']
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extension 'colcon_pkg'
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extensions ['colcon_meta']
+[1.926s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extension 'colcon_meta'
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extensions ['ros']
+[1.927s] Level 1:colcon.colcon_core.package_identification:_identify(src/mecanum_drive_controller) by extension 'ros'
+[1.931s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mecanum_drive_controller' with type 'ros.ament_cmake' and name 'mecanum_drive_controller'
+[1.931s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extensions ['ignore', 'ignore_ament_install']
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extension 'ignore'
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extension 'ignore_ament_install'
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extensions ['colcon_pkg']
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extension 'colcon_pkg'
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extensions ['colcon_meta']
+[1.932s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extension 'colcon_meta'
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extensions ['ros']
+[1.933s] Level 1:colcon.colcon_core.package_identification:_identify(src/omnicar) by extension 'ros'
+[1.934s] DEBUG:colcon.colcon_core.package_identification:Package 'src/omnicar' with type 'ros.ament_cmake' and name 'omnicar'
+[1.934s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.935s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.019s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.019s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.031s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/nwhit210/omnicar_ws/install
+[2.034s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 378 installed packages in /opt/ros/humble
+[2.039s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.139s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[2.139s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[2.139s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.140s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[2.140s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[2.140s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[2.140s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[2.140s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[2.140s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.140s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nwhit210/omnicar_ws/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nwhit210/omnicar_ws/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/nwhit210/omnicar_ws/src/diffdrive_arduino', 'symlink_install': False, 'test_result_base': None}
+[2.140s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_args' from command line to 'None'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_target' from command line to 'None'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.141s] Level 5:colcon.colcon_core.verb:set package 'mecanum_drive_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.141s] DEBUG:colcon.colcon_core.verb:Building package 'mecanum_drive_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nwhit210/omnicar_ws/build/mecanum_drive_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller', 'merge_install': False, 'path': '/home/nwhit210/omnicar_ws/src/mecanum_drive_controller', 'symlink_install': False, 'test_result_base': None}
+[2.142s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'cmake_args' from command line to 'None'
+[2.142s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'cmake_target' from command line to 'None'
+[2.142s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.142s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'cmake_clean_cache' from command line to 'False'
+[2.142s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'cmake_clean_first' from command line to 'False'
+[2.142s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'cmake_force_configure' from command line to 'False'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'ament_cmake_args' from command line to 'None'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'catkin_cmake_args' from command line to 'None'
+[2.143s] Level 5:colcon.colcon_core.verb:set package 'omnicar' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.143s] DEBUG:colcon.colcon_core.verb:Building package 'omnicar' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nwhit210/omnicar_ws/build/omnicar', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nwhit210/omnicar_ws/install/omnicar', 'merge_install': False, 'path': '/home/nwhit210/omnicar_ws/src/omnicar', 'symlink_install': False, 'test_result_base': None}
+[2.144s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.147s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.147s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nwhit210/omnicar_ws/src/diffdrive_arduino' with build type 'ament_cmake'
+[2.148s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nwhit210/omnicar_ws/src/diffdrive_arduino'
+[2.166s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.166s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.167s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.177s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nwhit210/omnicar_ws/src/mecanum_drive_controller' with build type 'ament_cmake'
+[2.178s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nwhit210/omnicar_ws/src/mecanum_drive_controller'
+[2.179s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.180s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.193s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nwhit210/omnicar_ws/src/omnicar' with build type 'ament_cmake'
+[2.194s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nwhit210/omnicar_ws/src/omnicar'
+[2.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.197s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/diffdrive_arduino -- -j8 -l8
+[2.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nwhit210/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/mecanum_drive_controller -- -j8 -l8
+[2.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nwhit210/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/omnicar -- -j8 -l8
+[2.505s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nwhit210/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/omnicar -- -j8 -l8
+[2.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nwhit210/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/omnicar
+[2.606s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omnicar)
+[2.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nwhit210/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/omnicar
+[2.647s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar' for CMake module files
+[2.650s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar' for CMake config files
+[2.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('omnicar', 'cmake_prefix_path')
+[2.652s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/hook/cmake_prefix_path.ps1'
+[2.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/hook/cmake_prefix_path.dsv'
+[2.660s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/hook/cmake_prefix_path.sh'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/bin'
+[2.664s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/lib/pkgconfig/omnicar.pc'
+[2.665s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/lib/python3.10/site-packages'
+[2.667s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/bin'
+[2.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.ps1'
+[2.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.dsv'
+[2.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.sh'
+[2.680s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.bash'
+[2.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.zsh'
+[2.698s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nwhit210/omnicar_ws/install/omnicar/share/colcon-core/packages/omnicar)
+[2.701s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(omnicar)
+[2.702s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar' for CMake module files
+[2.704s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar' for CMake config files
+[2.705s] Level 1:colcon.colcon_core.shell:create_environment_hook('omnicar', 'cmake_prefix_path')
+[2.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/hook/cmake_prefix_path.ps1'
+[2.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/hook/cmake_prefix_path.dsv'
+[2.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/hook/cmake_prefix_path.sh'
+[2.719s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/bin'
+[2.720s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/lib/pkgconfig/omnicar.pc'
+[2.721s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/lib/python3.10/site-packages'
+[2.723s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/omnicar/bin'
+[2.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.ps1'
+[2.726s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.dsv'
+[2.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.sh'
+[2.730s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.bash'
+[2.733s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.zsh'
+[2.736s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nwhit210/omnicar_ws/install/omnicar/share/colcon-core/packages/omnicar)
+[2.812s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/diffdrive_arduino -- -j8 -l8
+[2.823s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/diffdrive_arduino
+[2.877s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[2.878s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino' for CMake module files
+[2.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/diffdrive_arduino
+[2.885s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino' for CMake config files
+[2.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[2.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[2.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[2.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[2.894s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib'
+[2.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[2.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[2.900s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[2.901s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[2.902s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/bin'
+[2.902s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[2.902s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib/python3.10/site-packages'
+[2.903s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/bin'
+[2.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[2.906s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[2.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[2.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[2.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[2.915s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[2.916s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[2.917s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino' for CMake module files
+[2.918s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino' for CMake config files
+[2.919s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[2.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[2.920s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[2.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[2.923s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib'
+[2.924s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[2.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[2.927s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[2.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[2.931s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/bin'
+[2.932s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[2.933s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib/python3.10/site-packages'
+[2.934s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/bin'
+[2.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[2.936s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[2.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[2.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[2.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[2.945s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[2.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nwhit210/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/mecanum_drive_controller -- -j8 -l8
+[2.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nwhit210/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/mecanum_drive_controller
+[3.016s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_drive_controller)
+[3.018s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller' for CMake module files
+[3.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nwhit210/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/mecanum_drive_controller
+[3.023s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller' for CMake config files
+[3.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'cmake_prefix_path')
+[3.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.ps1'
+[3.025s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.dsv'
+[3.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.sh'
+[3.031s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/lib'
+[3.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'ld_library_path_lib')
+[3.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.ps1'
+[3.033s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.dsv'
+[3.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.sh'
+[3.035s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/bin'
+[3.035s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/lib/pkgconfig/mecanum_drive_controller.pc'
+[3.036s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/lib/python3.10/site-packages'
+[3.037s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/bin'
+[3.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.ps1'
+[3.041s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv'
+[3.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.sh'
+[3.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.bash'
+[3.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.zsh'
+[3.049s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/colcon-core/packages/mecanum_drive_controller)
+[3.052s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mecanum_drive_controller)
+[3.053s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller' for CMake module files
+[3.054s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller' for CMake config files
+[3.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'cmake_prefix_path')
+[3.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.ps1'
+[3.058s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.dsv'
+[3.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/cmake_prefix_path.sh'
+[3.060s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/lib'
+[3.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('mecanum_drive_controller', 'ld_library_path_lib')
+[3.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.ps1'
+[3.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.dsv'
+[3.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/hook/ld_library_path_lib.sh'
+[3.070s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/bin'
+[3.070s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/lib/pkgconfig/mecanum_drive_controller.pc'
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/lib/python3.10/site-packages'
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/bin'
+[3.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.ps1'
+[3.075s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv'
+[3.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.sh'
+[3.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.bash'
+[3.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.zsh'
+[3.083s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nwhit210/omnicar_ws/install/mecanum_drive_controller/share/colcon-core/packages/mecanum_drive_controller)
+[3.085s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.087s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.088s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.089s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.344s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.344s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.344s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.345s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.345s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[3.345s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.346s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nwhit210/omnicar_ws/install/local_setup.ps1'
+[3.349s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nwhit210/omnicar_ws/install/_local_setup_util_ps1.py'
+[3.353s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nwhit210/omnicar_ws/install/setup.ps1'
+[3.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nwhit210/omnicar_ws/install/local_setup.sh'
+[3.359s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nwhit210/omnicar_ws/install/_local_setup_util_sh.py'
+[3.361s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nwhit210/omnicar_ws/install/setup.sh'
+[3.365s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nwhit210/omnicar_ws/install/local_setup.bash'
+[3.367s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nwhit210/omnicar_ws/install/setup.bash'
+[3.372s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nwhit210/omnicar_ws/install/local_setup.zsh'
+[3.374s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nwhit210/omnicar_ws/install/setup.zsh'

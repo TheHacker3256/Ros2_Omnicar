@@ -1,0 +1,54 @@
+[0.081s] Invoking command in '/home/nwhit210/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/omnicar -- -j8 -l8
+[0.189s] Invoked command in '/home/nwhit210/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/omnicar -- -j8 -l8
+[0.217s] Invoking command in '/home/nwhit210/omnicar_ws/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/omnicar
+[0.246s] -- Install configuration: ""
+[0.247s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/config
+[0.247s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/config/my_controllers.yaml
+[0.248s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/config/empty.yaml
+[0.248s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/config/joystick.yaml
+[0.248s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/config/sim.yaml
+[0.249s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description
+[0.249s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/robot.urdf.xacro
+[0.249s] -- Installing: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/robot_core.xacro
+[0.251s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/ros2_control.xacro
+[0.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/lidar.xacro
+[0.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/mesh
+[0.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision
+[0.252s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/roller.stl
+[0.253s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/mesh/collision/wheel.stl
+[0.253s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual
+[0.253s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/wheel.dae
+[0.253s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/mesh/visual/roller.dae
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/urdf
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/urdf/wheel.xacro
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel_macro.xacro
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/urdf/rollers.xacro
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/urdf/mecanum_wheel.urdf.xacro
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/description/camera.xacro
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch
+[0.254s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/launch_bot.launch.py
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/launch_sim.launch.py
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/joint_pub.launch.py
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch_sim.cpython-310.pyc
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/__pycache__/launch.cpython-310.pyc
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/rsp.launch.py
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/launch/joystick.launch.py
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/worlds
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/worlds/empty.world
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/ament_index/resource_index/package_run_dependencies/omnicar
+[0.255s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/ament_index/resource_index/parent_prefix_path/omnicar
+[0.256s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.sh
+[0.256s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/environment/ament_prefix_path.dsv
+[0.256s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/environment/path.sh
+[0.295s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/environment/path.dsv
+[0.297s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/local_setup.bash
+[0.298s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/local_setup.sh
+[0.298s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/local_setup.zsh
+[0.298s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/local_setup.dsv
+[0.298s] -- Installing: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.dsv
+[0.299s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/ament_index/resource_index/packages/omnicar
+[0.314s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig.cmake
+[0.315s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/cmake/omnicarConfig-version.cmake
+[0.315s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/omnicar/share/omnicar/package.xml
+[0.326s] Invoked command in '/home/nwhit210/omnicar_ws/build/omnicar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/omnicar

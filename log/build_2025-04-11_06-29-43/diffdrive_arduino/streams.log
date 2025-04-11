@@ -1,0 +1,88 @@
+[0.028s] Invoking command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/omnicar_ws/src/diffdrive_arduino -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar_ws/install/diffdrive_arduino
+[0.526s] -- The CXX compiler identification is GNU 11.4.0
+[2.661s] -- Detecting CXX compiler ABI info
+[2.951s] -- Detecting CXX compiler ABI info - done
+[2.960s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.960s] -- Detecting CXX compile features
+[2.961s] -- Detecting CXX compile features - done
+[2.963s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.185s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.337s] -- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[3.858s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.866s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.880s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.905s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.942s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.772s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.778s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.843s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.940s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.948s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[9.213s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.222s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[9.235s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[9.682s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.729s] -- Looking for C++ include pthread.h
+[10.024s] -- Looking for C++ include pthread.h - found
+[10.025s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.764s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.765s] -- Found Threads: TRUE  
+[10.846s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[10.931s] -- Configuring done
+[10.972s] -- Generating done
+[10.980s] -- Build files have been written to: /home/nwhit210/omnicar_ws/build/diffdrive_arduino
+[10.993s] Invoked command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/omnicar_ws/src/diffdrive_arduino -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar_ws/install/diffdrive_arduino
+[10.995s] Invoking command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/diffdrive_arduino -- -j8 -l8
+[11.047s] [ 50%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o[0m
+[22.478s] [100%] [32m[1mLinking CXX shared library libdiffdrive_arduino.so[0m
+[23.772s] [100%] Built target diffdrive_arduino
+[23.808s] Invoked command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/omnicar_ws/build/diffdrive_arduino -- -j8 -l8
+[23.817s] Invoking command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/diffdrive_arduino
+[23.838s] -- Install configuration: ""
+[23.841s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/diffdrive_arduino.xml
+[23.841s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino
+[23.843s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino
+[23.844s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/wheel.hpp
+[23.845s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/visibility_control.h
+[23.846s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/diffbot_system.hpp
+[23.847s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/include/diffdrive_arduino/diffdrive_arduino/arduino_comms.hpp
+[23.847s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch
+[23.848s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/view_robot.launch.py
+[23.850s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control
+[23.851s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/ros2_control/diffbot.ros2_control.xacro
+[23.852s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf
+[23.853s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.urdf.xacro
+[23.853s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot_description.urdf.xacro
+[23.855s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/urdf/diffbot.materials.xacro
+[23.855s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz
+[23.856s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot.rviz
+[23.856s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/rviz/diffbot_view.rviz
+[23.856s] -- Up-to-date: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch
+[23.857s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/launch/diffbot.launch.py
+[23.858s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/config
+[23.859s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/config/diffbot_controllers.yaml
+[23.860s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
+[23.861s] -- Set runtime path of "/home/nwhit210/omnicar_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so" to ""
+[23.862s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh
+[23.862s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv
+[23.863s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino
+[23.865s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino
+[23.866s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh
+[23.867s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv
+[23.868s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh
+[23.869s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv
+[23.870s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash
+[23.871s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh
+[23.872s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh
+[23.874s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv
+[23.876s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv
+[23.877s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino
+[23.885s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino
+[23.887s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport.cmake
+[23.888s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/export_diffdrive_arduinoExport-noconfig.cmake
+[23.889s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_targets-extras.cmake
+[23.894s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.895s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake
+[23.897s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake
+[23.899s] -- Installing: /home/nwhit210/omnicar_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml
+[23.899s] Invoked command in '/home/nwhit210/omnicar_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/omnicar_ws/build/diffdrive_arduino
