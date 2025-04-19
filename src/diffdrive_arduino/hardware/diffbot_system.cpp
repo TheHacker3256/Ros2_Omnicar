@@ -196,10 +196,6 @@ hardware_interface::CallbackReturn DiffDriveArduinoHardware::on_activate(
   {
     return hardware_interface::CallbackReturn::ERROR;
   }
-  if (cfg_.pid_p > 0)
-  {
-    comms_.set_pid_values(cfg_.pid_p,cfg_.pid_d,cfg_.pid_i,cfg_.pid_o);
-  }
   RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Successfully activated!");
 
   return hardware_interface::CallbackReturn::SUCCESS;
@@ -250,7 +246,7 @@ hardware_interface::return_type diffdrive_arduino ::DiffDriveArduinoHardware::wr
   int motor_rl_counts_per_loop = wheel_rl_.cmd / wheel_rl_.rads_per_count / cfg_.loop_rate;
   int motor_rr_counts_per_loop = wheel_rr_.cmd / wheel_rr_.rads_per_count / cfg_.loop_rate;
 
-  comms_.set_motor_values(motor_fl_counts_per_loop, motor_fr_counts_per_loop, motor_rl_counts_per_loop, motor_rr_counts_per_loop);
+  comms_.set_motor_values(motor_fr_counts_per_loop, motor_rr_counts_per_loop, motor_fl_counts_per_loop, motor_rl_counts_per_loop);
   return hardware_interface::return_type::OK;
 }
 

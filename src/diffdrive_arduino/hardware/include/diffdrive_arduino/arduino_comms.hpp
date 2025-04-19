@@ -70,7 +70,7 @@ public:
         std::cerr << "The sendmessage() call has timed out." << std::endl ;
     }
 
-    if (true)
+    if (print_output)
     {
       std::cout << "Sent: " << msg_to_send << " Recv: " << response << std::endl;
     }
@@ -86,29 +86,23 @@ public:
 
   void read_encoder_values(int &val_1, int &val_2)
   {
-    std::string response = send_msg("e\r");
+    // std::string response = send_msg("e\r");
 
-    std::string delimiter = " ";
-    size_t del_pos = response.find(delimiter);
-    std::string token_1 = response.substr(0, del_pos);
-    std::string token_2 = response.substr(del_pos + delimiter.length());
+    // std::string delimiter = " ";
+    // size_t del_pos = response.find(delimiter);
+    // std::string token_1 = response.substr(0, del_pos);
+    // std::string token_2 = response.substr(del_pos + delimiter.length());
 
-    val_1 = std::atoi(token_1.c_str());
-    val_2 = std::atoi(token_2.c_str());
-    val_1 = 0;
-    val_2 = 0;
+    // val_1 = std::atoi(token_1.c_str());
+    // val_2 = std::atoi(token_2.c_str());
+    // val_1 = 0;
+    // val_2 = 0;
   }
+  
   void set_motor_values(int val_1, int val_2, int val_3, int val_4)
   {
     std::stringstream ss;
-    ss << "m " << val_1 << " " << val_2 << " " << val_3 << " " << val_4 << "\r";
-    send_msg(ss.str());
-  }
-
-  void set_pid_values(int k_p, int k_d, int k_i, int k_o)
-  {
-    std::stringstream ss;
-    ss << "u " << k_p << ":" << k_d << ":" << k_i << ":" << k_o << "\r";
+    ss << "m " << val_1 << " " << val_2 << " " << val_3 << " " << val_4;
     send_msg(ss.str());
   }
 
