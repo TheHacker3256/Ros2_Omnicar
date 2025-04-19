@@ -1,0 +1,12 @@
+[0.103s] Invoking command in '/home/pi/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/diffdrive_arduino -- -j4 -l4
+[1.129s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[1.750s] [ 50%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o[0m
+[9.396s] In file included from [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/include/diffdrive_arduino/diffbot_system.hpp:34[m[K,
+[9.404s]                  from [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/diffbot_system.cpp:15[m[K:
+[9.407s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/include/diffdrive_arduino/arduino_comms.hpp:[m[K In member function ‘[01m[Kvoid ArduinoComms::read_encoder_values(int&, int&)[m[K’:
+[9.414s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/include/diffdrive_arduino/arduino_comms.hpp:87:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval_1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.417s]    87 |   void read_encoder_values([01;35m[Kint &val_1[m[K, int &val_2)
+[9.421s]       |                            [01;35m[K~~~~~^~~~~[m[K
+[9.425s] [01m[K/home/pi/omnicar_ws/src/diffdrive_arduino/hardware/include/diffdrive_arduino/arduino_comms.hpp:87:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kval_2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.428s]    87 |   void read_encoder_values(int &val_1, [01;35m[Kint &val_2[m[K)
+[9.432s]       |                                        [01;35m[K~~~~~^~~~~[m[K

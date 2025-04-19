@@ -1,0 +1,67 @@
+[0.081s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/mecanum_drive_controller
+[1.782s] -- The CXX compiler identification is GNU 11.4.0
+[1.826s] -- Detecting CXX compiler ABI info
+[2.338s] -- Detecting CXX compiler ABI info - done
+[2.368s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.391s] -- Detecting CXX compile features
+[2.398s] -- Detecting CXX compile features - done
+[2.479s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.469s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.300s] -- Found controller_interface: 2.49.0 (/opt/ros/humble/share/controller_interface/cmake)
+[4.721s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.774s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.855s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.971s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.120s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.906s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.937s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.157s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.490s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.505s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.587s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.600s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.633s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[7.672s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.774s] -- Looking for C++ include pthread.h
+[8.395s] -- Looking for C++ include pthread.h - found
+[8.396s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[8.922s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[8.927s] -- Found Threads: TRUE  
+[9.221s] -- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[9.248s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[9.488s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[9.613s] -- Found realtime_tools: 2.12.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[9.742s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[9.851s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[9.893s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[9.990s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[9.998s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[9.999s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[10.435s] -- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[10.470s] -- Found controller_manager: 2.49.0 (/opt/ros/humble/share/controller_manager/cmake)
+[10.620s] -- Found ros2_control_test_assets: 2.49.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[10.648s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[10.853s] -- The C compiler identification is GNU 11.4.0
+[10.882s] -- Detecting C compiler ABI info
+[11.317s] -- Detecting C compiler ABI info - done
+[11.343s] -- Check for working C compiler: /usr/bin/cc - skipped
+[11.344s] -- Detecting C compile features
+[11.346s] -- Detecting C compile features - done
+[11.391s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[11.398s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[11.904s] -- Configuring done
+[12.597s] -- Generating done
+[12.671s] -- Build files have been written to: /home/pi/omnicar_ws/build/mecanum_drive_controller
+[12.746s] Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/pi/omnicar_ws/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/pi/omnicar_ws/install/mecanum_drive_controller
+[12.756s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+[12.990s] [  6%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/pi/omnicar_ws/build/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp /home/pi/omnicar_ws/src/mecanum_drive_controller/src/mecanum_drive_controller.yaml `[0m
+[15.475s] [ 12%] [34m[1mCreating deprecated header file /home/pi/omnicar_ws/build/mecanum_drive_controller/include/mecanum_drive_controller_parameters.hpp[0m
+[15.645s] [ 12%] Built target mecanum_drive_controller_parameters
+[15.730s] [ 18%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[31.044s] [ 25%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[40.656s] [ 31%] [32m[1mLinking CXX static library libgmock.a[0m
+[41.169s] [ 31%] Built target gmock
+[41.341s] [ 37%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[101.682s] gmake[2]: *** [CMakeFiles/mecanum_drive_controller.dir/build.make:76: CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o] Interrupt
+[101.705s] gmake[1]: *** [CMakeFiles/Makefile2:208: CMakeFiles/mecanum_drive_controller.dir/all] Interrupt
+[101.706s] gmake: *** [Makefile:146: all] Interrupt

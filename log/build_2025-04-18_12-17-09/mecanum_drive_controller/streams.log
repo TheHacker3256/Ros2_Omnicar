@@ -1,0 +1,20 @@
+[0.101s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+[0.613s] [35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[0.666s] [ 12%] Built target mecanum_drive_controller_parameters
+[0.779s] [ 25%] Built target gmock_main
+[0.793s] [ 43%] Built target gmock
+[0.801s] [ 50%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[0.805s] [ 56%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[0.933s] [ 62%] [32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o[0m
+[109.013s] [ 68%] [32m[1mLinking CXX executable test_load_mecanum_drive_controller[0m
+[112.931s] [ 68%] Built target test_load_mecanum_drive_controller
+[173.327s] [ 75%] [32m[1mLinking CXX shared library libmecanum_drive_controller.so[0m
+[178.453s] [ 75%] Built target mecanum_drive_controller
+[178.558s] [ 87%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o[0m
+[178.559s] [ 87%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o[0m
+[217.571s] gmake[2]: *** [CMakeFiles/test_mecanum_drive_controller_preceeding.dir/build.make:76: CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o] Interrupt
+[217.690s] gmake[2]: *** [CMakeFiles/test_mecanum_drive_controller.dir/build.make:76: CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o] Interrupt
+[217.691s] gmake[1]: *** [CMakeFiles/Makefile2:291: CMakeFiles/test_mecanum_drive_controller_preceeding.dir/all] Interrupt
+[217.691s] gmake[1]: *** [CMakeFiles/Makefile2:263: CMakeFiles/test_mecanum_drive_controller.dir/all] Interrupt
+[217.692s] gmake: *** [Makefile:146: all] Interrupt
+[217.755s] Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4

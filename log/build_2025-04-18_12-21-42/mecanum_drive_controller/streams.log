@@ -1,0 +1,50 @@
+[0.104s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+[0.936s] [ 12%] Built target mecanum_drive_controller_parameters
+[1.032s] [ 37%] Built target gmock_main
+[1.039s] [ 43%] Built target gmock
+[1.040s] [35m[1mConsolidate compiler generated dependencies of target mecanum_drive_controller[0m
+[1.128s] [35m[1mConsolidate compiler generated dependencies of target test_load_mecanum_drive_controller[0m
+[1.326s] [ 56%] Built target test_load_mecanum_drive_controller
+[1.341s] [ 75%] Built target mecanum_drive_controller
+[1.505s] [ 81%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller_preceeding.dir/test/test_mecanum_drive_controller_preceeding.cpp.o[0m
+[1.506s] [ 87%] [32mBuilding CXX object CMakeFiles/test_mecanum_drive_controller.dir/test/test_mecanum_drive_controller.cpp.o[0m
+[41.327s] [ 93%] [32m[1mLinking CXX executable test_mecanum_drive_controller_preceeding[0m
+[47.856s] [ 93%] Built target test_mecanum_drive_controller_preceeding
+[63.176s] [100%] [32m[1mLinking CXX executable test_mecanum_drive_controller[0m
+[69.285s] [100%] Built target test_mecanum_drive_controller
+[69.394s] Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/mecanum_drive_controller -- -j4 -l4
+[69.437s] Invoking command in '/home/pi/omnicar_ws/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller
+[69.481s] -- Install configuration: ""
+[69.485s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller
+[69.487s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller_parameters.hpp
+[69.499s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/mecanum_drive_controller.xml
+[69.506s] -- Up-to-date: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller
+[69.507s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller
+[69.509s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/visibility_control.h
+[69.511s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/mecanum_drive_controller.hpp
+[69.513s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller/odometry.hpp
+[69.516s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so
+[69.701s] -- Set runtime path of "/home/pi/omnicar_ws/install/mecanum_drive_controller/lib/libmecanum_drive_controller.so" to ""
+[69.705s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.sh
+[69.708s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/library_path.dsv
+[69.713s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/package_run_dependencies/mecanum_drive_controller
+[69.716s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/parent_prefix_path/mecanum_drive_controller
+[69.722s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.sh
+[69.724s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/ament_prefix_path.dsv
+[69.726s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.sh
+[69.728s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/environment/path.dsv
+[69.730s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.bash
+[69.732s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.sh
+[69.734s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.zsh
+[69.736s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/local_setup.dsv
+[69.738s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.dsv
+[69.741s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/packages/mecanum_drive_controller
+[69.743s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/mecanum_drive_controller
+[69.748s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport.cmake
+[69.751s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/export_mecanum_drive_controllerExport-noconfig.cmake
+[69.753s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[69.756s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/ament_cmake_export_targets-extras.cmake
+[69.759s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig.cmake
+[69.761s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/cmake/mecanum_drive_controllerConfig-version.cmake
+[69.763s] -- Installing: /home/pi/omnicar_ws/install/mecanum_drive_controller/share/mecanum_drive_controller/package.xml
+[69.784s] Invoked command in '/home/pi/omnicar_ws/build/mecanum_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/omnicar_ws/build/mecanum_drive_controller

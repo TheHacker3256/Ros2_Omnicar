@@ -1,0 +1,8 @@
+source;share/omnicar/hook/cmake_prefix_path.ps1
+source;share/omnicar/hook/cmake_prefix_path.dsv
+source;share/omnicar/hook/cmake_prefix_path.sh
+source;share/omnicar/local_setup.bash
+source;share/omnicar/local_setup.dsv
+source;share/omnicar/local_setup.ps1
+source;share/omnicar/local_setup.sh
+source;share/omnicar/local_setup.zsh

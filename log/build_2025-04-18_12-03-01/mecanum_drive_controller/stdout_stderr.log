@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[ 12%] Built target mecanum_drive_controller_parameters
+[ 18%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[ 50%] Built target gmock
+[ 56%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[ 56%] Built target gmock_main
+[ 62%] [32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o[0m
