@@ -14,25 +14,29 @@ from launch_ros.actions import Node
 def generate_launch_description():
     package_name='omnicar'
 
-
     rsp = IncludeLaunchDescription(
       PythonLaunchDescriptionSource([os.path.join(
       get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
       launch_arguments={'use_sim_time': 'true', 'sim_mode': 'true'}.items()
     )
 
+    default_world = os.path.join(
+      get_package_share_directory(package_name),
+      'worlds',
+      'empty.world'
+    )  
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
     gazebo = IncludeLaunchDescription(
-      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])
+      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('ros_gz_sim'), 'launch', 'gz_sim.launch.py')]),
+      launch_arguments={'gz_args': ['-r -v4 ', default_world], 'on_exit_shutdown': 'true'}.items()
     )
-
 
     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
     spawn_entity = Node(
-      package='gazebo_ros', 
-      executable='spawn_entity.py',
-      arguments=['-topic', 'robot_description', '-entity', 'my_robot'],
+      package='ros_gz_sim', 
+      executable='create',
+      arguments=['-topic', 'robot_description','-name', 'my_bot', '-z', '0.2'],
       output='screen'
     )
 
@@ -50,6 +54,17 @@ def generate_launch_description():
       arguments=["joint_broad"],
     )
 
+    bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+    ros_gz_bridge = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        arguments=[
+            '--ros-args',
+            '-p',
+            f'config_file:={bridge_params}',
+        ]
+    )
+
 
     # Launch them all!
     return LaunchDescription([
@@ -57,5 +72,6 @@ def generate_launch_description():
       gazebo,
       spawn_entity,
       joint_broad_spawner,
-      diff_drive_spawner
+      diff_drive_spawner,
+      ros_gz_bridge
     ])
