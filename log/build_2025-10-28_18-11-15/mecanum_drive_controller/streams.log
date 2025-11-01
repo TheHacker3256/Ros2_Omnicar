@@ -1,0 +1,27 @@
+[0.006s] Invoking command in '/home/nwhit210/omnicar/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/nwhit210/omnicar/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar/install/mecanum_drive_controller
+[0.065s] -- The CXX compiler identification is GNU 13.3.0
+[0.248s] -- Detecting CXX compiler ABI info
+[0.366s] -- Detecting CXX compiler ABI info - done
+[0.371s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.371s] -- Detecting CXX compile features
+[0.371s] -- Detecting CXX compile features - done
+[0.372s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.448s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.008s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[1.008s]   By not providing "Findbackward_ros.cmake" in CMAKE_MODULE_PATH this project
+[1.008s]   has asked CMake to find a package configuration file provided by
+[1.008s]   "backward_ros", but CMake did not find one.
+[1.008s] 
+[1.008s]   Could not find a package configuration file provided by "backward_ros" with
+[1.008s]   any of the following names:
+[1.008s] 
+[1.008s]     backward_rosConfig.cmake
+[1.008s]     backward_ros-config.cmake
+[1.008s] 
+[1.008s]   Add the installation prefix of "backward_ros" to CMAKE_PREFIX_PATH or set
+[1.009s]   "backward_ros_DIR" to a directory containing one of the above files.  If
+[1.009s]   "backward_ros" provides a separate development package or SDK, be sure it
+[1.009s]   has been installed.
+[1.009s] 
+[1.009s] [0m
+[1.009s] -- Configuring incomplete, errors occurred!

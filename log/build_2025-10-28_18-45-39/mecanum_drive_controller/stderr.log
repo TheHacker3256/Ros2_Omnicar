@@ -1,0 +1,164 @@
+In file included from [01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:15[m[K:
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:80:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_interface::return_type mecanum_drive_controller::MecanumDriveController::[01;32m[Kupdate_reference_from_subscribers[m[K()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   80 |   controller_interface::return_type [01;31m[Kupdate_reference_from_subscribers[m[K() override;
+      |                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::CallbackReturn mecanum_drive_controller::MecanumDriveController::[01;32m[Kon_deactivate[m[K(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:343:37:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  343 |     [01;35m[Kcommand_interfaces_[i].set_value(std::numeric_limits<double>::quiet_NaN())[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/controller_interface/controller_interface/controller_interface_base.hpp:29[m[K,
+                 from [01m[K/opt/ros/jazzy/include/controller_interface/controller_interface/chainable_controller_interface.hpp:23[m[K,
+                 from [01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:27[m[K:
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type mecanum_drive_controller::MecanumDriveController::[01;32m[Kupdate_and_write_commands[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:359:84:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  359 |   const double wheel_front_left_state_vel = [01;35m[Kstate_interfaces_[FRONT_LEFT].get_value()[m[K;
+      |                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/controller_interface/controller_interface/controller_interface_base.hpp:30[m[K:
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:360:86:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  360 |   const double wheel_front_right_state_vel = [01;35m[Kstate_interfaces_[FRONT_RIGHT].get_value()[m[K;
+      |                                              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:361:84:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  361 |   const double wheel_rear_right_state_vel = [01;35m[Kstate_interfaces_[REAR_RIGHT].get_value()[m[K;
+      |                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:362:82:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  362 |   const double wheel_rear_left_state_vel = [01;35m[Kstate_interfaces_[REAR_LEFT].get_value()[m[K;
+      |                                            [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:465:46:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  465 |     [01;35m[Kcommand_interfaces_[FRONT_LEFT].set_value(wheel_front_left_vel)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:466:47:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  466 |     [01;35m[Kcommand_interfaces_[FRONT_RIGHT].set_value(wheel_front_right_vel)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:467:46:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  467 |     [01;35m[Kcommand_interfaces_[REAR_RIGHT].set_value(wheel_rear_right_vel)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:468:45:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  468 |     [01;35m[Kcommand_interfaces_[REAR_LEFT].set_value(wheel_rear_left_vel)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:472:46:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  472 |     [01;35m[Kcommand_interfaces_[FRONT_LEFT].set_value(0.0)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:473:47:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  473 |     [01;35m[Kcommand_interfaces_[FRONT_RIGHT].set_value(0.0)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:474:46:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  474 |     [01;35m[Kcommand_interfaces_[REAR_RIGHT].set_value(0.0)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:475:45:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kbool hardware_interface::LoanedCommandInterface::[01;32m[Kset_value[m[K(const T&, unsigned int) [35m[K[with T = double][m[K[m[K’, declared with attribute ‘[01m[Knodiscard[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  475 |     [01;35m[Kcommand_interfaces_[REAR_LEFT].set_value(0.0)[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_command_interface.hpp:113:22:[m[K [01;36m[Knote: [m[Kdeclared here
+  113 |   [[nodiscard]] bool [01;36m[Kset_value[m[K(const T & value, unsigned int max_tries = 10)
+      |                      [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:511:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  511 |       [01;35m[Kstate_interfaces_[FRONT_LEFT].get_value()[m[K;
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:513:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  513 |       [01;35m[Kstate_interfaces_[FRONT_RIGHT].get_value()[m[K;
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:515:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  515 |       [01;35m[Kstate_interfaces_[REAR_RIGHT].get_value()[m[K;
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:517:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble hardware_interface::LoanedStateInterface::[01;32m[Kget_value[m[K() const[m[K’ is deprecated: Use std::optional<T> get_optional() instead to retrieve the value. This method will be removed by the ROS 2 Kilted Kaiju release. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  517 |       [01;35m[Kstate_interfaces_[REAR_LEFT].get_value()[m[K;
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/loaned_state_interface.hpp:94:10:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |   double [01;36m[Kget_value[m[K() const
+      |          [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/13/memory:78[m[K,
+                 from [01m[K/opt/ros/jazzy/src/gmock_vendor/include/gmock/gmock-actions.h:139[m[K,
+                 from [01m[K/opt/ros/jazzy/src/gmock_vendor/include/gmock/gmock.h:56[m[K,
+                 from [01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/test/test_load_mecanum_drive_controller.cpp:15[m[K:
+/usr/include/c++/13/bits/unique_ptr.h: In instantiation of ‘[01m[Kstd::__detail::__unique_ptr_t<_Tp> std::[01;32m[Kmake_unique[m[K(_Args&& ...) [35m[K[with _Tp = hardware_interface::ResourceManager; _Args = {const __cxx11::basic_string<char, char_traits<char>, allocator<char> >&}; __detail::__unique_ptr_t<_Tp> = __detail::__unique_ptr_t<hardware_interface::ResourceManager>][m[K[m[K’:
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/test/test_load_mecanum_drive_controller.cpp:31:58:[m[K   required from here
+[01m[K/usr/include/c++/13/bits/unique_ptr.h:1070:30:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Khardware_interface::ResourceManager::ResourceManager(const std::__cxx11::basic_string<char>&)[m[K’
+ 1070 |     { return unique_ptr<_Tp>([01;31m[Knew _Tp(std::forward<_Args>(__args)...)[m[K); }
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/jazzy/include/controller_manager/controller_manager/controller_manager.hpp:44[m[K,
+                 from [01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/test/test_load_mecanum_drive_controller.cpp:18[m[K:
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:114:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ResourceManager::[01;32m[KResourceManager[m[K(const hardware_interface::ResourceManagerParams&, bool)[m[K’
+  114 |   explicit [01;36m[KResourceManager[m[K(const hardware_interface::ResourceManagerParams & params, bool load);
+      |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:114:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:99:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ResourceManager::[01;32m[KResourceManager[m[K(const std::string&, rclcpp::Clock::SharedPtr, rclcpp::Logger, bool, unsigned int)[m[K’
+   99 |   explicit [01;36m[KResourceManager[m[K(
+      |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:99:12:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:78:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ResourceManager::[01;32m[KResourceManager[m[K(const std::string&, rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, bool, unsigned int)[m[K’
+   78 |   explicit [01;36m[KResourceManager[m[K(
+      |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:78:12:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:61:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ResourceManager::[01;32m[KResourceManager[m[K(rclcpp::Clock::SharedPtr, rclcpp::Logger)[m[K’
+   61 |   explicit [01;36m[KResourceManager[m[K(rclcpp::Clock::SharedPtr clock, rclcpp::Logger logger);
+      |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:61:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:56:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ResourceManager::[01;32m[KResourceManager[m[K(rclcpp::node_interfaces::NodeClockInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr)[m[K’
+   56 |   explicit [01;36m[KResourceManager[m[K(
+      |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/resource_manager.hpp:56:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+In file included from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader_core.hpp:58[m[K,
+                 from [01m[K/opt/ros/jazzy/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/jazzy/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/src/mecanum_drive_controller.cpp:533[m[K:
+/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::[01;32m[Kcreate[m[K() const [35m[K[with C = mecanum_drive_controller::MecanumDriveController; B = controller_interface::ChainableControllerInterface][m[K[m[K’:
+[01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/jazzy/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kmecanum_drive_controller::MecanumDriveController[m[K’
+  218 |     return [01;31m[Knew C[m[K;
+      |            [01;31m[K^~~~~[m[K
+[01m[K/home/nwhit210/omnicar/src/mecanum_drive_controller/include/mecanum_drive_controller/mecanum_drive_controller.hpp:52:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kmecanum_drive_controller::MecanumDriveController[m[K’:
+   52 | class [01;36m[KMecanumDriveController[m[K : public controller_interface::ChainableControllerInterface
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/controller_interface/controller_interface/chainable_controller_interface.hpp:108:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual controller_interface::return_type controller_interface::ChainableControllerInterface::[01;32m[Kupdate_reference_from_subscribers[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+  108 |   virtual return_type [01;36m[Kupdate_reference_from_subscribers[m[K(
+      |                       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_load_mecanum_drive_controller.dir/build.make:76: CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:235: CMakeFiles/test_load_mecanum_drive_controller.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/mecanum_drive_controller.dir/build.make:76: CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:208: CMakeFiles/mecanum_drive_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

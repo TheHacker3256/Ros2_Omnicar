@@ -1,8 +1,8 @@
-# Install script for directory: /opt/ros/humble/src/gtest_vendor
+# Install script for directory: /opt/ros/jazzy/src/gtest_vendor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/pi/omnicar_ws/install/mecanum_drive_controller")
+  set(CMAKE_INSTALL_PREFIX "/home/nwhit210/omnicar/install/mecanum_drive_controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
