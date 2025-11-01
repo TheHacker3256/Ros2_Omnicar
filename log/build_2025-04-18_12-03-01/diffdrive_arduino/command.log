@@ -1,1 +1,0 @@
-Invoking command in '/home/pi/omnicar_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/omnicar_ws/build/diffdrive_arduino -- -j4 -l4

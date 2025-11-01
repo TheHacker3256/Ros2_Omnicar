@@ -1,0 +1,1 @@
+Invoking command in '/home/nwhit210/omnicar/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/nwhit210/omnicar/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar/install/mecanum_drive_controller

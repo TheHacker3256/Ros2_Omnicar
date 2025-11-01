@@ -1,0 +1,25 @@
+[0.008s] Invoking command in '/home/nwhit210/omnicar/build/omnicar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/nwhit210/omnicar/src/omnicar -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar/install/omnicar
+[0.058s] -- The C compiler identification is GNU 13.3.0
+[0.277s] -- The CXX compiler identification is GNU 13.3.0
+[0.541s] -- Detecting C compiler ABI info
+[0.656s] -- Detecting C compiler ABI info - done
+[0.661s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.661s] -- Detecting C compile features
+[0.661s] -- Detecting C compile features - done
+[0.698s] -- Detecting CXX compiler ABI info
+[0.817s] -- Detecting CXX compiler ABI info - done
+[0.822s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.822s] -- Detecting CXX compile features
+[0.823s] -- Detecting CXX compile features - done
+[0.824s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.898s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.950s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.005s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.007s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.007s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.007s] -- Added test 'lint_cmake' to check CMake code style
+[1.007s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.008s] -- Added test 'xmllint' to check XML markup files
+[1.009s] -- Configuring done (1.0s)
+[1.011s] -- Generating done (0.0s)
+[1.012s] -- Build files have been written to: /home/nwhit210/omnicar/build/omnicar

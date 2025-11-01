@@ -54,7 +54,7 @@ public:
   }
 
 
-  std::string send_msg(const std::string &msg_to_send, bool print_output = true)
+  std::string send_msg(const std::string &msg_to_send, bool print_output = false)
   {
     serial_conn_.FlushIOBuffers(); // Just in case
     serial_conn_.Write(msg_to_send);

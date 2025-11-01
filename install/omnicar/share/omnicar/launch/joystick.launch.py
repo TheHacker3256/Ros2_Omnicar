@@ -19,7 +19,16 @@ def generate_launch_description():
     remappings=[('/cmd_vel', '/diff_cont/reference_unstamped')]
   )
 
+  twist_stamper = Node(
+    package='twist_stamper',
+    executable='twist_stamper',
+    parameters=[{'use_sim_time': True}],
+    remappings=[('/cmd_vel_in','/diff_cont/reference_unstamped'),
+                ('/cmd_vel_out','/diff_cont/reference')]
+  )
+
   return LaunchDescription([
     joy_node,
-    teleop_node
+    teleop_node,
+    twist_stamper
   ])

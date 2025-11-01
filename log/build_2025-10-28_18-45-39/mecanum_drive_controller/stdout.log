@@ -1,0 +1,5 @@
+[ 12%] Built target mecanum_drive_controller_parameters
+[ 25%] Built target gmock_main
+[ 43%] Built target gmock
+[ 56%] [32mBuilding CXX object CMakeFiles/test_load_mecanum_drive_controller.dir/test/test_load_mecanum_drive_controller.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m

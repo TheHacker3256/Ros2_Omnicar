@@ -1,0 +1,41 @@
+[0.006s] Invoking command in '/home/nwhit210/omnicar/build/mecanum_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/nwhit210/omnicar/src/mecanum_drive_controller -DCMAKE_INSTALL_PREFIX=/home/nwhit210/omnicar/install/mecanum_drive_controller
+[0.013s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.129s] -- Found controller_interface: 4.38.0 (/opt/ros/jazzy/share/controller_interface/cmake)
+[0.219s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.230s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.249s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.266s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.439s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.482s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.485s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.508s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.539s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.541s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.599s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.601s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.606s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[0.634s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.896s] -- Found generate_parameter_library: 0.5.0 (/opt/ros/jazzy/share/generate_parameter_library/cmake)
+[0.897s] -- Found parameter_traits: 0.5.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[0.908s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[0.930s] -- Found std_srvs: 5.3.6 (/opt/ros/jazzy/share/std_srvs/cmake)
+[0.947s] -- Found tf2: 0.36.14 (/opt/ros/jazzy/share/tf2/cmake)
+[0.952s] -- Found tf2_geometry_msgs: 0.36.14 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[0.979s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.980s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.981s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.040s] -- Found ament_cmake_gmock: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gmock/cmake)
+[1.042s] -- Found controller_manager: 4.38.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[1.091s] -- Found ros2_control_test_assets: 4.38.0 (/opt/ros/jazzy/share/ros2_control_test_assets/cmake)
+[1.093s] -- Found gmock sources under '/opt/ros/jazzy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[1.152s] -- The C compiler identification is GNU 13.3.0
+[1.417s] -- Detecting C compiler ABI info
+[1.551s] -- Detecting C compiler ABI info - done
+[1.556s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.556s] -- Detecting C compile features
+[1.556s] -- Detecting C compile features - done
+[1.559s] -- Found ament_cmake_gtest: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_gtest/cmake)
+[1.559s] -- Found gtest sources under '/opt/ros/jazzy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.614s] -- Configuring done (1.6s)
+[1.650s] -- Generating done (0.0s)
+[1.658s] -- Build files have been written to: /home/nwhit210/omnicar/build/mecanum_drive_controller
