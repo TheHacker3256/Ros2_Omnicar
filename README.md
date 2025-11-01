@@ -34,7 +34,7 @@ Follow the official ROS2 installation guide for Ubuntu 22.04: https://index.ros.
 
 1. Clone the repository: `git clone https://github.com/TheHacker3256/omnicar.git`
 2. Navigate to the repository: `cd omnicar`
-3. Install the required dependencies: `rosdep install -i --from-paths package --rosdistro humble`
+3. Install the required dependencies: `rosdep install -i --from-paths package --rosdistro jazzy`
 4. Run the car: `ros2 launch omnicar launch_bot.launch.py`
 
 **Hardware Interface**
