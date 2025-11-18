@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <joint name="gyro_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="gyro_link"/>
+    <origin xyz="0.305 0 0.08" rpy="0 0 0"/>
+  </joint>
+
+  <link name="gyro_link">
+    <visual>
+      <geometry>
+        <box size="0.010 0.03 0.03"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <gazebo reference="gyro_link">
+    <material>Gazebo/Red</material>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>1</always_on>
+      <update_rate>1</update_rate>
+      <visualize>true</visualize>
+      <topic>imu</topic>
+      <plugin filename="gz-sim-imu-system"
+        name="gz::sim::systems::Imu">
+      </plugin>
+    </sensor>
+  </gazebo>  
+</robot>

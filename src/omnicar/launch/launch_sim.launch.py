@@ -66,6 +66,11 @@ def generate_launch_description():
     )
 
 
+    joy = IncludeLaunchDescription(
+      PythonLaunchDescriptionSource([os.path.join(
+      get_package_share_directory(package_name),'launch','joystick.launch.py')])
+    )
+
     # Launch them all!
     return LaunchDescription([
       rsp,
@@ -73,5 +78,6 @@ def generate_launch_description():
       spawn_entity,
       joint_broad_spawner,
       diff_drive_spawner,
-      ros_gz_bridge
+      ros_gz_bridge,
+      joy
     ])

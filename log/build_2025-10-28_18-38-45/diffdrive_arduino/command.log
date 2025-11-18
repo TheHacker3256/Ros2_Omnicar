@@ -1,2 +1,0 @@
-Invoking command in '/home/nwhit210/omnicar/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/nwhit210/omnicar/build/diffdrive_arduino -- -j24 -l24
-Invoked command in '/home/nwhit210/omnicar/build/diffdrive_arduino' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/nwhit210/omnicar/build/diffdrive_arduino -- -j24 -l24
