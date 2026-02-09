@@ -28,6 +28,14 @@ def generate_launch_description():
       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','joystick.launch.py')]), 
     )
 
+    # ros2 launch nmea_navsat_driver nmea_serial_driver.launch.py port:=/dev/clearpath/gps baud:=19200
+    gps = Node(
+      package='nmea_navsat_driver',
+      executable='nmea_serial_driver',
+      parameters=[{'port': '/dev/ttyACM0', 'baud': 9600}],
+      output="both",
+    )
+
     controller_manager = Node(
       package='controller_manager',
       executable='ros2_control_node',
@@ -66,8 +74,9 @@ def generate_launch_description():
    
     return LaunchDescription([
       rsp,
-      delayed_controller_manager,
-      delayed_diff_drive_spawner,
-      delayed_joint_broad_spawner,
-      joystick,
+      # delayed_controller_manager,
+      # delayed_diff_drive_spawner,
+      # delayed_joint_broad_spawner,
+      # joystick,
+      gps,
     ])
