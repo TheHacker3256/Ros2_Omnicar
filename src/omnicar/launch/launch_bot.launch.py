@@ -36,6 +36,11 @@ def generate_launch_description():
       output="both",
     )
 
+    imu = Node(
+      package='mpu9250driver',
+      executable='mpu9250driver',
+    )
+
     controller_manager = Node(
       package='controller_manager',
       executable='ros2_control_node',
@@ -74,9 +79,10 @@ def generate_launch_description():
    
     return LaunchDescription([
       rsp,
-      # delayed_controller_manager,
-      # delayed_diff_drive_spawner,
-      # delayed_joint_broad_spawner,
-      # joystick,
       gps,
+      imu,
+      delayed_controller_manager,
+      delayed_diff_drive_spawner,
+      delayed_joint_broad_spawner,
+      joystick
     ])
