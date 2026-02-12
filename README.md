@@ -53,6 +53,16 @@ Follow the official ROS2 installation guide for Ubuntu 22.04: https://index.ros.
   ros2 launch omnicar launch_sim.launch.py
 ```
 
+**Docker Container**
+-------------------
+1. Pull the docker image
+```
+docker pull thehacker3256/omnicar:latest
+```
+2. Run the container
+```
+docker run --cap-add=SYS_PTRACE --security-opt=seccomp=unconfined --ipc=host --network=host --pid=host --privileged -name=omnicar thehacker3256/omnicar:latest
+```
 
 
 **Hardware Interface**

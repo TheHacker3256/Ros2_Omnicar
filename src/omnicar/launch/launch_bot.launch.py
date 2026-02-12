@@ -32,7 +32,7 @@ def generate_launch_description():
     gps = Node(
       package='nmea_navsat_driver',
       executable='nmea_serial_driver',
-      parameters=[{'port': '/dev/ttyACM0', 'baud': 9600}],
+      parameters=[{'port': '/dev/ttyACM1', 'baud': 9600}],
       output="both",
     )
 
