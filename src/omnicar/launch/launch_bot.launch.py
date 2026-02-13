@@ -41,6 +41,23 @@ def generate_launch_description():
       executable='mpu9250driver',
     )
 
+    camera = Node(
+        package='usb_cam',
+        executable='usb_cam_node_exe',
+        name='usb_cam_node',
+        output='screen',
+        parameters=[{
+            'video_device': '/dev/video0',
+            'image_width': 1920,
+            'image_height': 1080,
+            "frame_rate": 30,
+            'io_method': 'mmap',
+            "retry_on_error": True,
+            "pixel_format": "mjpeg2rgb"
+          }]
+        ), 
+
+
     controller_manager = Node(
       package='controller_manager',
       executable='ros2_control_node',
@@ -81,6 +98,7 @@ def generate_launch_description():
       rsp,
       gps,
       imu,
+      camera,
       delayed_controller_manager,
       delayed_diff_drive_spawner,
       delayed_joint_broad_spawner,

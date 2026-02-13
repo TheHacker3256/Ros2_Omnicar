@@ -10,5 +10,5 @@
     <xacro:include filename="imu.xacro" />
     <xacro:include filename="gps.xacro" />
 
-    <!-- <xacro:include filename="camera.xacro" /> add camera -->
+    <xacro:include filename="camera.xacro" /> add camera
 </robot>
