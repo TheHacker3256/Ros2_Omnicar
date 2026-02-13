@@ -6,7 +6,9 @@
     
     <xacro:include filename="ros2_control.xacro" />
 
+    <!-- Sensors -->
     <xacro:include filename="imu.xacro" />
-    
+    <xacro:include filename="gps.xacro" />
+
     <!-- <xacro:include filename="camera.xacro" /> add camera -->
 </robot>
