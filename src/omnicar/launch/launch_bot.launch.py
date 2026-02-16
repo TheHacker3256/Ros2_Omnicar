@@ -37,8 +37,15 @@ def generate_launch_description():
     )
 
     imu = Node(
-      package='mpu9250driver',
-      executable='mpu9250driver',
+      package='ros2_mpu6050',
+      executable='ros2_mpu6050',
+    )
+
+    imu_visualiser = Node(
+      package='imu_filter_madgwick',
+      executable='imu_filter_madgwick_node',
+      parameters=[{'use_mag': False, 'publish_tf': True, 'world_frame': 'enu'}],
+      remappings=[("/imu/data_raw", "/imu/mpu6050")],
     )
 
     camera = Node(
@@ -98,6 +105,7 @@ def generate_launch_description():
       rsp,
       gps,
       imu,
+      imu_visualiser,
       camera,
       delayed_controller_manager,
       delayed_diff_drive_spawner,
