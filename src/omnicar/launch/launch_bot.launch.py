@@ -49,20 +49,20 @@ def generate_launch_description():
     )
 
     camera = Node(
-        package='usb_cam',
-        executable='usb_cam_node_exe',
-        name='usb_cam_node',
-        output='screen',
-        parameters=[{
-            'video_device': '/dev/video0',
-            'image_width': 1920,
-            'image_height': 1080,
-            "frame_rate": 30,
-            'io_method': 'mmap',
-            "retry_on_error": True,
-            "pixel_format": "mjpeg2rgb"
-          }]
-        ), 
+      package='usb_cam',
+      executable='usb_cam_node_exe',
+      name='usb_cam_node',
+      output='screen',
+      parameters=[{
+        'video_device': '/dev/video0',
+        'image_width': 1920,
+        'image_height': 1080,
+        "frame_rate": 30,
+        'io_method': 'mmap',
+        "retry_on_error": True,
+        "pixel_format": "mjpeg2rgb"
+      }]
+    ), 
 
 
     controller_manager = Node(
