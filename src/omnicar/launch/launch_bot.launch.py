@@ -62,8 +62,7 @@ def generate_launch_description():
         "retry_on_error": True,
         "pixel_format": "mjpeg2rgb"
       }]
-    ), 
-
+    )
 
     controller_manager = Node(
       package='controller_manager',
