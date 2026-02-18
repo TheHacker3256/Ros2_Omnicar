@@ -23,7 +23,7 @@
         <ros>
           <!-- publish to /imu/data -->
           <namespace>/imu</namespace>
-          <remapping>~/out:=/imu</remapping>
+          <remapping>~/out:=/imu/mpu6050</remapping>
         </ros>
       </plugin>
     </sensor>

@@ -25,6 +25,14 @@ def generate_launch_description():
       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])
     )
 
+    imu_visualiser = Node(
+      package='imu_filter_madgwick',
+      executable='imu_filter_madgwick_node',
+      parameters=[{'use_mag': False, 'publish_tf': True, 'world_frame': 'enu'}],
+      remappings=[("/imu/data_raw", "/imu/mpu6050")],
+    )
+
+
     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
     spawn_entity = Node(
       package='gazebo_ros', 
@@ -56,6 +64,7 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
       rsp,
+      imu_visualiser,
       gazebo,
       spawn_entity,
       joint_broad_spawner,
