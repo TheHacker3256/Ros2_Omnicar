@@ -22,7 +22,8 @@ def generate_launch_description():
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
     gazebo = IncludeLaunchDescription(
-      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])
+      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+      launch_arguments={'world': os.path.join(get_package_share_directory(package_name), 'worlds', 'empty.world')}.items()
     )
 
     imu_visualiser = Node(
@@ -37,7 +38,7 @@ def generate_launch_description():
     spawn_entity = Node(
       package='gazebo_ros', 
       executable='spawn_entity.py',
-      arguments=['-topic', 'robot_description', '-entity', 'my_robot'],
+      arguments=['-topic', 'robot_description', '-entity', 'my_robot', '-x', '0', '-y', '0', '-z', '0.1'],
       output='screen'
     )
 
