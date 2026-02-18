@@ -31,7 +31,7 @@
       <plugin name="gps_plugin" filename="libgazebo_ros_gps_sensor.so">
         <ros>
           <namespace>/gps</namespace>
-          <remapping>~/out:=/fix</remapping>
+          <remapping>~/out:=/navsatfix</remapping>
         </ros>
       </plugin>
     </sensor>
