@@ -25,8 +25,8 @@ diff_cont:
 
     use_stamped_vel: false
 
-    base_frame_id: "base_link"
+    base_frame_id: "chassis"
     odom_frame_id: "odom"
-    enable_odom_tf: true
+    enable_odom_tf: false
     twist_covariance_diagonal: [0.0, 7.0, 14.0, 21.0, 28.0, 35.0]
     pose_covariance_diagonal: [0.0, 7.0, 14.0, 21.0, 28.0, 35.0]
