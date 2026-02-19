@@ -26,6 +26,23 @@ def generate_launch_description():
       launch_arguments={'world': os.path.join(get_package_share_directory(package_name), 'worlds', 'empty.world')}.items()
     )
 
+    robot_localization_node = Node(
+        package='robot_localization',
+        executable='ekf_node',
+        name='ekf_filter_node',
+        output='screen',
+        parameters=[os.path.join(get_package_share_directory(package_name), 'config/ekf.yaml'), {'use_sim_time': True}]
+    )
+
+    navsat_transform_node = Node(
+        package='robot_localization',
+        executable='navsat_transform_node',
+        name='navsat_transform',
+        output='screen',
+        parameters=[os.path.join(get_package_share_directory(package_name), 'config/ekf.yaml'), {'use_sim_time': True}],
+        remappings=[('/gps/fix', '/navsatfix'), ('/imu/data', '/imu/mpu6050') ]
+    )
+
     imu_visualiser = Node(
       package='imu_filter_madgwick',
       executable='imu_filter_madgwick_node',
@@ -65,7 +82,9 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
       rsp,
-      imu_visualiser,
+      # imu_visualiser,
+      robot_localization_node,
+      navsat_transform_node,
       gazebo,
       spawn_entity,
       joint_broad_spawner,
