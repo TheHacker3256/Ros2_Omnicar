@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
   <joint name="gps_joint" type="fixed">
-    <parent link="base_link"/>
+    <parent link="chassis"/>
     <child link="gps_link"/>
     <origin xyz="0.305 0 0.08" rpy="0 0 0"/>
   </joint>

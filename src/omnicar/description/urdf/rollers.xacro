@@ -21,12 +21,22 @@
         <visual>
           <origin xyz="0 0 0" rpy="0 0 0" />
           <geometry>
-            <mesh filename="$(find omnicar)/description/mesh/visual/roller.dae" scale="1 1 1" />
+            <xacro:if value="$(arg sim_mode)">
+              <mesh filename="$(find omnicar)/description/mesh/visual/roller.dae" scale="1 1 1" />
+            </xacro:if>
+            <xacro:unless value="$(arg sim_mode)">
+              <mesh filename="package://omnicar/description/mesh/visual/roller.dae" scale="1 1 1" />
+            </xacro:unless>
           </geometry>        
         </visual>
         <collision>
           <geometry>
-            <mesh filename="$(find omnicar)/description/mesh/collision/roller.stl" scale="1 1 1" />
+            <xacro:if value="$(arg sim_mode)">
+              <mesh filename="$(find omnicar)/description/mesh/visual/roller.dae" scale="1 1 1" />
+            </xacro:if>
+            <xacro:unless value="$(arg sim_mode)">
+              <mesh filename="package://omnicar/description/mesh/visual/roller.dae" scale="1 1 1" />
+            </xacro:unless>
           </geometry>
         </collision>
         <inertial>
